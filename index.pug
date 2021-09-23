@@ -1,0 +1,97 @@
+header.page-header
+    .top-header
+        form.top-header__search-form
+            input(placeholder="Поиск по сайту").search
+        .top-header__links
+            a(href="#").header-link Войти
+            a(href="#").header-link Сравнить
+            .top-header__cart-wrapper.cart
+                span.cart_count 
+                a(href="#").header-link Корзина
+                div.pop-up.cart__pop-up
+                    .pop-up__item
+                        p.pop-up__item
+                            img(src="#" alt="").pop-up__item-img
+                            | Любительская селфи-палка
+                            button(type="button")
+
+    nav.nav
+        ul.nav__list
+            li.nav__item
+                a(href="# ").nav__link.catalog Каталог Товаров
+                    ul.catalog-list
+                        li.catalog__item
+                            a(href="#").catalog__link Виртуальная реальность
+                        li.catalog__item
+                            a(href="#").catalog__link Моноподы для селфи
+                        li.catalog__item
+                            a(href="#").catalog__link Экшн-камеры
+                        li.catalog__item
+                            a(href="#").catalog__link Финтнес-браслеты
+                        li.catalog__item
+                            a(href="#").catalog__link Умные часы
+                        li.catalog__item
+                            a(href="#").catalog__link Квадрокоптеры
+
+                    button(type="button").catalog__toggle
+            li.nav__item
+                a(href="# ").nav__link Доставка
+            li.nav__item
+                a(href="# ").nav__link Гарантия
+            li.nav__item
+                a(href="# ").nav__link Контакты
+
+
+main
+    h1 Интернет-магазин Device
+    section.slider
+        .slider__item
+            .slider__image-area
+            .slider__content__area
+                span.slider__order 01
+                p
+                    b Порхает как бабочка, жалит как пчела!
+                P
+                    | Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                    | замаскированным под стандартную камеру.  
+                a(href="#").btn
+                table.slider__table
+                    tr
+                        th Дальность полета
+                        th Радиус поражения
+                    tr
+                        td 800 м
+                        td 50 м
+        .slider__item
+            .slider__image-area
+            .slider__content__area
+                span.slider__order 02
+                p
+                    b Худеем правильно
+                P
+                    | Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                a(href="#").btn
+                table.slider__table
+                    tr
+                        th 48 часов
+                    tr
+                        td Без подзарядки
+        .slider__item
+            .slider__image-area
+            .slider__content__area
+                span.slider__order 03
+                p
+                    b Делай селфи, как Бен Стиллер! 
+                P
+                    | Самая длинная палка для селфи доступна в нашем магазине. 
+                    | Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                a(href="#").btn
+                table.slider__table
+                    tr
+                        th Дальность полета
+                        th Радиус поражения
+                    tr
+                        td 800 м
+                        td 50 м
+
+footer.page-footer
