@@ -16,6 +16,8 @@ header.page-header
                             button(type="button")
 
     nav.nav
+        a(href="#")
+            img(src="#" alt="Описание картинки").logo
         ul.nav__list
             li.nav__item
                 a(href="# ").nav__link.catalog Каталог Товаров
@@ -33,7 +35,7 @@ header.page-header
                         li.catalog__item
                             a(href="#").catalog__link Квадрокоптеры
 
-                    button(type="button").catalog__toggle
+                    
             li.nav__item
                 a(href="# ").nav__link Доставка
             li.nav__item
@@ -43,10 +45,14 @@ header.page-header
 
 
 main
-    h1 Интернет-магазин Device
+    h1.visually-hidden Интернет-магазин Device
     section.slider
         .slider__item
             .slider__image-area
+                img(src="#").slider__img
+                .slider__buttons
+                    button(type="button").arrow-left
+                    button(type="button").arrow-right
             .slider__content__area
                 span.slider__order 01
                 p
@@ -57,13 +63,21 @@ main
                 a(href="#").btn
                 table.slider__table
                     tr
-                        th Дальность полета
-                        th Радиус поражения
-                    tr
+                        td Дальность полета
                         td 800 м
+                    tr
+                        td Радиус поражения
                         td 50 м
+                .slider__dots
+                    button(type="button").dot.dot--active
+                    button(type="button").dot
+                    button(type="button").dot
         .slider__item
             .slider__image-area
+                img(src="#").slider__img
+                .slider__buttons
+                    button(type="button").arrow-left
+                    button(type="button").arrow-right
             .slider__content__area
                 span.slider__order 02
                 p
@@ -73,11 +87,18 @@ main
                 a(href="#").btn
                 table.slider__table
                     tr
-                        th 48 часов
-                    tr
                         td Без подзарядки
+                        td 48 часов
+                .slider__dots
+                    button(type="button").dot.dot--active
+                    button(type="button").dot 
+                    button(type="button").dot
         .slider__item
             .slider__image-area
+                img(src="#").slider__img
+                .slider__buttons
+                    button(type="button").arrow-left
+                    button(type="button").arrow-right
             .slider__content__area
                 span.slider__order 03
                 p
@@ -88,10 +109,50 @@ main
                 a(href="#").btn
                 table.slider__table
                     tr
-                        th Дальность полета
-                        th Радиус поражения
+                        td Длина палки
+                        td 8,5 м
                     tr
-                        td 800 м
-                        td 50 м
-
+                        td Вес палки
+                        td 5 кг
+                    tr
+                        td Материал
+                        td Карбон
+                .slider__dots
+                    button(type="button").dot.dot--active
+                    button(type="button").dot
+                    button(type="button").dot
+    section.categories
+        h2.visually-hidden Категории товаров
+        ul.categories__list
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Виртуальная реальность
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Моноподы для селфи
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Экшн-камеры
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Фитнес-браслеты
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Умные часы
+            li.categories__item
+                a(href="#").categories__link
+                    .categories__icon-box
+                    h3.categories__name Квадрокоптеры
+    section.advantages
+        .advantages__buttons-area
+            button(type="button").btn.btn--selected
+            button(type="button").btn
+            button(type="button").btn.btn--selected
+        .advantages__content
+        q
 footer.page-footer
