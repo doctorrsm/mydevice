@@ -1,0 +1,45 @@
+* {
+    border: 1px solid;
+    padding: 10px;
+
+}
+
+
+header,
+main,
+footer {
+    border: 4px solid purple;
+    margin-bottom: 5px;
+}
+header > *,
+main  > *,
+footer > * {
+    margin-bottom: 40px;
+}
+
+header > * > *,
+main > * > *,
+footer > * > *{
+    margin-bottom: 20px;
+}
+
+section {
+    border: 2px solid rgb(214, 88, 4);
+}
+section > *, header > * {
+    border: 1px dashed red;
+}
+img, b, span, li> a {
+    display: inline-block;
+}
+
+/*
+.is-hover-child {
+    outline: 0px solid green;
+}
+
+
+.is-hover {
+    outline: 0px solid rgb(226, 18, 216);
+}
+*/
