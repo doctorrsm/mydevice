@@ -266,6 +266,15 @@
       }).on('mouseout', function(){
       $(this).siblings().removeClass('is-hover-child');
       })
+      
+          
+          
+       $('*').each(function(){
+           var classlist = $(this).attr("class");
+           var text
+           $(this).prepend("<i class='classname'>" + classlist + '</i>');
+          
+          });   
     </script>
   </body>
 </html>

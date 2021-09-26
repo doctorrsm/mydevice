@@ -30,8 +30,16 @@ section > *, header > * {
   border: 1px dashed red;
 }
 
-img, b, span, li > a {
+img, b, span, li > a, label {
   display: inline-block;
+}
+
+.classname {
+  padding: 0 4px;
+  background: rebeccapurple;
+  color: white;
+  position: relative;
+  font-size: 11px;
 }
 
 /*
