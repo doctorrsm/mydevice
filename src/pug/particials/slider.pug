@@ -1,76 +1,53 @@
 h1.visually-hidden Интернет-магазин Device
 section.slider
-    .slider__item
-        .slider__image-area
-            img(src="#").slider__img
-            .slider__buttons
-                button(type="button").arrow-left
-                button(type="button").arrow-right
-        .slider__content__area
-            span.slider__order 01
-            p
-                b Порхает как бабочка, жалит как пчела!
-            P
-                | Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                | замаскированным под стандартную камеру.  
-            a(href="#").btn
-            table.slider__table
-                tr
-                    td Дальность полета
-                    td 800 м
-                tr
-                    td Радиус поражения
-                    td 50 м
-            .slider__dots
-                button(type="button").dot.dot--active
-                button(type="button").dot
-                button(type="button").dot
-    .slider__item
-        .slider__image-area
-            img(src="#").slider__img
-            .slider__buttons
-                button(type="button").arrow-left
-                button(type="button").arrow-right
-        .slider__content__area
-            span.slider__order 02
-            p
-                b Худеем правильно
-            P
-                | Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-            a(href="#").btn
-            table.slider__table
-                tr
-                    td Без подзарядки
-                    td 48 часов
-            .slider__dots
-                button(type="button").dot.dot--active
-                button(type="button").dot 
-                button(type="button").dot
-    .slider__item
-        .slider__image-area
-            img(src="#").slider__img
-            .slider__buttons
-                button(type="button").arrow-left
-                button(type="button").arrow-right
-        .slider__content__area
-            span.slider__order 03
-            p
-                b Делай селфи, как Бен Стиллер! 
-            P
-                | Самая длинная палка для селфи доступна в нашем магазине. 
-                | Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-            a(href="#").btn
-            table.slider__table
-                tr
-                    td Длина палки
-                    td 8,5 м
-                tr
-                    td Вес палки
-                    td 5 кг
-                tr
-                    td Материал
-                    td Карбон
-            .slider__dots
-                button(type="button").dot.dot--active
-                button(type="button").dot
-                button(type="button").dot
+	.slider__buttons
+		button(type="button").arrow-left
+		button(type="button").arrow-right
+	.slider__dots
+		button(type="button").dot.dot--active
+		button(type="button").dot
+		button(type="button").dot
+	.slider__item
+		.slider__image-area
+			img(src="#").slider__img
+		.slider__content__area
+			span.slider__order 01
+			p.slider__lead-text Порхает как бабочка, жалит как пчела!
+			P
+				| Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+				| замаскированным под стандартную камеру.
+			a(href="#").btn
+			dl.slider__description
+				dt Дальность полета
+				dd 800 м
+				dt Радиус поражения
+				dd 50 м
+	.slider__item
+		.slider__image-area
+			img(src="#").slider__img
+		.slider__content__area
+			span.slider__order 02
+			p.slider__lead-text Худеем правильно
+			P
+				| Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+			a(href="#").btn
+			dl.slider__description
+				dt Без подзарядки
+				dd 48 часов
+	.slider__item
+		.slider__image-area
+			img(src="#").slider__img
+		.slider__content__area
+			span.slider__order 03
+			p.slider__lead-text Делай селфи, как Бен Стиллер!
+			P
+				| Самая длинная палка для селфи доступна в нашем магазине.
+				| Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+			a(href="#").btn
+			dl.slider__table
+				dt Длина палки
+				dd 8,5 м
+				dt Вес палки
+				dd 5 кг
+				dt Материал
+				dd Карбон

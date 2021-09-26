@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body class="page">
-    <header class="page-header">
+    <header class="page-header"><a class="page-logo" href="#"><img class="logo logo--header" src="#" alt="Описание картинки"></a>
       <div class="top-header">
         <form class="top-header__search search" action="#" method="get">
           <input placeholder="Поиск по сайту" name="search">
@@ -79,7 +79,7 @@
       </header>
       <section class="content-sort">
         <h2>Фильтр:</h2>
-        <form class="content-sort__form" method="POST" action="#">
+        <form class="content-sort__form" method="post" action="#">
           <fieldset class="content-sort__form-widget">
             <legend>Стоимость</legend>
             <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
@@ -160,17 +160,20 @@
         </footer>
       </section>
     </main>
-    <footer class="page-footer"><a class="footer-logo" href="#"><img class="footer-logo_img" alt="Описание картинки"></a>
+    <footer class="page-footer"><a class="footer-brand" href="#"><img class="logo logo--footer" alt="Описание картинки"></a>
       <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
       <ul class="footer-nav">
         <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
         <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гарантия</a></li>
         <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
       </ul>
-      <ul class="footer-icons icon">
-        <li class="icon__item"><a class="icon__link icon--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a><a class="icon__link icon--inst" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a><a class="icon__link icon--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
+      <ul class="footer-social">
+        <li class="footer-social__item"><a class="social social--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="footer-social__item"><a class="social social--inst" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="footer-social__item"><a class="social social--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
       </ul>
-      <address class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address><a class="footer-made-by" href="https://htmlacademy.ru/"></a>
+      <address class="footer__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+      <div class="footer-made"><a class="footer-made__link" href="https://htmlacademy.ru/"><img class="footer-made__image" src="#" alt="Описание картинки"></a></div>
     </footer>
     <script>
       $('*').on('mouseover', function(){

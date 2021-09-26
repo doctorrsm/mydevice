@@ -30,7 +30,7 @@ block main
 
 	section.content-sort
 		h2 Фильтр:
-		form(method="POST" action="#").content-sort__form
+		form(method="post" action="#").content-sort__form
 			fieldset.content-sort__form-widget
 				legend Стоимость
 				button.range-toggle.toggle-min(type='button')
@@ -77,36 +77,36 @@ block main
 			h2 Сортировка
 			form
 		.shop-grid
-			.shop-grid__item
-				span.shop-grid__item-bage New
-				img.shop-grid__item-img(src="#", alt="Описание картинки")
-				.shop-grid__item-description
+			.shop-grid__item.goods
+				span.goods__bage New
+				img.goods__img(src="#", alt="Описание картинки")
+				.goods__description
 					a(href="#") Любительская селфи-палка
-					span.shop-grid__item-price 500 &#8381;
+					span.goods__price 500 &#8381;
 				.shop-grid__item-overlay
 					a.btn Подробнее
-			.shop-grid__item
-				span.shop-grid__item-bage New
-				img.shop-grid__item-img(src="#", alt="Описание картинки")
-				.shop-grid__item-description
+			.shop-grid__item.goods
+				span.goods__bage New
+				img.goods__img(src="#", alt="Описание картинки")
+				..goods__description
 					a(href="#") Профессиональная селфи-палка
-					span.shop-grid__item-price 1500 &#8381;
+					span.goods__price 1500 &#8381;
 				.shop-grid__item-overlay
 					a.btn Подробнее
-			.shop-grid__item
-				span.shop-grid__item-bage New
-				img.shop-grid__item-img(src="#", alt="Описание картинки")
-				.shop-grid__item-description
+			.shop-grid__item.goods
+				span.goods__bage New
+				img.goods__img(src="#", alt="Описание картинки")
+				.goods__description
 					a(href="#") Непотопляемая селфи-палка
-					span.shop-grid__item-price 2500 &#8381;
+					span.goods__price 2500 &#8381;
 				.shop-grid__item-overlay
 					a.btn Подробнее
-			.shop-grid__item
-				span.shop-grid__item-bage New
-				img.shop-grid__item-img(src="#", alt="Описание картинки")
-				.shop-grid__item-description
+			.shop-grid__item.goods
+				span..goods__bage New
+				img..goods__img(src="#", alt="Описание картинки")
+				..goods__description
 					a(href="#") Селфи-палка "следуй за мной"
-					span.shop-grid__item-price 4900 &#8381;
+					span.goods__price 4900 &#8381;
 				.shop-grid__item-overlay
 					a.btn Подробнее
 		.load-more
