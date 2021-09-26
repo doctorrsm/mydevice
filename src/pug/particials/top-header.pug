@@ -1,15 +1,29 @@
+ a(href="#").page-logo
+    img(src="#" alt="Описание картинки").logo.logo--header
 .top-header
-    form.top-header__search-form
-        input(placeholder="Поиск по сайту").search
-    .top-header__links
-        a(href="#").header-link Войти
-        a(href="#").header-link Сравнить
-        .top-header__cart-wrapper.cart
-            span.cart_count 
-            a(href="#").header-link Корзина
-            div.pop-up.cart__pop-up
-                .pop-up__item
-                    p.pop-up__item
-                        img(src="#" alt="").pop-up__item-img
-                        | Любительская селфи-палка
-                        button(type="button")
+	form(action="#" method="get").top-header__search.search
+		input(placeholder="Поиск по сайту" name="search")
+	.top-header__links
+		a(href="#").top-link.top-link--login  Войти
+		a(href="#").top-link.top-link--logout  Войти
+		a(href="#").top-link.top-link--compare Сравнить
+		.top-header__cart-wrapper.cart
+			span.cart-count 12
+			a(href="#").top-link.top-link--cart Корзина
+			.pop-up.cart__pop-up
+				.pop-up__list
+					p.pop-up__item
+						img(src="#" alt="").pop-up__item-img
+						| Любительская селфи-палка
+						button(type="button").pop-up__close
+					p.pop-up__item
+						img(src="#" alt="").pop-up__item-img
+						| Любительская селфи-палка
+						button(type="button").pop-up__close
+				.pop-up__sum
+					p Товаров:
+						span.pop-up__sum-count 2
+					p Сумма:
+						span.pop-up__sum-price 2000 &#8381;
+				.pop-up__button-wrapper
+					a(href="#").pop-up__button-link Открыть корзину

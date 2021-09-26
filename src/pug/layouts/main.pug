@@ -1,48 +1,47 @@
 doctype html
 html(lang='ru')
-    head
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title Заголовок
-        meta(name='keywords' content='One, two, three, four, five')
-        link(rel='stylesheet' href='css/main.css')
-        script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title Заголовок
+		meta(name='keywords' content='One, two, three, four, five')
+		link(rel='stylesheet' href='css/main.css')
+		script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
 
-    body
-        header.page-header
-            block header
-        main
-            block main
+	body.page
+		header.page-header
+			block header
+		main.page-main
+			block main
+		footer.page-footer
+			block footer
+		script.
+			$('*').on('mouseover', function(){
+			$(this).parent().addClass('is-hover');
+			}).on('mouseout', function(){
+			$(this).parent().removeClass('is-hover');
+			})
 
-        footer.page-footer
-            block footer
-        script. 
-            $('*').on('mouseover', function(){
-            $(this).parent().addClass('is-hover');
-            }).on('mouseout', function(){
-            $(this).parent().removeClass('is-hover');
-            })
+			$('*').on('mouseover', function(){
+			$(this).addClass('is-hover-child');
+			}).on('mouseout', function(){
+			$(this).removeClass('is-hover-child');
+			})
 
-            $('*').on('mouseover', function(){
-            $(this).addClass('is-hover-child');
-            }).on('mouseout', function(){
-            $(this).removeClass('is-hover-child');
-            })
+			$('*').on('mouseover', function(){
+			$(this).siblings().addClass('is-hover-child');
+			}).on('mouseout', function(){
+			$(this).siblings().removeClass('is-hover-child');
+			})
 
-            $('*').on('mouseover', function(){
-            $(this).siblings().addClass('is-hover-child');
-            }).on('mouseout', function(){
-            $(this).siblings().removeClass('is-hover-child');
-            })
-          
-                
-                
-             $('*').each(function(){
-                 var classlist = $(this).attr("class");
-                 var text
-                 $(this).prepend("<i class='classname'>" + classlist + '</i>');
-                
-                });   
-           
-           
+
+
+			$('*').each(function(){
+					var classlist = $(this).attr("class");
+					var text
+					$(this).prepend("<i class='classname'>" + classlist + '</i>');
+
+			});
+
+

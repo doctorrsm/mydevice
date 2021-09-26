@@ -9,42 +9,51 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <div class="top-header">
-        <form class="top-header__search-form">
-          <input class="search" placeholder="Поиск по сайту">
+        <form class="top-header__search search" action="#" method="get">
+          <input placeholder="Поиск по сайту" name="search">
         </form>
-        <div class="top-header__links"><a class="header-link" href="#">Войти</a><a class="header-link" href="#">Сравнить</a>
-          <div class="top-header__cart-wrapper cart"><span class="cart_count"> </span><a class="header-link" href="#">Корзина</a>
+        <div class="top-header__links"><a class="top-link top-link--login" href="#"> Войти</a><a class="top-link top-link--logout" href="#"> Войти</a><a class="top-link top-link--compare" href="#">Сравнить</a>
+          <div class="top-header__cart-wrapper cart"><span class="cart-count">12</span><a class="top-link top-link--cart" href="#">Корзина</a>
             <div class="pop-up cart__pop-up">
-              <div class="pop-up__item">
+              <div class="pop-up__list">
                 <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
-                  <button type="button"></button>
+                  <button class="pop-up__close" type="button"></button>
+                </p>
+                <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
+                  <button class="pop-up__close" type="button"></button>
                 </p>
               </div>
+              <div class="pop-up__sum">
+                <p>Товаров:<span class="pop-up__sum-count">2</span></p>
+                <p>Сумма:<span class="pop-up__sum-price">2000 &#8381;</span></p>
+              </div>
+              <div class="pop-up__button-wrapper"><a class="pop-up__button-link" href="#">Открыть корзину</a></div>
             </div>
           </div>
         </div>
       </div>
-      <nav class="nav"><a href="#"><img class="logo" src="#" alt="Описание картинки"></a>
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link catalog" href="# ">Каталог Товаров
-              <ul class="catalog-list">
-                <li class="catalog__item"><a class="catalog__link" href="#">Виртуальная реальность</a></li>
-                <li class="catalog__item"><a class="catalog__link" href="#">Моноподы для селфи</a></li>
-                <li class="catalog__item"><a class="catalog__link" href="#">Экшн-камеры</a></li>
-                <li class="catalog__item"><a class="catalog__link" href="#">Финтнес-браслеты</a></li>
-                <li class="catalog__item"><a class="catalog__link" href="#">Умные часы</a></li>
-                <li class="catalog__item"><a class="catalog__link" href="#">Квадрокоптеры</a></li>
-              </ul></a></li>
-          <li class="nav__item"><a class="nav__link" href="# ">Доставка</a></li>
-          <li class="nav__item"><a class="nav__link" href="# ">Гарантия</a></li>
-          <li class="nav__item"><a class="nav__link" href="# ">Контакты</a></li>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link catalog">Каталог товаров</a>
+            <ul class="catalog-list visually-hidden">
+              <li class="catalog__item"><a class="catalog__link" href="#">Виртуальная реальность</a></li>
+              <li class="catalog__item"><a class="catalog__link" href="#">Моноподы для селфи</a></li>
+              <li class="catalog__item"><a class="catalog__link" href="#">Экшн-камеры</a></li>
+              <li class="catalog__item"><a class="catalog__link" href="#">Финтнес-браслеты</a></li>
+              <li class="catalog__item"><a class="catalog__link" href="#">Умные часы</a></li>
+              <li class="catalog__item"><a class="catalog__link" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="# ">Доставка</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="# ">Гарантия</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="# ">Контакты</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <section class="slider">
         <div class="slider__item">
@@ -162,7 +171,7 @@
         <div class="advantages__buttons-area">
           <button class="btn btn--selected" type="button">Доставка</button>
           <button class="btn" type="button">Гарантия</button>
-          <button class="btn btn" type="button">Кредит</button>
+          <button class="btn" type="button">Кредит</button>
         </div>
         <div class="advantages__content">
           <div class="advantages__item advantages--delivery">
@@ -184,8 +193,8 @@
           <div class="advantages__item advantages--credit">
             <h3 class="advantages__header">Гарантия</h3>
             <p>
-                Залезть в долговую яму стало проще! 
-                Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                 Выгодные для банка, разумеется.
             </p>
           </div>
@@ -267,14 +276,14 @@
       $(this).siblings().removeClass('is-hover-child');
       })
       
-          
-          
-       $('*').each(function(){
-           var classlist = $(this).attr("class");
-           var text
-           $(this).prepend("<i class='classname'>" + classlist + '</i>');
-          
-          });   
+      
+      
+      $('*').each(function(){
+      		var classlist = $(this).attr("class");
+      		var text
+      		$(this).prepend("<i class='classname'>" + classlist + '</i>');
+      
+      });
     </script>
   </body>
 </html>

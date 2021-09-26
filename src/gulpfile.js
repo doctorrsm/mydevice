@@ -235,7 +235,7 @@ function html() {
     .pipe(
       pug({
         // Your options in here.
-        pretty: true
+        //pretty: true
       })
     )
     .pipe(dest('./dist'));
