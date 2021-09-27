@@ -336,3 +336,46 @@ template {
 [hidden] {
   display: none;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 40px;
+}
+
+.page-header {
+  background-color: #FFE17F;
+}
+
+.top-header {
+  display: flex;
+  padding: 48px 60px;
+}
+
+.page-logo {
+  position: absolute;
+}
+
+.top-header__search {
+  width: 50%;
+}
+
+.top-header__links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}

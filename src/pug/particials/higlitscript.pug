@@ -15,7 +15,6 @@ script.
 	$(this).siblings().removeClass('is-hover-child');
 	}
 	$('*').each(function(){
-		var classlist = $(this).attr("class");
-		var text
-		$(this).prepend("<i class='classname'>" + classlist + '</i>')
+	var classlist = $(this).attr("class");
+	var text = $(this).prepend("<i class='classname'>" + classlist + '</i>');
 	});
