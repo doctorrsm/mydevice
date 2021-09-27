@@ -14,20 +14,6 @@ block main
 				a.breadcrumbs__link Каталог товаров
 			li.breadcrumbs__item
 				a.breadcrumbs__link Мопоподы для селфи
-		form.sorting-type
-			label.visually-hidden(for="sorting") Отсортировать товары
-			select#sorting.select-control(name="sorting")
-				option(value="popular") Сначала популярные
-				option(value="cheap") Сначала дешевые
-				option(value="expensive") Сначала дорогие
-			label.sort-by.sort-by--less
-				span.visually-hidden Сортируем от меньшего к большему
-				input(type="radio" name="sort_by")
-			label.sort-by.sort-by--more.sort-by--selected
-				span.visually-hidden Сортируем от большего к меньшему
-				input(type="radio" name="sort_by" cheked)
-			button.visually-hidden(type='submit') Отсортировать товары
-
 	section.content-sort
 		h2 Фильтр:
 		form(method="post" action="#").content-sort__form
@@ -74,8 +60,20 @@ block main
 		button(type="sybmit") Показать
 	section.content-shop
 		header.content-shop__header
-			h2 Сортировка
-			form
+			h2 Сортировка:
+			form.sorting-type
+				label.visually-hidden(for="sorting") Отсортировать товары
+				select#sorting.select-control(name="sorting")
+					option(value="popular") Сначала популярные
+					option(value="cheap") Сначала дешевые
+					option(value="expensive") Сначала дорогие
+				label.sort-by.sort-by--less
+					span.visually-hidden Сортируем от меньшего к большему
+					input(type="radio" name="sort_by")
+				label.sort-by.sort-by--more.sort-by--selected
+					span.visually-hidden Сортируем от большего к меньшему
+					input(type="radio" name="sort_by" cheked)
+				button.visually-hidden(type='submit') Отсортировать товары
 		.shop-grid
 			.shop-grid__item.goods
 				span.goods__bage New
@@ -88,7 +86,7 @@ block main
 			.shop-grid__item.goods
 				span.goods__bage New
 				img.goods__img(src="#", alt="Описание картинки")
-				..goods__description
+				.goods__description
 					a(href="#") Профессиональная селфи-палка
 					span.goods__price 1500 &#8381;
 				.shop-grid__item-overlay
@@ -102,9 +100,9 @@ block main
 				.shop-grid__item-overlay
 					a.btn Подробнее
 			.shop-grid__item.goods
-				span..goods__bage New
-				img..goods__img(src="#", alt="Описание картинки")
-				..goods__description
+				span.goods__bage New
+				img.goods__img(src="#", alt="Описание картинки")
+				.goods__description
 					a(href="#") Селфи-палка "следуй за мной"
 					span.goods__price 4900 &#8381;
 				.shop-grid__item-overlay

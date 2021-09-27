@@ -1,0 +1,21 @@
+script.
+	$('*').on('mouseover', function(){
+	$(this).parent().addClass('is-hover');
+	}).on('mouseout', function(){
+	$(this).parent().removeClass('is-hover');
+	}
+	$('*').on('mouseover', function(){
+	$(this).addClass('is-hover-child');
+	}).on('mouseout', function(){
+	$(this).removeClass('is-hover-child');
+	}
+	$('*').on('mouseover', function(){
+	$(this).siblings().addClass('is-hover-child');
+	}).on('mouseout', function(){
+	$(this).siblings().removeClass('is-hover-child');
+	}
+	$('*').each(function(){
+		var classlist = $(this).attr("class");
+		var text
+		$(this).prepend("<i class='classname'>" + classlist + '</i>')
+	});
