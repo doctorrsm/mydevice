@@ -10,48 +10,50 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body class="page">
-    <header class="page-header"><a class="page-logo" href="#"><img class="logo logo--header" src="#" alt="Описание картинки"></a>
-      <div class="top-header">
-        <form class="top-header__search search" action="#" method="get">
-          <input placeholder="Поиск по сайту" name="search">
-        </form>
-        <div class="top-header__links"><a class="top-link top-link--login" href="#"> Войти</a><a class="top-link top-link--logout" href="#"> Выйти</a><a class="top-link top-link--compare" href="#">Сравнить</a>
-          <div class="top-header__cart-wrapper cart"><span class="cart-count">12</span><a class="top-link top-link--cart" href="#">Корзина</a>
-            <div class="pop-up cart__pop-up">
-              <div class="pop-up__list">
-                <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
-                  <button class="pop-up__close" type="button"></button>
-                </p>
-                <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
-                  <button class="pop-up__close" type="button"></button>
-                </p>
+    <header class="page-header">
+      <div class="container"><a class="page-logo" href="#"><img class="logo logo--header" src="#" alt="Описание картинки"></a>
+        <div class="top-header">
+          <form class="top-header__search search" action="#" method="get">
+            <input placeholder="Поиск по сайту" name="search">
+          </form>
+          <div class="top-header__links"><a class="top-link top-link--login" href="#"> Войти</a><a class="top-link top-link--logout" href="#"> Выйти</a><a class="top-link top-link--compare" href="#">Сравнить</a>
+            <div class="top-header__cart-wrapper cart"><span class="cart-count">12</span><a class="top-link top-link--cart" href="#">Корзина</a>
+              <div class="pop-up cart__pop-up">
+                <div class="pop-up__list">
+                  <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
+                    <button class="pop-up__close" type="button"></button>
+                  </p>
+                  <p class="pop-up__item"><img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка
+                    <button class="pop-up__close" type="button"></button>
+                  </p>
+                </div>
+                <div class="pop-up__sum">
+                  <p>Товаров:<span class="pop-up__sum-count">2</span></p>
+                  <p>Сумма:<span class="pop-up__sum-price">2000 &#8381;</span></p>
+                </div>
+                <div class="pop-up__button-wrapper"><a class="pop-up__button-link" href="#">Открыть корзину</a></div>
               </div>
-              <div class="pop-up__sum">
-                <p>Товаров:<span class="pop-up__sum-count">2</span></p>
-                <p>Сумма:<span class="pop-up__sum-price">2000 &#8381;</span></p>
-              </div>
-              <div class="pop-up__button-wrapper"><a class="pop-up__button-link" href="#">Открыть корзину</a></div>
             </div>
           </div>
         </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="catalog navigation__link">Каталог товаров</a>
+              <ul class="catalog__list visually-hidden">
+                <li class="catalog__item"><a class="catalog__link" href="#">Виртуальная реальность</a></li>
+                <li class="catalog__item"><a class="catalog__link" href="#">Моноподы для селфи</a></li>
+                <li class="catalog__item"><a class="catalog__link" href="#">Экшн-камеры</a></li>
+                <li class="catalog__item"><a class="catalog__link" href="#">Финтнес-браслеты</a></li>
+                <li class="catalog__item"><a class="catalog__link" href="#">Умные часы</a></li>
+                <li class="catalog__item"><a class="catalog__link" href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="# ">Доставка</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="# ">Гарантия</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="# ">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="catalog navigation__link">Каталог товаров</a>
-            <ul class="catalog__list visually-hidden">
-              <li class="catalog__item"><a class="catalog__link" href="#">Виртуальная реальность</a></li>
-              <li class="catalog__item"><a class="catalog__link" href="#">Моноподы для селфи</a></li>
-              <li class="catalog__item"><a class="catalog__link" href="#">Экшн-камеры</a></li>
-              <li class="catalog__item"><a class="catalog__link" href="#">Финтнес-браслеты</a></li>
-              <li class="catalog__item"><a class="catalog__link" href="#">Умные часы</a></li>
-              <li class="catalog__item"><a class="catalog__link" href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li class="navigation__item"><a class="navigation__link" href="# ">Доставка</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="# ">Гарантия</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="# ">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
@@ -211,41 +213,22 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer"><a class="footer-brand" href="#"><img class="logo logo--footer" alt="Описание картинки"></a>
-      <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-      <ul class="footer-nav">
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гарантия</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li class="footer-social__item"><a class="social social--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li class="footer-social__item"><a class="social social--inst" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
-        <li class="footer-social__item"><a class="social social--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
-      </ul>
-      <address class="footer-phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
-      <div class="footer-made"><a class="footer-made__link" href="https://htmlacademy.ru/"><img class="footer-made__image" src="#" alt="Описание картинки"></a></div>
+    <footer class="page-footer">
+      <div class="container"><a class="footer-brand" href="#"><img class="logo logo--footer" alt="Описание картинки"></a>
+        <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <ul class="footer-nav">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гарантия</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li class="footer-social__item"><a class="social social--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="footer-social__item"><a class="social social--inst" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="footer-social__item"><a class="social social--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
+        </ul>
+        <address class="footer-phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+        <div class="footer-made"><a class="footer-made__link" href="https://htmlacademy.ru/"><img class="footer-made__image" src="#" alt="Описание картинки"></a></div>
+      </div>
     </footer>
-    <script>
-      $('*').on('mouseover', function(){
-      $(this).parent().addClass('is-hover');
-      }).on('mouseout', function(){
-      $(this).parent().removeClass('is-hover');
-      }
-      $('*').on('mouseover', function(){
-      $(this).addClass('is-hover-child');
-      }).on('mouseout', function(){
-      $(this).removeClass('is-hover-child');
-      }
-      $('*').on('mouseover', function(){
-      $(this).siblings().addClass('is-hover-child');
-      }).on('mouseout', function(){
-      $(this).siblings().removeClass('is-hover-child');
-      }
-      $('*').each(function(){
-      var classlist = $(this).attr("class");
-      var text = $(this).prepend("<i class='classname'>" + classlist + '</i>');
-      });
-    </script>
   </body>
 </html>
