@@ -5,26 +5,28 @@ a(href="#").page-logo
 		input(placeholder="Поиск по сайту" name="search" value="")
 		button(type="submit") Найти
 	.top-header__links
-		a(href="#").top-link.top-link--login  Войти
-		a(href="#").top-link.top-link--logout  Выйти
-		a(href="#").top-link.top-link--compare Сравнить
-		.top-header__cart-wrapper.cart
-			span.cart-count 12
-			a(href="#").top-link.top-link--cart Корзина
-			.pop-up.cart__pop-up
-				.pop-up__list
-					p.pop-up__item
-						img(src="#" alt="").pop-up__item-img
-						| Любительская селфи-палка
-						button(type="button").pop-up__close
-					p.pop-up__item
-						img(src="#" alt="").pop-up__item-img
-						| Любительская селфи-палка
-						button(type="button").pop-up__close
-				.pop-up__sum
-					p Товаров:
-						span.pop-up__sum-count 2
-					p Сумма:
-						span.pop-up__sum-price 2000 &#8381;
-				.pop-up__button-wrapper
-					a(href="#").pop-up__button-link Открыть корзину
+		.top-header__links-login
+			a(href="#").top-link.top-link--login  Войти
+			a(href="#").top-link.top-link--logout  Выйти
+		.top-header__links-cart
+			a(href="#").top-link.top-link--compare Сравнить
+			.top-header__cart-wrapper.cart
+				span.cart-count 12
+				a(href="#").top-link.top-link--cart Корзина
+				.pop-up.cart__pop-up
+					.pop-up__list
+						p.pop-up__item
+							img(src="#" alt="").pop-up__item-img
+							| Любительская селфи-палка
+							button(type="button").pop-up__close
+						p.pop-up__item
+							img(src="#" alt="").pop-up__item-img
+							| Любительская селфи-палка
+							button(type="button").pop-up__close
+					.pop-up__sum
+						p Товаров:
+							span.pop-up__sum-count 2
+						p Сумма:
+							span.pop-up__sum-price 2000 &#8381;
+					.pop-up__button-wrapper
+						a(href="#").pop-up__button-link Открыть корзину

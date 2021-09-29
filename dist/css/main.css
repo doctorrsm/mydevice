@@ -362,7 +362,7 @@ html {
   box-sizing: border-box;
   color: var(--dark);
   font-size: 18px;
-  line-height: 1.72;
+  line-height: 1.66;
 }
 
 *,
@@ -416,6 +416,14 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+button {
+  outline: 0;
+}
+
+button:focus {
+  border: 2px solid var(--violet);
 }
 
 input {
@@ -532,37 +540,90 @@ p {
   background-color: inherit;
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
-  background-position: 0% 50%;
+  background-position: 16px 50%;
   outline: 0;
+  border: 2px solid transparent;
+  border-right: none;
   width: 100%;
   color: var(--black);
+  padding: 9px 5px 9px 51px;
+  line-height: 1;
+  border-radius: 20px 0 0 20px;
 }
 
 .search:hover input::placeholder {
   color: #665a33;
 }
 
+.search input:not(:placeholder-shown) {
+  border-color: var(--black);
+}
+
 .search input:focus {
-  outline: 2px solid var(--violet);
-  outline-left: none;
+  border: 2px solid var(--violet);
+  border-right: none;
 }
 
 .search:focus input::placeholder {
   color: #b39e59;
 }
 
-.search:active input {
+.search input:active,
+.search input:focus:not(:placeholder-shown),
+.search input:active:not(:placeholder-shown) {
   color: var(--black);
+  border-color: var(--black);
 }
 
-input:placeholder-shown + button {
+.search button {
+  padding: 9px 55px;
+  line-height: 1;
+  border-radius: 0 20px 20px 0;
+}
+
+.search input + button {
+  background-color: inherit;
+  border: 2px solid transparent;
+}
+
+.search input + button:focus {
+  border-color: var(--violet);
+}
+
+.search input:placeholder-shown + button {
   background: transparent;
   color: transparent;
   border: none;
 }
 
-.search input:focus + button {
-  outline: 2px solid var(--violet);
+.search input:focus:placeholder-shown + button {
+  border: 2px solid var(--violet);
+  border-left: none;
+}
+
+.search input:active:placeholder-shown + button {
+  border: 2px solid var(--black);
+  border-left: none;
+}
+
+.search input:not(:placeholder-shown) + button {
+  border-color: var(--black);
+}
+
+.search input:not(:placeholder-shown) + button:hover {
+  border-color: var(--black);
+  background-color: var(--black);
+  cursor: pointer;
+  color: var(--white);
+}
+
+.search input:not(:placeholder-shown) + button:focus {
+  border-color: var(--violet);
+}
+
+.search input:not(:placeholder-shown) + button:active {
+  border-color: var(--black);
+  color: #4c4c4c;
 }
 
 /* Main header section of the page */
@@ -591,6 +652,17 @@ input:placeholder-shown + button {
   width: calc(50% - 20px);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.top-header__links-login {
+  display: flex;
+  align-items: center;
+}
+
+.top-header__links-cart {
+  display: flex;
+  align-items: center;
 }
 
 .cart__pop-up {

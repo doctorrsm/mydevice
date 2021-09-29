@@ -21,7 +21,7 @@ html {
   box-sizing: border-box;
   color: var(--dark);
   font-size: 18px;
-  line-height: 1.72;
+  line-height: 1.66;
 }
 
 *,
@@ -69,6 +69,12 @@ a {
 }
 a:hover {
   cursor: pointer;
+}
+button {
+  outline: 0;
+}
+button:focus {
+  border: 2px solid var(--violet);
 }
 input {
   outline: 0;

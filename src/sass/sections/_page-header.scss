@@ -22,9 +22,22 @@
   width: calc(50% - 20px);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.top-header__links-login {
+  display: flex;
+  align-items: center;
+}
+
 .top-link--login {
 }
+
+.top-header__links-cart {
+  display: flex;
+  align-items: center;
+}
+
 .cart__pop-up {
   display: none;
   position: absolute;
