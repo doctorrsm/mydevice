@@ -1,0 +1,86 @@
+/**
+ * Общая типографика сайта
+ * Используются селекторы по тегам, без классов,
+ */
+:root {
+  --black: #000000;
+  --dark: #444444;
+  --gray: #dcdcdc;
+  --light-gray: #ebebebb;
+  --light: #f0f0f0;
+  --white: #ffffff;
+  --yellow: #ffe17f;
+  --yellow-hover: #ffc700;
+  --violet: #af4fff;
+  --danger: #ff3d3d;
+  --warning: #fd912e;
+  --success: #08af00;
+  transition: all 0.3s;
+}
+html {
+  box-sizing: border-box;
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 40px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 18px;
+  letter-spacing: 20%;
+}
+h4 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+input {
+  outline: 0;
+  border: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+p {
+  margin-bottom: 38px;
+}

@@ -1,0 +1,48 @@
+/* Main header section of the page */
+
+.page-header {
+  background-color: #ffe17f;
+}
+
+/* top-header */
+.top-header {
+  display: flex;
+  padding: 48px 0;
+  position: relative;
+}
+.page-logo {
+  position: absolute;
+  top: 17px;
+}
+.top-header__search {
+  width: 50%;
+  margin-right: 20px;
+}
+.top-header__links {
+  width: calc(50% - 20px);
+  display: flex;
+  justify-content: space-between;
+}
+.top-link--login {
+}
+.cart__pop-up {
+  display: none;
+  position: absolute;
+}
+.top-header__cart-wrapper:hover .cart__pop-up {
+  display: block;
+  cursor: pointer;
+}
+/* navigation */
+.navigation {
+}
+.navigation__list {
+  padding: 0 0 38px;
+}
+.navigation__item:first-child {
+  width: 50%;
+  margin-right: 20px;
+}
+.navigation__item:last-child {
+  margin-left: auto;
+}
