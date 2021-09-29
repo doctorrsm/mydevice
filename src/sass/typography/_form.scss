@@ -3,18 +3,19 @@
 }
 
 .search input {
+  width: 100%;
+  padding: 9px 5px 9px 35px;
+  border: 2px solid transparent;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: 0;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1;
   background-color: inherit;
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
-  background-position: 16px 50%;
-  outline: 0;
-  border: 2px solid transparent;
-  border-right: none;
-  width: 100%;
-  color: var(--black);
-  padding: 9px 5px 9px 51px;
-  line-height: 1;
-  border-radius: 20px 0 0 20px;
+  background-position: -1px 50%;
 }
 
 .search:hover input::placeholder {
