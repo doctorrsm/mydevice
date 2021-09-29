@@ -66,16 +66,16 @@
 .search input:not(:placeholder-shown) + button {
   border-color: var(--black);
 }
+
+.search input:not(:placeholder-shown) + button:focus {
+  border-color: var(--violet);
+}
 .search input:not(:placeholder-shown) + button:hover {
   border-color: var(--black);
   background-color: var(--black);
   cursor: pointer;
   color: var(--white);
 }
-.search input:not(:placeholder-shown) + button:focus {
-  border-color: var(--violet);
-}
-
 .search input:not(:placeholder-shown) + button:active {
   border-color: var(--black);
   color: #4c4c4c;

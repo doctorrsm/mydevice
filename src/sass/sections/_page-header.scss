@@ -2,8 +2,12 @@
 
 .page-header {
   background-color: #ffe17f;
+  color: var(--black);
 }
-
+.page-header a {
+  color: var(--black);
+  text-decoration: none;
+}
 /* top-header */
 .top-header {
   display: flex;
@@ -23,6 +27,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+}
+
+.top-link {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 12px 24px 12px 48px;
+}
+.top-link:focus {
+  outline: 2px solid var(--violet);
+}
+.top-link:hover {
+}
+.top-link:active {
 }
 
 .top-header__links-login {
@@ -37,7 +55,10 @@
   display: flex;
   align-items: center;
 }
-
+.cart-count {
+  display: inline-block;
+  position: absolute;
+}
 .cart__pop-up {
   display: none;
   position: absolute;

@@ -412,6 +412,11 @@ h4 {
 
 a {
   text-decoration: none;
+  border: none;
+}
+
+a:focus {
+  outline: 2px solid var(--violet);
 }
 
 a:hover {
@@ -610,15 +615,15 @@ p {
   border-color: var(--black);
 }
 
+.search input:not(:placeholder-shown) + button:focus {
+  border-color: var(--violet);
+}
+
 .search input:not(:placeholder-shown) + button:hover {
   border-color: var(--black);
   background-color: var(--black);
   cursor: pointer;
   color: var(--white);
-}
-
-.search input:not(:placeholder-shown) + button:focus {
-  border-color: var(--violet);
 }
 
 .search input:not(:placeholder-shown) + button:active {
@@ -629,6 +634,12 @@ p {
 /* Main header section of the page */
 .page-header {
   background-color: #ffe17f;
+  color: var(--black);
+}
+
+.page-header a {
+  color: var(--black);
+  text-decoration: none;
 }
 
 /* top-header */
@@ -653,6 +664,17 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+}
+
+.top-link {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 12px 24px 12px 48px;
+}
+
+.top-link:focus {
+  outline: 2px solid var(--violet);
 }
 
 .top-header__links-login {
@@ -663,6 +685,11 @@ p {
 .top-header__links-cart {
   display: flex;
   align-items: center;
+}
+
+.cart-count {
+  display: inline-block;
+  position: absolute;
 }
 
 .cart__pop-up {
