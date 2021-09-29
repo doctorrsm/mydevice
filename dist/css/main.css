@@ -461,6 +461,7 @@ p {
   background-image: url(../images/perfectpixel.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
+  pointer-events: none;
 }
 
 .container {
