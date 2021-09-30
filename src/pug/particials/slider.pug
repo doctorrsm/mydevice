@@ -10,8 +10,8 @@ h1.visually-hidden Интернет-магазин Device
 			button(type="button").dot
 		.slider__item
 			.slider__image-area
-				img(src="#").slider__img
-			.slider__content__area
+				img(src="#" alt='Описание картинки').slider__img
+			.slider__content-area
 				span.slider__order 01
 				p.slider__lead-text Порхает как бабочка, жалит как пчела!
 				P
@@ -19,26 +19,29 @@ h1.visually-hidden Интернет-магазин Device
 					| замаскированным под стандартную камеру.
 				a(href="#").btn
 				dl.slider__description
-					dt Дальность полета
-					dd 800 м
-					dt Радиус поражения
-					dd 50 м
+					div.slider__description-row
+						dt Дальность полета
+						dd 800 м
+					div.slider__description-row
+						dt Радиус поражения
+						dd 50 м
 		.slider__item
 			.slider__image-area
-				img(src="#").slider__img
-			.slider__content__area
+				img(src="#" alt="Описание картинки").slider__img
+			.slider__content-area
 				span.slider__order 02
 				p.slider__lead-text Худеем правильно
 				P
 					| Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 				a(href="#").btn
 				dl.slider__description
-					dt Без подзарядки
-					dd 48 часов
+					div.slider__description-row
+						dt Без подзарядки
+						dd 48 часов
 		.slider__item
 			.slider__image-area
-				img(src="#").slider__img
-			.slider__content__area
+				img(src="#" alt="Описание картинки").slider__img
+			.slider__content-area
 				span.slider__order 03
 				p.slider__lead-text Делай селфи, как Бен Стиллер!
 				P
@@ -46,9 +49,12 @@ h1.visually-hidden Интернет-магазин Device
 					| Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
 				a(href="#").btn
 				dl.slider__table
-					dt Длина палки
-					dd 8,5 м
-					dt Вес палки
-					dd 5 кг
-					dt Материал
-					dd Карбон
+					div.slider__description-row
+						dt Длина палки
+						dd 8,5 м
+					div.slider__description-row
+						dt Вес палки
+						dd 5 кг
+					div.slider__description-row
+						dt Материал
+						dd Карбон

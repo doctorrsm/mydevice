@@ -1,14 +1,17 @@
 extends pug/layouts/main.pug
 
+block vars
+	- var mainpage = true;
+
 block header
-    include pug/particials/top-header.pug
-    include pug/particials/nav.pug
+	include pug/var/varformainpage.pug
+	include pug/particials/top-header.pug
+	include pug/particials/nav.pug
 
 block main
-    include pug/particials/slider.pug
-    include pug/particials/categories.pug
-    include pug/particials/advantages.pug
-    include pug/particials/section.pug
+	include pug/particials/slider.pug
+	include pug/particials/categories.pug
+	include pug/particials/advantages.pug
+	include pug/particials/section.pug
 block footer
-    include pug/particials/footer.pug    
-    
+	include pug/particials/footer.pug

@@ -1,7 +1,11 @@
-a(href="#").page-logo
-	img(src="images/logo.png" width="145" height="36" alt="Логотип магазина Device").logo.logo--header
+if mainpage
+	a().page-header__logo.logo
+		img(src="images/logo.png" width="145" height="36" alt="Логотип магазина Device").logo.logo--header
+else
+	a(href='/').page-header__logo.logo
+		img(src="images/logo.png" width="145" height="36" alt="Логотип магазина Device").logo.logo--header
 .top-header
-	form(action="#" method="get").top-header__search.search
+	form(action="https://echo.htmlacademy.ru/" method="get").top-header__search.search
 		input(placeholder="Поиск по сайту" name="search" type="search")
 		button(type="submit") Найти
 	.top-header__links

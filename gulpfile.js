@@ -20,7 +20,7 @@ exports.views = () => {
     .pipe(
       pug({
         // Your options in here.
-        pretty: false
+        pretty: falseb
       })
     )
     .pipe(dest('./dist'));

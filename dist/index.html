@@ -12,9 +12,9 @@
   <body class="page">
     <div class="perfectpixel"></div>
     <header class="page-header">
-      <div class="container container--page-header"><a class="page-logo" href="#"><img class="logo logo--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
+      <div class="container container--page-header"><a class="page-header__logo logo"><img class="logo logo--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
         <div class="top-header">
-          <form class="top-header__search search" action="#" method="get">
+          <form class="top-header__search search" action="https://echo.htmlacademy.ru/" method="get">
             <input placeholder="Поиск по сайту" name="search" type="search">
             <button type="submit">Найти</button>
           </form>
@@ -74,47 +74,59 @@
             <button class="dot" type="button"></button>
           </div>
           <div class="slider__item">
-            <div class="slider__image-area"><img class="slider__img" src="#"></div>
-            <div class="slider__content__area"><span class="slider__order">01</span>
+            <div class="slider__image-area"><img class="slider__img" src="#" alt="Описание картинки"></div>
+            <div class="slider__content-area"><span class="slider__order">01</span>
               <p class="slider__lead-text">Порхает как бабочка, жалит как пчела!</p>
               <P>
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.
               </P><a class="btn" href="#"></a>
               <dl class="slider__description">
-                <dt>Дальность полета</dt>
-                <dd>800 м</dd>
-                <dt>Радиус поражения</dt>
-                <dd>50 м</dd>
+                <div class="slider__description-row">
+                  <dt>Дальность полета</dt>
+                  <dd>800 м</dd>
+                </div>
+                <div class="slider__description-row">
+                  <dt>Радиус поражения</dt>
+                  <dd>50 м</dd>
+                </div>
               </dl>
             </div>
           </div>
           <div class="slider__item">
-            <div class="slider__image-area"><img class="slider__img" src="#"></div>
-            <div class="slider__content__area"><span class="slider__order">02</span>
+            <div class="slider__image-area"><img class="slider__img" src="#" alt="Описание картинки"></div>
+            <div class="slider__content-area"><span class="slider__order">02</span>
               <p class="slider__lead-text">Худеем правильно</p>
               <P>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</P><a class="btn" href="#"></a>
               <dl class="slider__description">
-                <dt>Без подзарядки</dt>
-                <dd>48 часов</dd>
+                <div class="slider__description-row">
+                  <dt>Без подзарядки</dt>
+                  <dd>48 часов</dd>
+                </div>
               </dl>
             </div>
           </div>
           <div class="slider__item">
-            <div class="slider__image-area"><img class="slider__img" src="#"></div>
-            <div class="slider__content__area"><span class="slider__order">03</span>
+            <div class="slider__image-area"><img class="slider__img" src="#" alt="Описание картинки"></div>
+            <div class="slider__content-area"><span class="slider__order">03</span>
               <p class="slider__lead-text">Делай селфи, как Бен Стиллер!</p>
               <P>
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </P><a class="btn" href="#"></a>
               <dl class="slider__table">
-                <dt>Длина палки</dt>
-                <dd>8,5 м</dd>
-                <dt>Вес палки</dt>
-                <dd>5 кг</dd>
-                <dt>Материал</dt>
-                <dd>Карбон</dd>
+                <div class="slider__description-row">
+                  <dt>Длина палки</dt>
+                  <dd>8,5 м</dd>
+                </div>
+                <div class="slider__description-row">
+                  <dt>Вес палки</dt>
+                  <dd>5 кг</dd>
+                </div>
+                <div class="slider__description-row">
+                  <dt>Материал</dt>
+                  <dd>Карбон</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -178,14 +190,14 @@
           </div>
         </div>
       </section>
-      <div class="rare-merchandise">
-        <div class="rare-merchandise__link">
-          <p class="notation__text">Доставим редкий товар под заказ</p>
-          <div class="notation__icon"></div>
+      <div class="special-offer">
+        <div class="special-offer__link">
+          <p class="special-offer__text">Доставим редкий товар под заказ</p>
+          <div class="special-offer__icon special-offer__icon--truck"></div>
         </div>
       </div>
       <section class="site-contacts">
-        <div class="site-contacts__block">
+        <div class="site-contacts__block site-contacts__block--about-us">
           <h2 class="site-contacts__header">O нас</h2>
           <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -195,7 +207,7 @@
             <li>ТоксБерри</li>
           </ul><a class="btn" href="#">Подробнее о нас</a>
         </div>
-        <div class="site-contacts__block">
+        <div class="site-contacts__block site-contacts__block--adress">
           <h2 class="site-contacts__header">Контакты</h2>
           <p>
             Вы можете забрать товар сами, заехав в наш офис.
@@ -214,8 +226,8 @@
       </section>
       <section class="describe">
         <h2 class="describe__header">Подпишитесь на рассылку</h2>
-        <form class="describe__form">
-          <input placeholder="Подпишитесь на рассылку">
+        <form class="describe__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input placeholder="Подпишитесь на рассылку" type="email" name="describe_email">
           <button class="describe__button" type="submit">Подписаться</button>
           <p class="describe__form__text">
             Еженедельный дайджест с обзорами новинок,

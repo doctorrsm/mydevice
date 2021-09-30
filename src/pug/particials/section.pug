@@ -1,5 +1,5 @@
 section.site-contacts
-	div.site-contacts__block
+	div.site-contacts__block.site-contacts__block--about-us
 		h2.site-contacts__header O нас
 		p  Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
 		p  Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
@@ -8,7 +8,7 @@ section.site-contacts
 			li СДИК
 			li ТоксБерри
 		a(href="#").btn Подробнее о нас
-	div.site-contacts__block
+	div.site-contacts__block.site-contacts__block--adress
 		h2.site-contacts__header Контакты
 		p
 			| Вы можете забрать товар сами, заехав в наш офис.
@@ -26,8 +26,8 @@ section.site-contacts
 
 section.describe
 	h2.describe__header Подпишитесь на рассылку
-	form.describe__form
-		input(placeholder="Подпишитесь на рассылку")
+	form(action="https://echo.htmlacademy.ru/" method="post").describe__form
+		input(placeholder="Подпишитесь на рассылку" type="email" name="describe_email")
 		button(type="submit").describe__button Подписаться
 		p.describe__form__text
 			| Еженедельный дайджест с обзорами новинок,
