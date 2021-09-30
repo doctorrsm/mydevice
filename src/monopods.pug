@@ -62,56 +62,56 @@ block main
 	section.content-shop
 		header.content-shop__header
 			h2 Сортировка:
-			form.sorting-type
-				label.visually-hidden(for="sorting") Отсортировать товары
-				select#sorting.select-control(name="sorting")
+			.sort-contrl
+				select.sort-contrl__select(name="sort")
 					option(value="popular") Сначала популярные
 					option(value="cheap") Сначала дешевые
 					option(value="expensive") Сначала дорогие
-				label.sort-by.sort-by--less
-					span.visually-hidden Сортируем от меньшего к большему
-					input(type="radio" name="sort_by")
-				label.sort-by.sort-by--more.sort-by--selected
-					span.visually-hidden Сортируем от большего к меньшему
-					input(type="radio" name="sort_by" cheked)
-				button.visually-hidden(type='submit') Отсортировать товары
-		.shop-grid
-			.shop-grid__item.goods
-				span.goods__bage New
-				img.goods__img(src="#", alt="Описание картинки")
-				.goods__description
+				.sort-contrl__arr
+					a.sort-contrl__arr-item.sort-contrl__arr-item--less
+						span.visually-hidden Сортируем от меньшего к большему
+					a.sort-contrl__arr-item.sort-contrl__arr-item--more.sort-contrl__arr-item--selected
+						span.visually-hidden Сортируем от большего к меньшему
+
+		section.catalog
+			h2.visually-hidden Каталог товаров
+			article.catalog__item
+				span.catalog__item-bage New
+				img.catalog__item-img(src="#", alt="Описание картинки")
+				.catalog__item-desc
 					a(href="#") Любительская селфи-палка
-					span.goods__price 500 &#8381;
-				.shop-grid__item-overlay
-					a(href="#").btn.btn-goods Подробнее
-			.shop-grid__item.goods
-				span.goods__bage New
-				img.goods__img(src="#", alt="Описание картинки")
-				.goods__description
+					span.catalog__item-price 500 &#8381;
+				.catalog__item-overlay
+					a(href="#").btn.btn-catalog Подробнее
+			article.catalog__item
+				span.catalog__item-bage New
+				img.catalog__item-img(src="#", alt="Описание картинки")
+				.catalog__item-desc
 					a(href="#") Профессиональная селфи-палка
-					span.goods__price 1500 &#8381;
-				.shop-grid__item-overlay
-					a(href="#").btn.btn-goods Подробнее
-			.shop-grid__item.goods
-				span.goods__bage New
-				img.goods__img(src="#", alt="Описание картинки")
-				.goods__description
+					span.catalog__item-price 1500 &#8381;
+				.catalog__item-overlay
+					a(href="#").btn.btn-catalog Подробнее
+			article.catalog__item
+				span.catalog__item-bage New
+				img.catalog__item-img(src="#", alt="Описание картинки")
+				.catalog__item-desc
 					a(href="#") Непотопляемая селфи-палка
-					span.goods__price 2500 &#8381;
-				.shop-grid__item-overlay
-					a(href="#").btn.btn-goods Подробнее
-			.shop-grid__item.goods
-				span.goods__bage New
-				img.goods__img(src="#", alt="Описание картинки")
-				.goods__description
+					span.catalog__item-price 2500 &#8381;
+				.catalog__item-overlay
+					a(href="#").btn.btn-catalog Подробнее
+			article.catalog__item
+				span.catalog__item-bage New
+				img.catalog__item-img(src="#", alt="Описание картинки")
+				.catalog__item-desc
 					a(href="#") Селфи-палка "следуй за мной"
-					span.goods__price 4900 &#8381;
-				.shop-grid__item-overlay
-					a(href="#").btn.btn-goods Подробнее
+					span.catalog__item-price 4900 &#8381;
+				.catalog__item-overlay
+					a(href="#").btn.btn-catalog Подробнее
 		.load-more
 			button(type="button") Загрузить еще
 		footer.content-shop__footer
 			section.pagination
+				h2.visually-hidden Постраничная навигация сайта
 				a.pagination__bnt(href="#")  Назад
 				ul.pagination__list
 					li.pagination__item
