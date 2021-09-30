@@ -1,0 +1,11 @@
+{
+  "indent_size": 2,
+  "indent_char": " ",
+  "extra_liners": ["head", "body", "/html", "section", "nav", "main", "header", "footer", "/footer"],
+  "inline": [],
+  "indent_inner_html": false,
+  "preserve_newlines": false,
+  "wrap_line_length": 0,
+  "wrap_attributes": "auto"
+
+}
