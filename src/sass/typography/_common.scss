@@ -17,6 +17,7 @@
   --success: #08af00;
   transition: all 0.3s;
 }
+
 html {
   box-sizing: border-box;
   color: var(--dark);
@@ -43,6 +44,7 @@ body {
   padding-top: 40px;
   min-height: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -53,8 +55,9 @@ h6 {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
-
+  color: var(--black);
 }
+
 h4,
 h5,
 h6 {
@@ -65,13 +68,16 @@ h6 {
 h1 {
   font-size: 50px;
 }
+
 h2 {
   font-size: 40px;
 }
+
 h3 {
   font-size: 18px;
   letter-spacing: 20%;
 }
+
 h4 {
   font-size: 18px;
 }
@@ -80,22 +86,28 @@ a {
   text-decoration: none;
   border: none;
 }
+
 a:focus {
   outline: 2px solid var(--violet);
 }
+
 a:hover {
   cursor: pointer;
 }
+
 button {
   outline: 0;
 }
+
 button:focus {
   border: 2px solid var(--violet);
 }
+
 input {
   outline: 0;
   border: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -105,6 +117,10 @@ ul {
 
 p {
   margin-bottom: 38px;
+}
+
+.hide {
+  display: none;
 }
 
 .perfectpixel {
@@ -120,4 +136,38 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 0;
   pointer-events: none;
+}
+
+#perfectpixel-btn {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-radius: 20px;
+  bottom: 20px;
+  right: 20px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: all .6s;
+
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399, #ff00cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#perfectpixel-btn:hover {
+  background: #ff00cc;
+  text-decoration: underline;
+  bottom: 25px;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff00cc, #333399);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff00cc, #333399);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }

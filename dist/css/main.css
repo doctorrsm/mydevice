@@ -395,6 +395,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
+  color: var(--black);
 }
 
 h4,
@@ -458,6 +459,10 @@ p {
   margin-bottom: 38px;
 }
 
+.hide {
+  display: none;
+}
+
 .perfectpixel {
   opacity: 0.3;
   z-index: 10;
@@ -471,6 +476,38 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 0;
   pointer-events: none;
+}
+
+#perfectpixel-btn {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-radius: 20px;
+  bottom: 20px;
+  right: 20px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.6s;
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399, #ff00cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#perfectpixel-btn:hover {
+  background: #ff00cc;
+  text-decoration: underline;
+  bottom: 25px;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff00cc, #333399);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff00cc, #333399);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
@@ -698,7 +735,7 @@ p {
 .top-link {
   display: inline-block;
   border-radius: 20px;
-  padding: 12px 24px 12px 48px;
+  padding: 8px 26px 11px 27px;
 }
 
 .top-link:focus {
@@ -742,4 +779,24 @@ p {
 
 .navigation__item:last-child {
   margin-left: auto;
+}
+
+.advantages__header {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.special-offer {
+  text-align: center;
+  background-color: var(--light);
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--black);
+  padding: 40px 0;
+}
+
+.special-offer__text {
+  margin: 0;
 }
