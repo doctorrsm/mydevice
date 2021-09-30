@@ -1,25 +1,28 @@
 nav.main-nav
-    ul.main-nav__list
-        li.main-nav__item
-            a.main-nav__link.nav-dropdown Каталог товаров
-            ul.nav-dropdown__list.visually-hidden
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Виртуальная реальность
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Моноподы для селфи
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Экшн-камеры
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Финтнес-браслеты
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Умные часы
-                li.nav-dropdown__item
-                    a(href="#").nav-dropdown__link Квадрокоптеры
+	ul.main-nav__list
+		li.main-nav__item
+			a.main-nav__link.nav-dropdown Каталог товаров
+			ul.nav-dropdown__list.visually-hidden
+				li.nav-dropdown__item
+					a(href="#").nav-dropdown__link Виртуальная реальность
+				li.nav-dropdown__item
+					if mainpage
+						a(href="monopods.html").nav-dropdown__link Моноподы для селфи
+					else
+						a.nav-dropdown__link.nav-dropdown__link--active Моноподы для селфи
+				li.nav-dropdown__item
+					a(href="#").nav-dropdown__link Экшн-камеры
+				li.nav-dropdown__item
+					a(href="#").nav-dropdown__link Финтнес-браслеты
+				li.nav-dropdown__item
+					a(href="#").nav-dropdown__link Умные часы
+				li.nav-dropdown__item
+					a(href="#").nav-dropdown__link Квадрокоптеры
 
 
-        li.main-nav__item
-            a(href="# ").main-nav__link Доставка
-        li.main-nav__item
-            a(href="# ").main-nav__link Гарантия
-        li.main-nav__item
-            a(href="# ").main-nav__link Контакты
+		li.main-nav__item
+			a(href="# ").main-nav__link Доставка
+		li.main-nav__item
+			a(href="# ").main-nav__link Гарантия
+		li.main-nav__item
+			a(href="# ").main-nav__link Контакты

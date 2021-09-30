@@ -9,14 +9,15 @@ block main
 		h1 Моноподы для селфи
 		ul.breadcrumbs
 			li.breadcrumbs__item
-				a.breadcrumbs__link Главная
+				a(href="/").breadcrumbs__link Главная
 			li.breadcrumbs__item
-				a.breadcrumbs__link Каталог товаров
+				a(href="#").breadcrumbs__link Каталог товаров
 			li.breadcrumbs__item
 				a.breadcrumbs__link Мопоподы для селфи
 	section.content-sort
-		h2 Фильтр:
-		form(method="post" action="#").content-sort__form
+		h2.visually-hidden Фильтр товаров
+		p Фильтр:
+		form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
 			fieldset.content-sort__form-widget
 				legend Стоимость
 				button.range-toggle.toggle-min(type='button')
@@ -35,7 +36,7 @@ block main
 			fieldset.content-sort__form-widget
 				legend Цвет
 				label.checkbox
-					input(type="checkbox" name="black" value="Черный" checked)
+					input(type="checkbox" name="black" value="black" checked)
 					| Черный
 				label.checkbox
 					input(type="checkbox" name="white" value="white" checked)
@@ -52,10 +53,10 @@ block main
 				fieldset.content-sort__form-widget
 					legend Bluetooth
 					label.radio
-						input(type="radio" name="bluetooth" value="yes")
+						input(type="radio" name="bluetooth" value="is-bluetooth" checked)
 						| Есть
 					label.radio
-						input(type="radio" name="bluetooth" value="no")
+						input(type="radio" name="bluetooth" value="no-bluetooth")
 						| Нет
 			button(type="submit") Показать
 	section.content-shop

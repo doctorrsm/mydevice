@@ -1,35 +1,37 @@
 section.site-contacts
-	div.site-contacts__block.site-contacts__block--about-us
-		h2.site-contacts__header O нас
-		p  Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-		p  Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
-		ul
-			li Меловые линии
-			li СДИК
-			li ТоксБерри
-		a(href="#").btn Подробнее о нас
-	div.site-contacts__block.site-contacts__block--adress
-		h2.site-contacts__header Контакты
-		p
-			| Вы можете забрать товар сами, заехав в наш офис.
-			| Заодно, сможете проверить работоспособность покупки.
-		h3 Интернет-магазин "Девайс"
-		address
-			p   Санкт-Петербург, набережная реки Карповки, 5, литера П.
-			a(href="tel:+78128121212") +7 (812) 812-12-12
-		h3 Время работы
-		ul
-			li пн—пт: с 10:00 до 22:00
-			li сб—вс: с 10:00 до 19:00
-		a(href="#").btn Напишите нам
+	.container
+		div.site-contacts__block.site-contacts__block--about-us
+			h2.site-contacts__header O нас
+			p  Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+			p  Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+			ul
+				li Меловые линии
+				li СДИК
+				li ТоксБерри
+			a(href="#").btn Подробнее о нас
+		div.site-contacts__block.site-contacts__block--adress
+			h2.site-contacts__header Контакты
+			p
+				| Вы можете забрать товар сами, заехав в наш офис.
+				| Заодно, сможете проверить работоспособность покупки.
+			h3 Интернет-магазин "Девайс"
+			address
+				p   Санкт-Петербург, набережная реки Карповки, 5, литера П.
+				a(href="tel:+78128121212") +7 (812) 812-12-12
+			h3 Время работы
+			ul
+				li пн—пт: с 10:00 до 22:00
+				li сб—вс: с 10:00 до 19:00
+			a(href="#").btn Напишите нам
 
 
 section.describe
-	h2.describe__header Подпишитесь на рассылку
-	form(action="https://echo.htmlacademy.ru/" method="post").describe__form
-		input(placeholder="Подпишитесь на рассылку" type="email" name="describe_email")
-		button(type="submit").describe__button Подписаться
-		p.describe__form__text
-			| Еженедельный дайджест с обзорами новинок,
-			| длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-		span.describe__form__span Это бесплатно
+	.container
+		h2.describe__header Подпишитесь на рассылку
+		form(action="https://echo.htmlacademy.ru/" method="post").describe__form
+			input(placeholder="Подпишитесь на рассылку" type="email" name="describe_email")
+			button(type="submit").describe__button Подписаться
+			p.describe__form__text
+				| Еженедельный дайджест с обзорами новинок,
+				| длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+			span.describe__form__span Это бесплатно

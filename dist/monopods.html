@@ -46,7 +46,8 @@
             <li class="main-nav__item"><a class="main-nav__link nav-dropdown">Каталог товаров</a>
               <ul class="nav-dropdown__list visually-hidden">
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Виртуальная реальность</a></li>
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Моноподы для селфи</a></li>
+                <li class="nav-dropdown__item"><a class="nav-dropdown__link nav-dropdown__link--active">Моноподы для селфи</a>
+                </li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Экшн-камеры</a></li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Финтнес-браслеты</a></li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#">Умные часы</a></li>
@@ -70,8 +71,9 @@
         </ul>
       </header>
       <section class="content-sort">
-        <h2>Фильтр:</h2>
-        <form class="content-sort__form" method="post" action="#">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <p>Фильтр:</p>
+        <form class="content-sort__form" method="post" action="https://echo.htmlacademy.ru/">
           <fieldset class="content-sort__form-widget">
             <legend>Стоимость</legend>
             <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
@@ -86,7 +88,7 @@
           <fieldset class="content-sort__form-widget">
             <legend>Цвет</legend>
             <label class="checkbox">
-              <input type="checkbox" name="black" value="Черный" checked>Черный
+              <input type="checkbox" name="black" value="black" checked>Черный
             </label>
             <label class="checkbox">
               <input type="checkbox" name="white" value="white" checked>Белый
@@ -103,10 +105,10 @@
             <fieldset class="content-sort__form-widget">
               <legend>Bluetooth</legend>
               <label class="radio">
-                <input type="radio" name="bluetooth" value="yes">Есть
+                <input type="radio" name="bluetooth" value="is-bluetooth" checked>Есть
               </label>
               <label class="radio">
-                <input type="radio" name="bluetooth" value="no">Нет
+                <input type="radio" name="bluetooth" value="no-bluetooth">Нет
               </label>
             </fieldset>
           </fieldset>

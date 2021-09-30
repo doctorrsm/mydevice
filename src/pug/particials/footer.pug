@@ -1,25 +1,29 @@
-a(href="/").footer-brand
-	img(alt="Логотип магазина Device").logo.logo--footer
-address.footer-address Санкт-Петербург, набережная реки Карповки, 5, литера П.
-ul.footer-nav
+if mainpage
+	a.page-footer__logo.logo
+		img(alt="Логотип магазина Device").logo__img.logo__img--footer
+else
+	a(href="/").page-footer__logo.logo
+		img(alt="Логотип магазина Device").logo__img.logo__img--footer
+address.page-footer__address Санкт-Петербург, набережная реки Карповки, 5, литера П.
+ul.page-footer__nav
 	li.footer-nav__item
 		a(href="#").footer-nav__link Доставка
 	li.footer-nav__item
 		a(href="#").footer-nav__link Гарантия
 	li.footer-nav__item
 		a(href="#").footer-nav__link Контакты
-ul.cosials
-	li.cosials__item
-		a(href="https://www.facebook.com/htmlacademy" target="_blank").social__link.social__link--fb
+ul.page-footer__socials.socials
+	li.socials__item
+		a(href="https://www.facebook.com/htmlacademy" target="_blank").socials__link.socials__link--fb
 			span.visually-hidden Фейсбук
-	li.cosials__item
-		a(href="https://www.instagram.com/htmlacademy" target="_blank").social__link.social__link--inst
+	li.socials__item
+		a(href="https://www.instagram.com/htmlacademy" target="_blank").socials__link.socials__link--inst
 			span.visually-hidden Инстаграм
-	li.cosials__item
-		a(href="https://twitter.com/htmlacademy_ru" target="_blank").social__link.social__link--tw
+	li.socials__item
+		a(href="https://twitter.com/htmlacademy_ru" target="_blank").socials__link.socials__link--tw
 			span.visually-hidden Твиттер
-address.footer-phone
+address.page-footer__phone
 	a(href="tel:+78128121212") +7 (812) 812-12-12
-.copyright
+.page-footer__copyright.copyright
 	a(href="https://htmlacademy.ru/" target="_blank").copyright__link
 		img(src="#" alt="Описание картинки").copytight__image
