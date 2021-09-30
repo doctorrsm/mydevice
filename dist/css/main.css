@@ -364,6 +364,8 @@ html {
   font-size: 18px;
   line-height: 1.66;
   height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
 *,
@@ -390,9 +392,16 @@ h4,
 h5,
 h6 {
   color: var(--black);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Rubic", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -450,7 +459,7 @@ p {
 }
 
 .perfectpixel {
-  opacity: 0;
+  opacity: 0.3;
   z-index: 10;
   position: absolute;
   top: 0;
@@ -667,7 +676,7 @@ p {
   position: relative;
 }
 
-.page-logo {
+.page-header__logo {
   position: absolute;
   top: 17px;
 }
