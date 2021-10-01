@@ -1,3 +1,20 @@
+.advantages {
+  background-color: var(--light);
+
+}
+.advantages__item {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.advantages__item--delivery {
+  background-image: url(../images/tabs/delivery.png);
+}
+.advantages__item--garanty {
+  background-image: url(../images/tabs/garanty.png);
+}
+.advantages__item--credit {
+  background-image: url(../images/tabs/credit.png);
+}
 .advantages__header {
   font-size: 50px;
   margin-bottom: 50px;

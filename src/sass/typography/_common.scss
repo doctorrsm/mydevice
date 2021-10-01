@@ -6,7 +6,7 @@
   --black: #000000;
   --dark: #444444;
   --gray: #dcdcdc;
-  --light-gray: #ebebebb;
+  --light-gray: #ebebeb;
   --light: #f0f0f0;
   --white: #ffffff;
   --yellow: #ffe17f;
@@ -117,6 +117,16 @@ ul {
 
 p {
   margin-bottom: 38px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
 }
 
 .hide {

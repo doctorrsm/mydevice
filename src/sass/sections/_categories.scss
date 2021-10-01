@@ -1,3 +1,35 @@
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+
+}
+.categories__item {
+  width: calc(100%/6);
+  padding: 0 20px;
+}
 .icon-box {
   background-color: var(--yellow);
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-box--vr {
+  background-image: url(../images/icons/categories/vr.svg);
+}
+.icon-box--monopod {
+  background-image: url(../images/icons/categories/monopod.svg);
+}
+.icon-box--gopro {
+  background-image: url(../images/icons/categories/gopro.svg);
+}
+.icon-box--fit-tracker {
+  background-image: url(../images/icons/categories/fit-tracker.svg);
+}
+.icon-box--smart-watch {
+  background-image: url(../images/icons/categories/smart-watch.svg);
+}
+.icon-box--quadrocopter {
+  background-image: url(../images/icons/categories/quadrocopter.svg);
 }

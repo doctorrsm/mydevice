@@ -7,13 +7,27 @@
     <title>Заголовок</title>
     <meta name="keywords" content="One, two, three, four, five">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&amp;family=Rubik:wght@400;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="page">
     <div id="perfectpixel-btn">index</div>
-    <div class="perfectpixel" id="perfectpixel"></div>
+    <div class="perfectpixel hide" id="perfectpixel"></div>
     <header class="page-header">
       <div class="container container--page-header"><a class="page-header__logo logo"><img class="logo__img logo__img--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
         <div class="top-header">
@@ -142,22 +156,22 @@
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="categories__list">
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--vr</div>
+                <div class="icon-box icon-box--vr"></div>
                 <h3 class="categories__name">Виртуальная реальность</h3></a></li>
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--monopod</div>
+                <div class="icon-box icon-box--monopod"></div>
                 <h3 class="categories__name">Моноподы для селфи</h3></a></li>
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--gopro</div>
+                <div class="icon-box icon-box--gopro"></div>
                 <h3 class="categories__name">Экшн-камеры</h3></a></li>
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--fit-tracker</div>
+                <div class="icon-box icon-box--fit-tracker"></div>
                 <h3 class="categories__name">Фитнес-браслеты</h3></a></li>
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--smart-watch</div>
+                <div class="icon-box icon-box--smart-watch"></div>
                 <h3 class="categories__name">Умные часы</h3></a></li>
             <li class="categories__item"><a class="categories__link" href="#">
-                <div class="icon-box">icon-box--quadrocopter</div>
+                <div class="icon-box icon-box--quadrocopter"></div>
                 <h3 class="categories__name">Квадрокоптеры</h3></a></li>
           </ul>
         </section>
@@ -198,12 +212,9 @@
         </div>
       </section>
       <div class="container">
-        <div class="special-offer">
-          <div class="special-offer__link">
+        <div class="special-offer"><a class="special-offer__link" href="#">
             <p class="special-offer__text">Доставим редкий товар под заказ</p>
-            <div class="special-offer__icon special-offer__icon--truck"></div>
-          </div>
-        </div>
+            <div class="special-offer__icon special-offer__icon--truck"></div></a></div>
       </div>
       <section class="site-contacts">
         <div class="container">

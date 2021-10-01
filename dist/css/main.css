@@ -338,6 +338,34 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+}
 /**
  * Общая типографика сайта
  * Используются селекторы по тегам, без классов,
@@ -346,7 +374,7 @@ template {
   --black: #000000;
   --dark: #444444;
   --gray: #dcdcdc;
-  --light-gray: #ebebebb;
+  --light-gray: #ebebeb;
   --light: #f0f0f0;
   --white: #ffffff;
   --yellow: #ffe17f;
@@ -459,6 +487,14 @@ p {
   margin-bottom: 38px;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .hide {
   display: none;
 }
@@ -518,6 +554,10 @@ p {
 .container--page-header {
   padding: 0 60px;
   background-color: #ffe17f;
+}
+
+.container--grid {
+  display: flex;
 }
 
 /* Regular link-button */
@@ -781,6 +821,70 @@ p {
   margin-left: auto;
 }
 
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__item {
+  width: 16.6666666667%;
+  padding: 0 20px;
+}
+
+.icon-box {
+  background-color: var(--yellow);
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-box--vr {
+  background-image: url(../images/icons/categories/vr.svg);
+}
+
+.icon-box--monopod {
+  background-image: url(../images/icons/categories/monopod.svg);
+}
+
+.icon-box--gopro {
+  background-image: url(../images/icons/categories/gopro.svg);
+}
+
+.icon-box--fit-tracker {
+  background-image: url(../images/icons/categories/fit-tracker.svg);
+}
+
+.icon-box--smart-watch {
+  background-image: url(../images/icons/categories/smart-watch.svg);
+}
+
+.icon-box--quadrocopter {
+  background-image: url(../images/icons/categories/quadrocopter.svg);
+}
+
+.advantages {
+  background-color: var(--light);
+}
+
+.advantages__item {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.advantages__item--delivery {
+  background-image: url(../images/tabs/delivery.png);
+}
+
+.advantages__item--garanty {
+  background-image: url(../images/tabs/garanty.png);
+}
+
+.advantages__item--credit {
+  background-image: url(../images/tabs/credit.png);
+}
+
 .advantages__header {
   font-size: 50px;
   margin-bottom: 50px;
@@ -799,4 +903,30 @@ p {
 
 .special-offer__text {
   margin: 0;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.socials__link {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #7c7c7c;
+  height: 100px;
+  width: 100px;
+}
+
+.socials__link--fb {
+  background-image: url(../images/icons/socials/facebook.svg);
+}
+
+.socials__link--inst {
+  background-image: url(../images/icons/socials/instagram.svg);
+}
+
+.socials__link--tw {
+  background-image: url(../images/icons/socials/twitter.svg);
 }
