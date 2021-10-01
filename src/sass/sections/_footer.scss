@@ -1,9 +1,12 @@
 .socials__link {
+  display: inline-block;
   background-repeat: no-repeat;
   background-position:center center;
   background-color: #7c7c7c;
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .socials__link--fb {
   background-image: url(../images/icons/socials/facebook.svg);

@@ -2,6 +2,10 @@
   background-color: var(--light);
 
 }
+.advantages__controls button {
+  font-family: "Raleway";
+  color: var(--black);
+}
 .advantages__item {
   background-repeat: no-repeat;
   background-position: right center;
@@ -21,6 +25,7 @@
 }
 
 .special-offer {
+  position: relative;
   text-align: center;
   background-color: var(--light);
   text-transform: uppercase;
@@ -29,7 +34,33 @@
   line-height:1;
   color: var(--black);
   padding: 40px 0;
+  letter-spacing: 3.6px;
+}
+.special-offer__link:before {
+  content: "";
+  position: absolute;
+  background-color: var(--yellow);
+  width: 125px;
+  height: 100%;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url("../images/icons/delivery-truck.svg");
+
+}
+.special-offer__link:after{
+  content: "";
+  position: absolute;
+  background-color: #e6e6e6;
+  width: 40px;
+  height: 40%;
+  border-radius: 50%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url("../images/icons/info.svg");
 }
 .special-offer__text {
   margin: 0;
+  color: var(--black);
 }

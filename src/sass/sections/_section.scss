@@ -1,0 +1,56 @@
+.site-contacts .container {
+  display: flex;
+}
+
+.site-contacts__header {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1;
+  position: relative;
+}
+
+.site-contacts__header::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: var(--black);
+  top: -30px;
+}
+
+.site-contacts h3 {
+  color: var(--dark);
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.site-contacts a[href^=tel] {
+  text-decoration: underline;
+}
+
+.site-contacts__list ul {}
+.site-contacts__list li {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+
+
+}
+.site-contacts__list li::before {
+  content: "";
+  background-color:var(--yellow-hover);
+  display: inline-block;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+
+}
+

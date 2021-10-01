@@ -84,6 +84,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: var(--dark);
   border: none;
 }
 
@@ -94,7 +95,9 @@ a:focus {
 a:hover {
   cursor: pointer;
 }
-
+address {
+  font-style: normal;
+}
 button {
   outline: 0;
 }
@@ -112,14 +115,13 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-}
+ }
 
 p {
   margin-bottom: 38px;
 }
 
-
+/*
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -128,7 +130,7 @@ p {
   margin: -1px;
 
 }
-
+*/
 .hide {
   display: none;
 }
@@ -148,7 +150,7 @@ p {
   pointer-events: none;
 }
 
-#perfectpixel-btn {
+.perfectpixel-btn {
   color: white;
   display: flex;
   align-items: center;
@@ -180,4 +182,8 @@ p {
   background: linear-gradient(to right, #ff00cc, #333399);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+#btn--grid {
+  bottom: 140px
 }

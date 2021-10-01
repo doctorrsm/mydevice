@@ -1,0 +1,48 @@
+.slider__item {
+  display: flex;
+}
+
+.slider__buttons {
+  width: 50%;
+  position: relative;
+}
+
+.arrow-left:before,
+.arrow-right:before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 20px;
+}
+
+.arrow-left:before {
+  background-image: url("../images/icons/left-tall-arrow.svg");
+}
+
+.arrow-right:before {
+  background-image: url("../images/icons/right-tall-arrow.svg");
+}
+
+.slider__order {
+  font-family: "Rubik";
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 1;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.slider__lead-text {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1;
+  color: var(--black);
+  /* or 100% */
+}
+
+.slider__description dd {
+  font-size: 36px;
+  color: var(--black);
+}
