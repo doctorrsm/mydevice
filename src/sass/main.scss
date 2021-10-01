@@ -4,6 +4,7 @@
 @import "modules/nomalize";
 
 // Typography
+@import "typography/_fonts";
 @import "typography/common";
 @import "typography/grid";
 @import "typography/links";
@@ -11,4 +12,8 @@
 
 //Sections
 @import "sections/page-header";
+@import "sections/slider";
+@import "sections/categories";
 @import "sections/_advantages";
+@import "sections/section";
+@import "secton/footer";
