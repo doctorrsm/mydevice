@@ -3,30 +3,30 @@
 }
 
 .site-contacts__header {
-  font-family: Raleway;
+  position: relative;
   font-style: normal;
-  font-weight: 800;
   font-size: 50px;
   line-height: 1;
-  position: relative;
+  font-family: Raleway;
+  font-weight: 800;
 }
 
 .site-contacts__header::before {
-  content: "";
   position: absolute;
+  top: -30px;
   width: 80px;
   height: 7px;
+  content: "";
   background-color: var(--black);
-  top: -30px;
 }
 
 .site-contacts h3 {
   color: var(--dark);
-  font-family: "Rubik";
   font-style: normal;
-  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  font-family: "Rubik";
+  font-weight: bold;
 }
 
 .site-contacts a[href^=tel] {
@@ -34,23 +34,43 @@
 }
 
 .site-contacts__list ul {}
+
 .site-contacts__list li {
-  font-family: "Rubik";
+  color: var(--black);
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--black);
-
-
+  font-family: "Rubik";
+  font-weight: 700;
 }
+
 .site-contacts__list li::before {
-  content: "";
-  background-color:var(--yellow-hover);
   display: inline-block;
   position: absolute;
-  height: 8px;
   width: 8px;
-
+  height: 8px;
+  content: "";
+  background-color: var(--yellow-hover);
 }
 
+.describe__form button {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Raleway", "Tahoma", sans-serif;
+
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.describe__form__span {
+  position: relative;
+}
+.describe__form__span::before {
+  content: "";
+  background-image: url("../images/icons/tick-big.svg");
+  height: 14px;
+  width: 14px;
+  position: absolute;
+}

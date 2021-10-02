@@ -9,11 +9,11 @@
 
 .arrow-left:before,
 .arrow-right:before {
-  content: "";
   position: absolute;
-  background-repeat: no-repeat;
-  height: 60px;
   width: 20px;
+  height: 60px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
 .arrow-left:before {
@@ -25,24 +25,23 @@
 }
 
 .slider__order {
-  font-family: "Rubik";
-  font-weight: 800;
+  color: var(--white);
   font-size: 180px;
   line-height: 1;
-  color: var(--white);
+  font-family: "Rubik";
+  font-weight: 800;
   background-color: var(--black);
 }
 
 .slider__lead-text {
-  font-family: Raleway;
-  font-weight: 800;
+  color: var(--black);
   font-size: 50px;
   line-height: 1;
-  color: var(--black);
-  /* or 100% */
+  font-family: Raleway;
+  font-weight: 800;
 }
 
 .slider__description dd {
-  font-size: 36px;
   color: var(--black);
+  font-size: 36px;
 }
