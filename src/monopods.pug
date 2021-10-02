@@ -16,11 +16,11 @@ block main
 				li.breadcrumbs__item
 					a.breadcrumbs__link Мопоподы для селфи
 		.container.container--grid
-			.sidebar-grid
+			.content-sort.sidebar-grid
 				h2.visually-hidden Фильтр товаров
-				p Фильтр:
+				p.content-sort__header Фильтр:
 				form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
-					fieldset.content-sort__form-width
+					fieldset.content-sort__form-field
 						legend Стоимость
 						button.range-toggle.toggle-min(type='button')
 							span.visually-hidden Изменить минимальную цену.
@@ -35,7 +35,7 @@ block main
 							input.catalog-filter-input(type='number' name='max-price')
 							|  &#x20BD;
 
-					fieldset.content-sort__form-width
+					fieldset.content-sort__form-field
 						legend Цвет
 						label.checkbox
 							input(type="checkbox" name="black" value="black" checked)
@@ -52,7 +52,7 @@ block main
 						label.checkbox
 							input(type="checkbox" name="pink" value="pink")
 							| Розовый
-						fieldset.content-sort__form-width
+						fieldset.content-sort__form-field
 							legend Bluetooth
 							label.radio
 								input(type="radio" name="bluetooth" value="is-bluetooth" checked)
@@ -60,19 +60,19 @@ block main
 							label.radio
 								input(type="radio" name="bluetooth" value="no-bluetooth")
 								| Нет
-					button(type="submit") Показать
-			.content-grid
+					button(type="submit").content-sort__form-submit Показать
+			.content-shop.content-grid
 				header.content-shop__header
-					h2 Сортировка:
-					.sort-contrl
-						select.sort-contrl__select(name="sort")
+					p Сортировка:
+					.sort-control
+						select.sort-control__select(name="sort")
 							option(value="popular") Сначала популярные
 							option(value="cheap") Сначала дешевые
 							option(value="expensive") Сначала дорогие
-						.sort-contrl__arr
-							a.sort-contrl__arr-item.sort-contrl__arr-item--less
+						.sort-control__arr
+							a.sort-control__arr-item.sort-control__arr-item--less
 								span.visually-hidden Сортируем от меньшего к большему
-							a.sort-contrl__arr-item.sort-contrl__arr-item--more.sort-contrl__arr-item--selected
+							a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
 								span.visually-hidden Сортируем от большего к меньшему
 
 				section.catalog

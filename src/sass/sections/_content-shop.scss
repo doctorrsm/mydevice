@@ -1,5 +1,96 @@
+.content-shop__header p {
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.sort-control__select,
+.sort-control__select option {
+  color: var(--black);
+  background-color: var(--light);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sort-control__arr-item {
+  position: relative;
+}
+
+.sort-control__arr-item::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/sort-down.svg");
+  position: absolute;
+  width: 11px;
+  height: 10px;
+}
+
 .catalog {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.catalog h2 {
+  width: 100%;
+}
+
+.catalog__item-bage {
+  font-family: "Raleway", "Tahoma", sans-serif;
+  color: #606060;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog__item-link {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.catalog__item-price {}
+
+.load-more button {
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pagination {
+  background-color: var(--light-gray);
+}
+
+.pagination__bnt {
+  color: var(--black);
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.pagination__link {
+  color: #b9b9b9;
+  font-size: 16px;
+  line-height: 19px;
 }
