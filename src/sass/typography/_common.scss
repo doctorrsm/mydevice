@@ -112,7 +112,11 @@ input {
   outline: 0;
   border: 0;
 }
-
+img {
+  min-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -120,10 +124,11 @@ ul {
  }
 
 p {
-  margin-bottom: 38px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -132,7 +137,7 @@ p {
   margin: -1px;
 
 }
-*/
+
 .show {
   display: block;
 }

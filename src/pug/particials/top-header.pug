@@ -10,12 +10,16 @@ else
 		button(type="submit") Найти
 	.top-header__links
 		.top-header__links-login
-			a(href="#").top-link.top-link--login  Войти
-			a(href="#").top-link.top-link--logout  Выйти
+			if mainpage
+				a(href="#").top-link.top-link--login  Войти
+				a().top-link.top-link--logout
+			else
+				a(href="#").top-link.top-link--login  Коля Петухов
+				a(href="#").top-link.top-link--logout Выйти
 		.top-header__links-cart
 			a(href="#").top-link.top-link--compare Сравнить
 			.top-header__cart-wrapper.cart
-				span.cart-count 12
+				span.cart-count 2
 				a(href="#").top-link.top-link--cart Корзина
 				.pop-up.cart__pop-up
 					.pop-up__list
