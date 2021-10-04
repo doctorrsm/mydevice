@@ -1,9 +1,11 @@
-.site-contacts {
-
-}
+.site-contacts {}
 
 .site-contacts__block {
   padding-right: 45px;
+}
+
+.site-contacts__block>*:last-child {
+  margin-top: 43px;
 }
 
 .site-contacts__header {
@@ -38,7 +40,7 @@
 .site-contacts a[href^=tel] {
   text-decoration: underline;
   position: relative;
-    top: -30px;
+  top: -30px;
 }
 
 .site-contacts__list {
@@ -69,21 +71,47 @@
   background-color: var(--yellow-hover);
 }
 
-.describe__form button {
+.site-contacts__work-time {
+  margin-bottom: 12px;
+}
+
+.subscribe {
+  background-color: var(--light);
+}
+
+.subscribe__text:first-child {
+  margin-top: 10px;
+}
+
+.subscribe__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.subscribe__form  {
+  flex-basis: 857px;
+  display: flex;
+}
+.subscribe__form input {
+  flex-grow: 1;
+}
+
+.subscribe__form button {
   font-style: normal;
   font-size: 18px;
   font-size: 18px;
   line-height: 21px;
   font-family: "Raleway", "Tahoma", sans-serif;
-
   font-weight: 800;
   text-align: center;
   letter-spacing: 0.2em;
 }
-.describe__form__span {
+
+.subscribe__span {
   position: relative;
 }
-.describe__form__span::before {
+
+.subscribe__span::before {
   content: "";
   background-image: url("../images/icons/tick-big.svg");
   height: 14px;

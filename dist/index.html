@@ -241,24 +241,32 @@
               <p>  Санкт-Петербург, набережная реки Карповки, 5, литера П.</p><a class="site-contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
             <h3>Время работы</h3>
-            <ul>
+            <ul class="site-contacts__work-time">
               <li>пн—пт: с 10:00 до 22:00</li>
               <li>сб—вс: с 10:00 до 19:00</li>
             </ul><a class="btn" href="#">Напишите нам</a>
           </div>
         </div>
       </section>
-      <section class="describe">
-        <div class="container">
-          <h2 class="describe__header">Подпишитесь на рассылку</h2>
-          <form class="describe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input placeholder="Подпишитесь на рассылку" type="email" name="describe_email">
-            <button class="describe__button" type="submit">Подписаться</button>
-            <p class="describe__form__text">
-              Еженедельный дайджест с обзорами новинок,
-              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p><span class="describe__form__span">Это бесплатно</span>
-          </form>
+      <section class="subscribe">
+        <div class="container container--subscribe">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="subscribe__header">Подпишитесь <br> на рассылку</h2>
+            </div>
+            <div class="col-6">
+              <p class="subscribe__text">
+                Еженедельный дайджест с обзорами новинок, <br>
+                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+              </p>
+            </div>
+          </div>
+          <div class="subscribe__form-wrapper">
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input placeholder="Подпишитесь на рассылку" type="email" name="subscribe_email">
+              <button class="subscribe__button" type="submit">Подписаться</button>
+            </form><span class="subscribe__span">Это бесплатно</span>
+          </div>
         </div>
       </section>
     </main>

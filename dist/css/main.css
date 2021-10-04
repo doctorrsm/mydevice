@@ -607,10 +607,26 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  padding-bottom: 75px;
+}
+
+.container--subscribe {
+  padding-top: 77px;
+  padding-bottom: 143px;
 }
 
 .container--grid {
   display: flex;
+}
+
+.row {
+  display: flex;
+  margin: 0 -20px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 20px;
 }
 
 .sidebar-grid {
@@ -1260,6 +1276,10 @@ p {
   padding-right: 45px;
 }
 
+.site-contacts__block > *:last-child {
+  margin-top: 43px;
+}
+
 .site-contacts__header {
   position: relative;
   font-style: normal;
@@ -1323,7 +1343,34 @@ p {
   background-color: var(--yellow-hover);
 }
 
-.describe__form button {
+.site-contacts__work-time {
+  margin-bottom: 12px;
+}
+
+.subscribe {
+  background-color: var(--light);
+}
+
+.subscribe__text:first-child {
+  margin-top: 10px;
+}
+
+.subscribe__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.subscribe__form {
+  flex-basis: 857px;
+  display: flex;
+}
+
+.subscribe__form input {
+  flex-grow: 1;
+}
+
+.subscribe__form button {
   font-style: normal;
   font-size: 18px;
   font-size: 18px;
@@ -1334,11 +1381,11 @@ p {
   letter-spacing: 0.2em;
 }
 
-.describe__form__span {
+.subscribe__span {
   position: relative;
 }
 
-.describe__form__span::before {
+.subscribe__span::before {
   content: "";
   background-image: url("../images/icons/tick-big.svg");
   height: 14px;

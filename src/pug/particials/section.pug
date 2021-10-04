@@ -19,19 +19,25 @@ section.site-contacts
 				p   Санкт-Петербург, набережная реки Карповки, 5, литера П.
 				a(href="tel:+78128121212").site-contacts__phone +7 (812) 812-12-12
 			h3 Время работы
-			ul
+			ul.site-contacts__work-time
 				li пн—пт: с 10:00 до 22:00
 				li сб—вс: с 10:00 до 19:00
 			a(href="#").btn Напишите нам
 
 
-section.describe
-	.container
-		h2.describe__header Подпишитесь на рассылку
-		form(action="https://echo.htmlacademy.ru/" method="post").describe__form
-			input(placeholder="Подпишитесь на рассылку" type="email" name="describe_email")
-			button(type="submit").describe__button Подписаться
-			p.describe__form__text
-				| Еженедельный дайджест с обзорами новинок,
-				| длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-			span.describe__form__span Это бесплатно
+section.subscribe
+	.container.container--subscribe
+		.row
+			.col-6
+				h2.subscribe__header Подпишитесь <br> на рассылку
+
+			.col-6
+				p.subscribe__text
+					| Еженедельный дайджест с обзорами новинок, <br>
+					| длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+
+		.subscribe__form-wrapper
+			form(action="https://echo.htmlacademy.ru/" method="post").subscribe__form
+					input(placeholder="Подпишитесь на рассылку" type="email" name="subscribe_email")
+					button(type="submit").subscribe__button Подписаться
+			span.subscribe__span Это бесплатно
