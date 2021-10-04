@@ -2,13 +2,26 @@
   background-color: var(--light);
 
 }
+.advantages__controls {
+  width: 280px;
+  padding-top: 78px;
+}
 .advantages__controls button {
   font-family: "Raleway", "Tahoma", sans-serif;
   color: var(--black);
 }
+.advantages__content {
+  width: calc(100% - 280px);
+}
 .advantages__item {
   background-repeat: no-repeat;
   background-position: right center;
+  padding-top: 55px;
+    padding-left: 120px;
+    padding-right: 305px;
+}
+.advantages__item:not(:first-of-type) {
+  display: none;
 }
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);
@@ -21,7 +34,7 @@
 }
 .advantages__header {
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 16px;
 }
 
 .special-offer {
@@ -31,10 +44,11 @@
   text-transform: uppercase;
   font-family: Raleway;
   font-weight: 800;
-  line-height:1;
+  line-height:24px;
   color: var(--black);
   padding: 40px 0;
-  letter-spacing: 3.6px;
+  letter-spacing: 4px;
+  font-size: 20px;
 }
 .special-offer__link:before {
   content: "";
@@ -43,6 +57,7 @@
   width: 125px;
   height: 100%;
   left: 0;
+  top: 0;
   background-repeat: no-repeat;
   background-position: 50%;
   background-image: url("../images/icons/delivery-truck.svg");
@@ -55,7 +70,9 @@
   width: 40px;
   height: 40%;
   border-radius: 50%;
-  right: 0;
+  right: 33px;
+  top: 50%;
+  transform: translateY(-50%);
   background-repeat: no-repeat;
   background-position: 50%;
   background-image: url("../images/icons/info.svg");

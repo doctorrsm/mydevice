@@ -6,6 +6,26 @@
   padding: 0 57px;
   background-color: #ffe17f;
 }
+.container--categories {
+  padding-top: 70px;
+}
+.container--advantages{
+  display:flex;
+  padding-top: 65px;
+  padding-bottom: 110px;
+
+}
+.container--special-offer {
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+
+.container--site-contacts {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
 .container--grid {
   display: flex;
 
@@ -15,4 +35,8 @@
 .sidebar-grid {
   background-color: var(--light-gray);
   width: 33%;
+}
+
+.d-flex {
+  display: flex;
 }

@@ -1,6 +1,7 @@
 .categories__list {
   display: flex;
   justify-content: space-between;
+  margin: 0 -20px;
 
 }
 .categories__item {
@@ -14,12 +15,14 @@
   background-color: var(--yellow);
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 32px;
 }
 .icon-box--vr {
   background-image: url(../images/icons/categories/vr.svg);
 }
 .icon-box--monopod {
   background-image: url(../images/icons/categories/monopod.svg);
+  background-position: 50% 100%;
 }
 .icon-box--gopro {
   background-image: url(../images/icons/categories/gopro.svg);

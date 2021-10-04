@@ -1,5 +1,9 @@
-.site-contacts .container {
-  display: flex;
+.site-contacts {
+
+}
+
+.site-contacts__block {
+  padding-right: 45px;
 }
 
 .site-contacts__header {
@@ -9,11 +13,12 @@
   line-height: 1;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
+  margin-bottom: 46px;
 }
 
 .site-contacts__header::before {
   position: absolute;
-  top: -30px;
+  top: -49px;
   width: 80px;
   height: 7px;
   content: "";
@@ -27,28 +32,39 @@
   line-height: 30px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .site-contacts a[href^=tel] {
   text-decoration: underline;
+  position: relative;
+    top: -30px;
 }
 
-.site-contacts__list ul {}
+.site-contacts__list {
+  margin-top: 75px;
+  padding-left: 35px;
+}
 
-.site-contacts__list li {
+.site-contacts__item {
+  position: relative;
   color: var(--black);
   font-style: normal;
   font-size: 18px;
   line-height: 20px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.site-contacts__list li::before {
+.site-contacts__item:before {
   display: inline-block;
   position: absolute;
+  top: 6px;
+  left: -34px;
   width: 8px;
   height: 8px;
+  border-radius: 50%;
   content: "";
   background-color: var(--yellow-hover);
 }
