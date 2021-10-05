@@ -9,13 +9,12 @@
   line-height: 1;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
-  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
-.btn:before {
+.btn::before {
   display: block;
   z-index: -1;
   position: absolute;
@@ -30,11 +29,11 @@
   transform: translateY(-50%);
 }
 
-.btn:focus:before {
+.btn:focus::before {
   background-color: var(--violet);
 }
 
-.btn:hover:before {
+.btn:hover::before {
   height: 100%;
 }
 
@@ -45,7 +44,7 @@
 
 /* Goods link-button */
 .btn-goods {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding: 11px 20px;
   color: var(--black);
@@ -57,7 +56,7 @@
   letter-spacing: 0.2em;
 }
 
-.btn-goods:before {
+.btn-goods::before {
   display: block;
   z-index: -1;
   position: absolute;
@@ -72,7 +71,7 @@
   transform: translateY(-50%);
 }
 
-.btn-goods:hover:before {
+.btn-goods:hover::before {
   height: 100%;
 }
 

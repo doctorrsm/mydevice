@@ -93,8 +93,7 @@
 }
 
 .cart-count {
-  display: inline-block;
-  display: flex;
+  display: inline-flex;
   z-index: 1;
   position: absolute;
   top: 5px;
@@ -160,7 +159,7 @@
   display:none;
     z-index: 1;
   position: absolute;
-    top: 85px;
+    top: 30px;
     left: 0px;
     width: 100%;
     background-color: var(--yellow);

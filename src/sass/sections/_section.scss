@@ -59,8 +59,8 @@
   margin-bottom: 20px;
 }
 
-.site-contacts__item:before {
-  display: inline-block;
+.site-contacts__item::before {
+  display: inline-flex;
   position: absolute;
   top: 6px;
   left: -34px;

@@ -50,7 +50,7 @@
   letter-spacing: 4px;
   font-size: 20px;
 }
-.special-offer__link:before {
+.special-offer__link::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
@@ -63,7 +63,7 @@
   background-image: url("../images/icons/delivery-truck.svg");
 
 }
-.special-offer__link:after{
+.special-offer__link::after{
   content: "";
   position: absolute;
   background-color: #e6e6e6;

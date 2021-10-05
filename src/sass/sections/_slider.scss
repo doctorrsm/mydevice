@@ -18,7 +18,7 @@
 .slider__item:nth-last-child(2) {
   display:none;
 }
-.slider__item:before {
+.slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
@@ -32,8 +32,8 @@
 .slider__buttons {
   position: absolute;
 }
-.arrow-left:before,
-.arrow-right:before {
+.arrow-left::before,
+.arrow-right::before {
   position: absolute;
   width: 20px;
   height: 60px;
@@ -41,11 +41,11 @@
   background-repeat: no-repeat;
 }
 
-.arrow-left:before {
+.arrow-left::before {
   background-image: url("../images/icons/left-tall-arrow.svg");
 }
 
-.arrow-right:before {
+.arrow-right::before {
   background-image: url("../images/icons/right-tall-arrow.svg");
 }
 .slider__image-area {

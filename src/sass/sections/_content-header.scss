@@ -4,7 +4,7 @@
   color: #666666;
   position: relative;
 }
-.breadcrumbs__link:after{
+.breadcrumbs__link::after{
   content: "";
   background-repeat: no-repeat;
   background-image: url("../images/icons/nav-arrow.svg");

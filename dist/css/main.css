@@ -397,8 +397,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -649,13 +649,12 @@ p {
   line-height: 1;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
-  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
-.btn:before {
+.btn::before {
   display: block;
   z-index: -1;
   position: absolute;
@@ -670,11 +669,11 @@ p {
   transform: translateY(-50%);
 }
 
-.btn:focus:before {
+.btn:focus::before {
   background-color: var(--violet);
 }
 
-.btn:hover:before {
+.btn:hover::before {
   height: 100%;
 }
 
@@ -685,7 +684,7 @@ p {
 
 /* Goods link-button */
 .btn-goods {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding: 11px 20px;
   color: var(--black);
@@ -697,7 +696,7 @@ p {
   letter-spacing: 0.2em;
 }
 
-.btn-goods:before {
+.btn-goods::before {
   display: block;
   z-index: -1;
   position: absolute;
@@ -712,7 +711,7 @@ p {
   transform: translateY(-50%);
 }
 
-.btn-goods:hover:before {
+.btn-goods:hover::before {
   height: 100%;
 }
 
@@ -911,8 +910,7 @@ p {
 }
 
 .cart-count {
-  display: inline-block;
-  display: flex;
+  display: inline-flex;
   z-index: 1;
   position: absolute;
   top: 5px;
@@ -977,7 +975,7 @@ p {
   display: none;
   z-index: 1;
   position: absolute;
-  top: 85px;
+  top: 30px;
   left: 0px;
   width: 100%;
   background-color: var(--yellow);
@@ -1040,7 +1038,7 @@ p {
   display: none;
 }
 
-.slider__item:before {
+.slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
@@ -1056,8 +1054,8 @@ p {
   position: absolute;
 }
 
-.arrow-left:before,
-.arrow-right:before {
+.arrow-left::before,
+.arrow-right::before {
   position: absolute;
   width: 20px;
   height: 60px;
@@ -1065,11 +1063,11 @@ p {
   background-repeat: no-repeat;
 }
 
-.arrow-left:before {
+.arrow-left::before {
   background-image: url("../images/icons/left-tall-arrow.svg");
 }
 
-.arrow-right:before {
+.arrow-right::before {
   background-image: url("../images/icons/right-tall-arrow.svg");
 }
 
@@ -1239,7 +1237,7 @@ p {
   font-size: 20px;
 }
 
-.special-offer__link:before {
+.special-offer__link::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
@@ -1252,7 +1250,7 @@ p {
   background-image: url("../images/icons/delivery-truck.svg");
 }
 
-.special-offer__link:after {
+.special-offer__link::after {
   content: "";
   position: absolute;
   background-color: #e6e6e6;
@@ -1331,8 +1329,8 @@ p {
   margin-bottom: 20px;
 }
 
-.site-contacts__item:before {
-  display: inline-block;
+.site-contacts__item::before {
+  display: inline-flex;
   position: absolute;
   top: 6px;
   left: -34px;
@@ -1400,7 +1398,7 @@ p {
   position: relative;
 }
 
-.breadcrumbs__link:after {
+.breadcrumbs__link::after {
   content: "";
   background-repeat: no-repeat;
   background-image: url("../images/icons/nav-arrow.svg");
@@ -1570,7 +1568,7 @@ p {
 }
 
 .socials__link {
-  display: inline-block;
+  display: inline-flex;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #7c7c7c;
