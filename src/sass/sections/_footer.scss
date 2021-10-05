@@ -4,18 +4,70 @@
   font-size: 16px;
   line-height: 19px;
 }
+.page-footer__top-wrapper {
+  display: flex;
+  padding-top: 35px;
+
+}
+.page-footer__address {
+  width: 360px;
+}
+.page-footer__nav{
+  display: flex;
+}
+.page-footer__nav-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .page-footer__nav-link {
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--white);
+
 }
 
+.page-footer__phone {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: normal;
+  text-align: right;
+  margin-left: auto;
+
+}
+.page-footer__phone a {
+  color: var(--white);
+}
+.page-footer__bottom-wrapper {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+
+}
+.page-footer__bottom-wrapper::before {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 80px;
+  background-color: var(--yellow-hover);
+}
+.page-footer__socials {
+  position: relative;
+  left: 17px;
+}
+.socials {
+  display: flex;
+}
+.socials__item {
+  margin: 0 8px;
+}
 .socials__link {
   display: inline-flex;
   background-repeat: no-repeat;
@@ -39,11 +91,3 @@
   background-image: url(../images/icons/socials/twitter.svg);
 }
 
-.page-footer__phone {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: "Rubik", "Arial", sans-serif;
-  font-weight: normal;
-  text-align: right;
-}

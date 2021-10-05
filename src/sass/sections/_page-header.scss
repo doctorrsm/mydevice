@@ -163,13 +163,16 @@
     left: 0px;
     width: 100%;
     background-color: var(--yellow);
+    padding: 38px 60px 0;
 
 }
 
 .nav-dropdown:hover .nav-dropdown__list {
   display: block;
 }
-
+.nav-dropdown__item{
+  margin-bottom: 6px;
+}
 .nav-dropdown__link {
   font-size: 16px;
 }

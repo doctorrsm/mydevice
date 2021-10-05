@@ -4,26 +4,30 @@ if mainpage
 else
 	a(href="/").page-footer__logo.logo
 		img(alt="Логотип магазина Device" src="images/logo-footer.png"  width="145" height="36").logo__img.logo__img--footer
-address.page-footer__address Санкт-Петербург, набережная реки Карповки, 5, литера П.
-ul.page-footer__nav
-	li.page-footer__nav-item
-		a(href="#").page-footer__nav-link Доставка
-	li.page-footer__nav-tem
-		a(href="#").page-footer__nav-link Гарантия
-	li.page-footer__nav-item
-		a(href="#").page-footer__nav-link Контакты
-ul.page-footer__socials.socials
-	li.socials__item
-		a(href="https://www.facebook.com/htmlacademy" target="_blank").socials__link.socials__link--fb
-			span.visually-hidden Фейсбук
-	li.socials__item
-		a(href="https://www.instagram.com/htmlacademy" target="_blank").socials__link.socials__link--inst
-			span.visually-hidden Инстаграм
-	li.socials__item
-		a(href="https://twitter.com/htmlacademy_ru" target="_blank").socials__link.socials__link--tw
-			span.visually-hidden Твиттер
-address.page-footer__phone
-	a(href="tel:+78128121212") +7 (812) 812-12-12
-.page-footer__copyright.copyright
-	a(href="https://htmlacademy.ru/" target="_blank").copyright__link
-		img(src="images/copyright.png" alt="Логотип компании HTML Академии" width="115" height="34").copyright__image
+
+.page-footer__top-wrapper
+	address.page-footer__address Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.
+	ul.page-footer__nav
+		li.page-footer__nav-item
+			a(href="#").page-footer__nav-link Доставка
+		li.page-footer__nav-item
+			a(href="#").page-footer__nav-link Гарантия
+		li.page-footer__nav-item
+			a(href="#").page-footer__nav-link Контакты
+
+	address.page-footer__phone
+		a(href="tel:+78128121212") Тел.: +7 (812) 812-12-12
+.page-footer__bottom-wrapper
+	ul.page-footer__socials.socials
+		li.socials__item
+			a(href="https://www.facebook.com/htmlacademy" target="_blank").socials__link.socials__link--fb
+				span.visually-hidden Фейсбук
+		li.socials__item
+			a(href="https://www.instagram.com/htmlacademy" target="_blank").socials__link.socials__link--inst
+				span.visually-hidden Инстаграм
+		li.socials__item
+			a(href="https://twitter.com/htmlacademy_ru" target="_blank").socials__link.socials__link--tw
+				span.visually-hidden Твиттер
+	.page-footer__copyright.copyright
+		a(href="https://htmlacademy.ru/" target="_blank").copyright__link
+			img(src="images/copyright.png" alt="Логотип компании HTML Академии" width="115" height="34").copyright__image
