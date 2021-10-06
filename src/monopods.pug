@@ -6,7 +6,7 @@ block header
 
 block main
 	header.content-header
-		.container
+		.container.container--content-header
 			h1 Моноподы для селфи
 			ul.breadcrumbs
 				li.breadcrumbs__item
@@ -15,116 +15,119 @@ block main
 					a(href="#").breadcrumbs__link Каталог товаров
 				li.breadcrumbs__item
 					a.breadcrumbs__link Мопоподы для селфи
-	.container.container--grid
-		.content-sort.sidebar-grid
-			h2.visually-hidden Фильтр товаров
-			p.content-sort__header Фильтр:
-			form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
-				fieldset.content-sort__form-field
-					legend Стоимость
-					button.range-toggle.toggle-min(type='button')
-						span.visually-hidden Изменить минимальную цену.
-					button.range-toggle.toggle-max(type='button')
-						span.visually-hidden Изменить максимальную цену.
-					label.catalog-filter-label
-						| От
-						input.catalog-filter-input(type='number' name='min-price')
-						|  &#x20BD;
-					label.catalog-filter-label
-						| До
-						input.catalog-filter-input(type='number' name='max-price')
-						|  &#x20BD;
-				fieldset.content-sort__form-field
-					legend Цвет
-					label.checkbox
-						input(type="checkbox" name="black" value="black" checked)
-						| Черный
-					label.checkbox
-						input(type="checkbox" name="white" value="white" checked)
-						| Белый
-					label.checkbox
-						input(type="checkbox" name="blue" value="blue")
-						| Синий
-					label.checkbox
-						input(type="checkbox" name="red" value="red")
-						| Красный
-					label.checkbox
-						input(type="checkbox" name="pink" value="pink")
-						| Розовый
-					fieldset.content-sort__form-field
-						legend Bluetooth
-						label.radio
-							input(type="radio" name="bluetooth" value="is-bluetooth" checked)
-							| Есть
-						label.radio
-							input(type="radio" name="bluetooth" value="no-bluetooth")
-							| Нет
-				button(type="submit").content-sort__form-submit Показать
-		.content-shop.content-grid
-			header.content-shop__header
-				p Сортировка:
-				.sort-control
-					select.sort-control__select(name="sort")
-						option(value="popular") Сначала популярные
-						option(value="cheap") Сначала дешевые
-						option(value="expensive") Сначала дорогие
-					.sort-control__arr
-						a.sort-control__arr-item.sort-control__arr-item--less
-							span.visually-hidden Сортируем от меньшего к большему
-						a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
-							span.visually-hidden Сортируем от большего к меньшему
-			section.catalog
-				h2.visually-hidden Каталог товаров
-				article.catalog__item
-					span.catalog__item-bage New
-					img.catalog__item-img(src="images/content/monopods/product-1.jpg", alt="Любительская селфи-палка" width="360" height="380")
-					.catalog__item-desc
-						a(href="#").catalog__item-link Любительская селфи-палка
-						span.catalog__item-price 500 &#8381;
-					.catalog__item-overlay
-						a(href="#").btn.btn-catalog Подробнее
-				article.catalog__item
-					span.catalog__item-bage New
-					img.catalog__item-img(src="images/content/monopods/product-2.jpg", alt="Профессиональная селфи-палка "  width="360" height="380")
-					.catalog__item-desc
-						a(href="#").catalog__item-link Профессиональная селфи-палка
-						span.catalog__item-price 1500 &#8381;
-					.catalog__item-overlay
-						a(href="#").btn.btn-catalog Подробнее
-				article.catalog__item
-					span.catalog__item-bage New
-					img.catalog__item-img(src="images/content/monopods/product-3.jpg", alt="Непотопляемая селфи-палка"  width="360" height="380")
-					.catalog__item-desc
-						a(href="#").catalog__item-link Непотопляемая селфи-палка
-						span.catalog__item-price 2500 &#8381;
-					.catalog__item-overlay
-						a(href="#").btn.btn-catalog Подробнее
-				article.catalog__item
-					span.catalog__item-bage New
-					img.catalog__item-img(src="images/content/monopods/product-4.jpg", alt="Селфи-палка 'следуй за мной'"  width="360" height="380")
-					.catalog__item-desc
-						a(href="#").catalog__item-link Селфи-палка "следуй за мной"
-						span.catalog__item-price 4900 &#8381;
-					.catalog__item-overlay
-						a(href="#").btn.btn-catalog Подробнее
-			.load-more
-				button(type="button") Загрузить еще
-			footer.content-shop__footer
-					section.pagination
-						h2.visually-hidden Постраничная навигация сайта
-						a.pagination__bnt(href="#")  Назад
-						ul.pagination__list
-							li.pagination__item
-								a.pagination__link(href="#") 1
-							li.pagination__item
-								a.pagination__link(href="#") 2
-							li.pagination__item
-								a.pagination__link(href="#") 3
-							li.pagination__item
-								a.pagination__link ...
-							li.pagination__item
-								a.pagination__link(href="#") 15
-						a.pagination__bnt(href="#")  Вперёд
+	.container
+		.row.row--shop-page
+			.col-sidebar
+				.content-sort
+					h2.visually-hidden Фильтр товаров
+					p.content-sort__header Фильтр:
+					form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
+						fieldset.content-sort__form-field
+							legend Стоимость
+							button.range-toggle.toggle-min(type='button')
+								span.visually-hidden Изменить минимальную цену.
+							button.range-toggle.toggle-max(type='button')
+								span.visually-hidden Изменить максимальную цену.
+							label.catalog-filter-label
+								| От
+								input.catalog-filter-input(type='number' name='min-price')
+								|  &#x20BD;
+							label.catalog-filter-label
+								| До
+								input.catalog-filter-input(type='number' name='max-price')
+								|  &#x20BD;
+						fieldset.content-sort__form-field
+							legend Цвет
+							label.checkbox
+								input(type="checkbox" name="black" value="black" checked)
+								| Черный
+							label.checkbox
+								input(type="checkbox" name="white" value="white" checked)
+								| Белый
+							label.checkbox
+								input(type="checkbox" name="blue" value="blue")
+								| Синий
+							label.checkbox
+								input(type="checkbox" name="red" value="red")
+								| Красный
+							label.checkbox
+								input(type="checkbox" name="pink" value="pink")
+								| Розовый
+							fieldset.content-sort__form-field
+								legend Bluetooth
+								label.radio
+									input(type="radio" name="bluetooth" value="is-bluetooth" checked)
+									| Есть
+								label.radio
+									input(type="radio" name="bluetooth" value="no-bluetooth")
+									| Нет
+						button(type="submit").content-sort__form-submit Показать
+			.col-shop
+				.content-shop
+					header.content-shop__header
+						p Сортировка:
+						.sort-control
+							select.sort-control__select(name="sort")
+								option(value="popular") Сначала популярные
+								option(value="cheap") Сначала дешевые
+								option(value="expensive") Сначала дорогие
+							.sort-control__arr
+								a.sort-control__arr-item.sort-control__arr-item--less
+									span.visually-hidden Сортируем от меньшего к большему
+								a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
+									span.visually-hidden Сортируем от большего к меньшему
+					section.catalog
+						h2.visually-hidden Каталог товаров
+						article.catalog__item
+							span.catalog__item-bage New
+							img.catalog__item-img(src="images/content/monopods/product-1.jpg", alt="Любительская селфи-палка" width="360" height="380")
+							.catalog__item-desc
+								a(href="#").catalog__item-link Любительская селфи-палка
+								span.catalog__item-price 500 &#8381;
+							.catalog__item-overlay
+								a(href="#").btn.btn-catalog Подробнее
+						article.catalog__item
+							span.catalog__item-bage New
+							img.catalog__item-img(src="images/content/monopods/product-2.jpg", alt="Профессиональная селфи-палка "  width="360" height="380")
+							.catalog__item-desc
+								a(href="#").catalog__item-link Профессиональная селфи-палка
+								span.catalog__item-price 1500 &#8381;
+							.catalog__item-overlay
+								a(href="#").btn.btn-catalog Подробнее
+						article.catalog__item
+							span.catalog__item-bage New
+							img.catalog__item-img(src="images/content/monopods/product-3.jpg", alt="Непотопляемая селфи-палка"  width="360" height="380")
+							.catalog__item-desc
+								a(href="#").catalog__item-link Непотопляемая селфи-палка
+								span.catalog__item-price 2500 &#8381;
+							.catalog__item-overlay
+								a(href="#").btn.btn-catalog Подробнее
+						article.catalog__item
+							span.catalog__item-bage New
+							img.catalog__item-img(src="images/content/monopods/product-4.jpg", alt="Селфи-палка 'следуй за мной'"  width="360" height="380")
+							.catalog__item-desc
+								a(href="#").catalog__item-link Селфи-палка "следуй за мной"
+								span.catalog__item-price 4900 &#8381;
+							.catalog__item-overlay
+								a(href="#").btn.btn-catalog Подробнее
+					.load-more
+						button(type="button") Загрузить еще
+					footer.content-shop__footer
+							section.pagination
+								h2.visually-hidden Постраничная навигация сайта
+								a.pagination__bnt(href="#")  Назад
+								ul.pagination__list
+									li.pagination__item
+										a.pagination__link(href="#") 1
+									li.pagination__item
+										a.pagination__link(href="#") 2
+									li.pagination__item
+										a.pagination__link(href="#") 3
+									li.pagination__item
+										a.pagination__link ...
+									li.pagination__item
+										a.pagination__link(href="#") 15
+								a.pagination__bnt(href="#")  Вперёд
 
 block footer
 	include pug/particials/footer.pug

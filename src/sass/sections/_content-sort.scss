@@ -1,3 +1,8 @@
+.content-sort {
+  padding-left: 40px;
+  position: relative;
+    z-index: 0;
+}
 .content-sort__header {
   background-color: var(--gray);
   font-family: "Raleway", "Tahoma", sans-serif;
@@ -7,10 +12,27 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--black);
+  margin: 0;
+  padding: 26px 0;
+  position: relative;
 }
-
+.content-sort__header::before {
+  background-color: var(--gray);
+  content: '';
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
 .content-shop__header {
   background-color: var(--light-gray);
+  display: flex;
+
+  padding: 26px 0;
+
 }
 
 .content-sort__form-field legend {

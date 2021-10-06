@@ -6,6 +6,8 @@
 
 .slider__dots {
   position: absolute;
+  bottom: 182px;
+  right: 69px;
 }
 .slider__item {
   display: grid;
@@ -31,6 +33,12 @@
 }
 .slider__buttons {
   position: absolute;
+  width: calc(50% - 33px);
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0px 18px;
 }
 .arrow-left::before,
 .arrow-right::before {

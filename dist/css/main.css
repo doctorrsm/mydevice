@@ -527,11 +527,11 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/innermenu.png);
+  background-image: url(../images/perfectpixel.png);
 }
 
 .bg-monopod {
-  background-image: url(../images/popupcart.png);
+  background-image: url(../images/monopod.png);
 }
 
 .bg-grid {
@@ -620,6 +620,10 @@ p {
   padding-bottom: 3px;
 }
 
+.container--content-header {
+  padding: 37px 61px 43px;
+}
+
 .container--grid {
   display: flex;
 }
@@ -629,14 +633,27 @@ p {
   margin: 0 -20px;
 }
 
-.col-6 {
+.row--shop-page {
+  margin: 0;
+}
+
+.col {
   width: 50%;
   padding: 0 20px;
 }
 
+.col-sidebar {
+  width: 329px;
+  padding: 0 20px;
+}
+
+.col-shop {
+  width: calc(100% - 329px);
+  padding-left: 72px;
+}
+
 .sidebar-grid {
   background-color: var(--light-gray);
-  width: 33%;
 }
 
 .d-flex {
@@ -1097,6 +1114,8 @@ p {
 
 .slider__dots {
   position: absolute;
+  bottom: 182px;
+  right: 69px;
 }
 
 .slider__item {
@@ -1127,6 +1146,12 @@ p {
 
 .slider__buttons {
   position: absolute;
+  width: calc(50% - 33px);
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0px 18px;
 }
 
 .arrow-left::before,
@@ -1467,6 +1492,19 @@ p {
   position: absolute;
 }
 
+.content-header h1 {
+  margin-bottom: 19px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  margin-right: 34px;
+}
+
 .breadcrumbs__link {
   font-size: 16px;
   line-height: 19px;
@@ -1475,12 +1513,20 @@ p {
 }
 
 .breadcrumbs__link::after {
-  content: "";
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/nav-arrow.svg");
   position: absolute;
+  top: 6px;
+  right: -18px;
   width: 4px;
   height: 7px;
+  content: "";
+  background-image: url("../images/icons/nav-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.content-sort {
+  padding-left: 40px;
+  position: relative;
+  z-index: 0;
 }
 
 .content-sort__header {
@@ -1492,10 +1538,27 @@ p {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--black);
+  margin: 0;
+  padding: 26px 0;
+  position: relative;
+}
+
+.content-sort__header::before {
+  background-color: var(--gray);
+  content: "";
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .content-shop__header {
   background-color: var(--light-gray);
+  display: flex;
+  padding: 26px 0;
 }
 
 .content-sort__form-field legend {
@@ -1538,6 +1601,8 @@ p {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--black);
+  margin: 0;
+  margin-right: 45px;
 }
 
 .sort-control__select,

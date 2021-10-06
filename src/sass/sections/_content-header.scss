@@ -1,15 +1,30 @@
-.breadcrumbs__link{
+.content-header h1 {
+  margin-bottom: 19px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  margin-right: 34px;
+}
+
+.breadcrumbs__link {
   font-size: 16px;
   line-height: 19px;
   color: #666666;
   position: relative;
 }
+
 .breadcrumbs__link::after{
-  content: "";
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/nav-arrow.svg");
   position: absolute;
+  top: 6px;
+  right: -18px;
   width: 4px;
   height: 7px;
-
+  content: "";
+  background-image: url("../images/icons/nav-arrow.svg");
+  background-repeat: no-repeat;
 }

@@ -8,12 +8,25 @@ const {
   parallel
 } = require('gulp');
 const gulp =    require('gulp');
+const svgSprite = require('gulp-svg-sprite');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const clean = require('gulp-clean');
 const postcss = require('gulp-postcss');
 const sorting = require('postcss-sorting');
 const browserSync = require('browser-sync').create();
+
+
+const svgSprintConfig = {
+  mode: {
+    css: { // Activate the «css» mode
+      render: {
+        css: true // Activate CSS output (with default options)
+      }
+    }
+  }
+};
+
 
 exports.views = () => {
   return src('./src/*.pug')
@@ -24,6 +37,12 @@ exports.views = () => {
       })
     )
     .pipe(dest('./dist'));
+};
+
+exports.svgsp = () => {
+  return src('./src/images/icons/**/*.svg')
+  .pipe(svgSprite(svgSprintConfig))
+  .pipe(dest('./dist/images/svg'));
 };
 
 
