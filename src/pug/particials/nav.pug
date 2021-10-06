@@ -2,21 +2,18 @@ nav.main-nav.page-header__navigation
 	ul.main-nav__list
 		li.main-nav__item.nav-dropdown
 			a.main-nav__link Каталог товаров
-			ul.nav-dropdown__list
-				li.nav-dropdown__item
+			.nav-dropdown__list
+				.nav-dropdown__col
 					a(href="#").nav-dropdown__link Виртуальная реальность
-				li.nav-dropdown__item
 					if mainpage
 						a(href="monopods.html").nav-dropdown__link Моноподы для селфи
 					else
 						a.nav-dropdown__link.nav-dropdown__link--active Моноподы для селфи
-				li.nav-dropdown__item
 					a(href="#").nav-dropdown__link Экшн-камеры
-				li.nav-dropdown__item
-					a(href="#").nav-dropdown__link Финтнес-браслеты
-				li.nav-dropdown__item
+				.nav-dropdown__col
+					a(href="#").nav-dropdown__link Фитнес-браслеты
 					a(href="#").nav-dropdown__link Умные часы
-				li.nav-dropdown__item
+				.nav-dropdown__col
 					a(href="#").nav-dropdown__link Квадрокоптеры
 
 
