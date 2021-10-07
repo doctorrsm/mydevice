@@ -28,11 +28,17 @@
   z-index: -1;
 }
 .content-shop__header {
-  background-color: var(--light-gray);
+
   display: flex;
 
-  padding: 26px 0;
+  padding: 24px 0 22px;
+  margin-bottom: 70px;
 
+
+}
+
+.content-shop__header:before {
+  background-color: var(--light-gray);
 }
 
 .content-sort__form-field legend {

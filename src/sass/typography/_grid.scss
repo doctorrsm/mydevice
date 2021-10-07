@@ -61,13 +61,38 @@
 }
 .col-sidebar {
   width: 329px;;
-  padding: 0 20px;
+  padding-left: 20px;
+  position: relative;
 }
+.col-sidebar::before {
+  background-color: var(--light);
+  content: "";
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .col-shop {
   width: calc(100% - 329px);
   padding-left: 72px;
-}
+  position: relative;
 
+}
+.col-shop::before {
+  background-color: var(--light);
+  content: '';
+  height: 70px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  z-index: -1;
+}
 .sidebar-grid {
   background-color: var(--light-gray);
 
