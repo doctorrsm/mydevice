@@ -34,7 +34,7 @@
 }
 .container--page-footer {
   padding-top: 62px;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .container--content-header {
@@ -42,8 +42,6 @@
 }
 .container--grid {
   display: flex;
-
-
 }
 
 .row {
@@ -65,15 +63,15 @@
   position: relative;
 }
 .col-sidebar::before {
-  background-color: var(--light);
-  content: "";
-  height: 100%;
-  width: 100vw;
+  z-index: -1;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
-  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  content: "";
+  background-color: var(--light);
 }
 
 .col-shop {
