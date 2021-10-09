@@ -69,14 +69,15 @@
   margin: 0 8px;
 }
 .socials__link {
-  display: inline-flex;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color: #7c7c7c;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 
 .socials__link--fb {

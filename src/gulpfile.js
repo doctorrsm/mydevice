@@ -32,7 +32,7 @@ exports.sorting = () => {
   return gulp.src('./dist/css/*.css').pipe(
     postcss([
       sorting({
-        "order": [
+          "order": [
           "custom-properties",
           "dollar-variables",
           {
@@ -193,7 +193,7 @@ exports.sorting = () => {
       })
     ])
   ).pipe(
-    gulp.dest('./dist/css/*.css')
+    gulp.dest('./dist/css')
   );
 };
 
