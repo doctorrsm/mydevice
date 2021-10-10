@@ -38,15 +38,22 @@
 }
 
 .special-offer {
+  padding: 40px 0;
+
+}
+.special-offer__link {
   position: relative;
   text-align: center;
+  display: block;
   background-color: var(--light);
   text-transform: uppercase;
   font-family: Raleway;
   font-weight: 800;
   line-height:24px;
   color: var(--black);
-  padding: 40px 0;
+
+  padding-top: 90px;
+    padding-bottom: 75px;
   letter-spacing: 4px;
   font-size: 20px;
 }

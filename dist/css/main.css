@@ -532,7 +532,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/innermenu.png);
+  background-image: url(../images/perfectpixel.png);
 }
 
 .bg-monopod {
@@ -591,10 +591,6 @@ p {
 .container--page-header {
   padding: 0 57px;
   background-color: #ffe17f;
-}
-
-.container--categories {
-  padding-top: 70px;
 }
 
 .container--advantages {
@@ -1265,6 +1261,10 @@ h1 + .slider .slider__item::before {
   margin-left: 0;
 }
 
+.categories {
+  padding-top: 70px;
+}
+
 .categories__list {
   display: flex;
   justify-content: center;
@@ -1368,15 +1368,21 @@ h1 + .slider .slider__item::before {
 }
 
 .special-offer {
+  padding: 40px 0;
+}
+
+.special-offer__link {
   position: relative;
   text-align: center;
+  display: block;
   background-color: var(--light);
   text-transform: uppercase;
   font-family: Raleway;
   font-weight: 800;
   line-height: 24px;
   color: var(--black);
-  padding: 40px 0;
+  padding-top: 90px;
+  padding-bottom: 75px;
   letter-spacing: 4px;
   font-size: 20px;
 }
