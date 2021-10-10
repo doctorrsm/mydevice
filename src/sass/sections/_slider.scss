@@ -20,7 +20,7 @@
 .slider__item:nth-last-child(2) {
   display:none;
 }
-.slider__item::before {
+h1 + .slider .slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);

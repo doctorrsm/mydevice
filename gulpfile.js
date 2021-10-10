@@ -14,6 +14,7 @@ const sass = require('gulp-sass')(require('sass'));
 const clean = require('gulp-clean');
 const postcss = require('gulp-postcss');
 const sorting = require('postcss-sorting');
+const scsssorting = require('postcss-scss');
 const browserSync = require('browser-sync').create();
 
 
@@ -81,6 +82,7 @@ exports['sortscss']= () => {
     postcss([
       sorting({
         /* options */
+        'syntax': 'postcss-scss',
         'properties-order': [
           'position',
           'top',

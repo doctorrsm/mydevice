@@ -17,7 +17,8 @@
 
 .page-header__logo {
   position: absolute;
-  top: 17px;
+  top: -23px;
+  left: 61px;
 }
 
 .top-header__search {
@@ -155,37 +156,49 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
 }
 
-.nav-dropdown {
+.nav-dropdown .main-nav__link{
+  padding:20px 70px 20px 0;
 
 }
 
-.nav-dropdown::after {
+.nav-dropdown > .main-nav__link::after {
   content: "";
+
   display: inline-flex;
   position: absolute;
   height: 50px;
   width: 50px;
-  border: 2px solid var(--black);
-  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icons/minus.svg");
+  right: 0px;
+    top: 5px;
+    border: 2px solid;
+    border-radius: 50%;
 }
 
 .nav-dropdown__list {
   display: none;
   z-index: 1;
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 0px;
   width: 100%;
-  background-color: var(--yellow);
-  padding: 40px 60px 0;
+  background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
+  padding: 50px 60px 43px;
 }
 
-.nav-dropdown:hover .nav-dropdown__list {
+.nav-dropdown  .main-nav__link:hover + .nav-dropdown__list, .nav-dropdown__list:hover{
   display: flex;
   flex-wrap: wrap;
 }
+
+
+
 
 .nav-dropdown__col {
   min-width: 153px;
