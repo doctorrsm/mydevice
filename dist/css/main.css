@@ -1153,8 +1153,44 @@ p {
 
 .slider__dots {
   position: absolute;
-  bottom: 182px;
-  right: 69px;
+  bottom: 185px;
+  right: 59px;
+  z-index: 1;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.dot {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--black);
+  background-color: inherit;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dot:not(:last-child) {
+  margin-right: 22px;
+}
+
+.dot--active {
+  background-color: var(--black);
+}
+
+.dot:focus {
+  border-color: var(--violet);
+}
+
+.dot:hover {
+  opacity: 0.6;
+}
+
+.dot:active {
+  opacity: 0.3;
 }
 
 .slider__item {
@@ -1213,7 +1249,7 @@ h1 + .slider .slider__item::before {
 }
 
 .arrow:focus {
-  outline: 1px solid var(--purple);
+  outline: 1px solid var(--violet);
 }
 
 .arrow:hover {
