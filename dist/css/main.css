@@ -1601,24 +1601,25 @@ h1 + .slider .slider__item::before {
 
 .breadcrumbs__item {
   margin-right: 34px;
-}
-
-.breadcrumbs__link {
-  font-size: 16px;
-  line-height: 19px;
-  color: #666666;
   position: relative;
 }
 
-.breadcrumbs__link::after {
+.breadcrumbs__item:not(:last-child)::after {
   position: absolute;
-  top: 6px;
+  top: 14px;
   right: -18px;
   width: 4px;
   height: 7px;
   content: "";
   background-image: url("../images/icons/nav-arrow.svg");
   background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
 }
 
 .content-sort {
