@@ -2,7 +2,7 @@
 .btn {
   display: inline-block;
   position: relative;
-  padding: 11px 18px;
+  padding: 11px 10px;
   outline: none;
   color: var(--black);
   font-size: 18px;
@@ -12,6 +12,8 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  min-width: 260px;
+
 }
 
 .btn::before {
@@ -28,13 +30,17 @@
   transition: height 0.3s;
   transform: translateY(-50%);
 }
-
+.btn:focus {
+  outline: none;
+}
 .btn:focus::before {
   background-color: var(--violet);
+
 }
 
 .btn:hover::before {
   height: 100%;
+  background-color: var(--yellow);
 }
 
 .btn:active {
@@ -82,4 +88,6 @@
 
 .btn--slider {
   margin-top: 13px;
+  min-width: 220px;
+
 }

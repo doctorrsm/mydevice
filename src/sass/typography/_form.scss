@@ -4,7 +4,7 @@
 
 .search input {
   width: 100%;
-  padding: 9px 5px 9px 35px;
+  padding: 9px 5px 9px 49px;
   border: 2px solid transparent;
   border-right: none;
   border-radius: 20px 0 0 20px;
@@ -15,7 +15,7 @@
   background-color: inherit;
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
-  background-position: -1px 50%;
+  background-position: 15px 50%;
 }
 
 .search:hover input::placeholder {

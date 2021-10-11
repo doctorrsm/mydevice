@@ -38,9 +38,10 @@
 .top-link {
   display: inline-block;
   border-radius: 20px;
-  padding: 8px 0px 11px 26px;
+  padding: 8px 21px 11px 26px;
   position: relative;
   font-size: 16px;
+  border:2px solid var(--violet);
 }
 
 .top-link::before {
@@ -66,17 +67,19 @@
   display: flex;
   align-items: center;
 }
-
+.top-link--login{
+  padding-left: 43px;
+}
 .top-link--login::before {
   background-image: url(../images/icons/user.svg);
 }
 
 .top-link--compare {
-  padding-left: 30px;
+  padding-left: 37px;
 }
 
 .top-link--compare::before {
-  left: 10px;
+  left: 17px;
   background-image: url(../images/icons/compare.svg);
 }
 
@@ -91,6 +94,7 @@
   align-items: center;
   justify-content: space-between;
   width: 50%;
+  margin-right: 16px;
 }
 
 .cart-count {
@@ -125,8 +129,8 @@
 /* navigation */
 .page-header__navigation {
   position: relative;
-  margin: 0px -57px;
-  padding: 0 57px;
+  margin: 0px -45px;
+  padding: 0 57px 0 63px;
 }
 
 .main-nav {}

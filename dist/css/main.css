@@ -589,7 +589,7 @@ p {
 }
 
 .container--page-header {
-  padding: 0 57px;
+  padding: 0 43px;
   background-color: #ffe17f;
 }
 
@@ -691,7 +691,7 @@ p {
 .btn {
   display: inline-block;
   position: relative;
-  padding: 11px 18px;
+  padding: 11px 10px;
   outline: none;
   color: var(--black);
   font-size: 18px;
@@ -701,6 +701,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  min-width: 260px;
 }
 
 .btn::before {
@@ -718,12 +719,17 @@ p {
   transform: translateY(-50%);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn:focus::before {
   background-color: var(--violet);
 }
 
 .btn:hover::before {
   height: 100%;
+  background-color: var(--yellow);
 }
 
 .btn:active {
@@ -771,6 +777,7 @@ p {
 
 .btn--slider {
   margin-top: 13px;
+  min-width: 220px;
 }
 
 .search {
@@ -779,7 +786,7 @@ p {
 
 .search input {
   width: 100%;
-  padding: 9px 5px 9px 35px;
+  padding: 9px 5px 9px 49px;
   border: 2px solid transparent;
   border-right: none;
   border-radius: 20px 0 0 20px;
@@ -790,7 +797,7 @@ p {
   background-color: inherit;
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
-  background-position: -1px 50%;
+  background-position: 15px 50%;
 }
 
 .search:hover input::placeholder {
@@ -908,9 +915,10 @@ p {
 .top-link {
   display: inline-block;
   border-radius: 20px;
-  padding: 8px 0px 11px 26px;
+  padding: 8px 21px 11px 26px;
   position: relative;
   font-size: 16px;
+  border: 2px solid var(--violet);
 }
 
 .top-link::before {
@@ -933,16 +941,20 @@ p {
   align-items: center;
 }
 
+.top-link--login {
+  padding-left: 43px;
+}
+
 .top-link--login::before {
   background-image: url(../images/icons/user.svg);
 }
 
 .top-link--compare {
-  padding-left: 30px;
+  padding-left: 37px;
 }
 
 .top-link--compare::before {
-  left: 10px;
+  left: 17px;
   background-image: url(../images/icons/compare.svg);
 }
 
@@ -957,6 +969,7 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 50%;
+  margin-right: 16px;
 }
 
 .cart-count {
@@ -991,8 +1004,8 @@ p {
 /* navigation */
 .page-header__navigation {
   position: relative;
-  margin: 0px -57px;
-  padding: 0 57px;
+  margin: 0px -45px;
+  padding: 0 57px 0 63px;
 }
 
 .main-nav__list {
