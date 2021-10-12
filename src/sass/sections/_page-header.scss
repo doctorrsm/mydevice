@@ -11,8 +11,9 @@
 /* top-header */
 .top-header {
   display: flex;
-  padding: 40px 0 28px 0;
+  padding: 40px 0 0 0;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .page-header__logo {
@@ -139,8 +140,8 @@
 /* navigation */
 .page-header__navigation {
   position: relative;
-  margin: 0px -45px;
-  padding: 0 57px 0 63px;
+  margin: 0 -5px;
+
 }
 
 .main-nav {}
@@ -149,17 +150,20 @@
   padding: 0 0 48px;
   display: flex;
 }
-
+.main-nav__item {
+  display: inline-flex;
+}
 .main-nav__item:first-child {
   width: 50%;
-  margin-right: 20px;
+
 }
 
-.main-nav__item:not(:first-child):not(:last-child) {
-  padding-right: 30px;
+.main-nav__item:not(:first-child) {
+  margin-right:-8px;
 }
 
 .main-nav__item:last-child {
+  margin-right:0px;
   margin-left: auto;
 }
 
@@ -171,7 +175,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   position: relative;
-  padding: 14px 20px 15px;
+  padding: 12px 18px 13px;
   border: 2px solid var(--violet);
   border-radius: 25px;
 }
