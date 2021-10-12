@@ -95,9 +95,6 @@ a {
   border: none;
 }
 
-a:focus {
-  outline: 2px solid var(--violet);
-}
 
 a:hover {
   cursor: pointer;
@@ -188,6 +185,7 @@ p {
   cursor: pointer;
   transition: all .6s;
   background: #ff00cc;
+  z-index: 100;
 
 
   /* fallback for old browsers */

@@ -23,14 +23,13 @@
 
 .top-header__search {
   width: 50%;
-  margin-right: 20px;
 }
 
 .top-header__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(50% - 20px);
+  width: 50%;
   font-size: 16px;
   line-height: 1;
 }
@@ -41,13 +40,14 @@
   padding: 8px 21px 11px 26px;
   position: relative;
   font-size: 16px;
-  border:2px solid var(--violet);
+  border:2px solid transparent;
+  outline: 0;
 }
 
 .top-link::before {
   display: block;
   position: absolute;
-  left: 2px;
+  left: 18px;
   width: 13px;
   height: 13px;
   content: " ";
@@ -56,12 +56,20 @@
 }
 
 .top-link:focus {
-  outline: 2px solid var(--violet);
+  border:2px solid var(--violet);
 }
 
-.top-link:hover {}
+.top-link:hover {
+  opacity: 0.6;
+  border:2px solid transparent;
 
-.top-link:active {}
+}
+
+.top-link:active {
+  opacity: 0.3;
+  border:2px solid transparent;
+
+}
 
 .top-header__links-login {
   display: flex;
@@ -82,10 +90,12 @@
   left: 17px;
   background-image: url(../images/icons/compare.svg);
 }
-
+.top-link--cart {
+  padding-left: 41px;
+}
 .top-link--cart::before {
   width: 18px;
-  left: -1px;
+  left: 15px;
   background-image: url(../images/icons/cart.svg);
 }
 
@@ -93,16 +103,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
-  margin-right: 16px;
+  margin-right: -7px;
 }
 
 .cart-count {
   display: inline-flex;
   z-index: 1;
   position: absolute;
-  top: 5px;
-  left: -17px;
+  top: 7px;
+  left: 2px;
   justify-content: center;
   align-items: center;
   width: 21px;
@@ -119,6 +128,7 @@
 
 .top-header__cart-wrapper {
   position: relative;
+  margin-left: 15px;
 }
 
 .top-header__cart-wrapper:hover .cart__pop-up {
@@ -161,12 +171,11 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   position: relative;
+  padding: 14px 20px 15px;
+  border: 2px solid var(--violet);
+  border-radius: 25px;
 }
 
-.nav-dropdown .main-nav__link{
-  padding:20px 70px 20px 0;
-
-}
 
 .nav-dropdown > .main-nav__link::after {
   content: "";
