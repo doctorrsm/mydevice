@@ -140,18 +140,20 @@
 /* navigation */
 .page-header__navigation {
   position: relative;
-  margin: 0 -5px;
+  margin: 0px -8px 0 -2px;
+  z-index: 1;
 
 }
 
 .main-nav {}
 
 .main-nav__list {
-  padding: 0 0 48px;
+  padding: 0 0 50px;
   display: flex;
 }
 .main-nav__item {
   display: inline-flex;
+  position: relative;
 }
 .main-nav__item:first-child {
   width: 50%;
@@ -159,7 +161,7 @@
 }
 
 .main-nav__item:not(:first-child) {
-  margin-right:-8px;
+  margin-right:-11px;
 }
 
 .main-nav__item:last-child {
@@ -176,10 +178,10 @@
   letter-spacing: 0.2em;
   position: relative;
   padding: 12px 18px 13px;
-  border: 2px solid var(--violet);
+  border: 2px solid transparent;
   border-radius: 25px;
+  outline: none;
 }
-
 
 .nav-dropdown > .main-nav__link::after {
   content: "";
@@ -192,21 +194,67 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/icons/minus.svg");
-  right: 0px;
-    top: 5px;
+  right: -51px;
+  top: -4px;
     border: 2px solid;
     border-radius: 50%;
+    opacity: 0.2;
 }
 
+.nav-dropdown > .main-nav__link::before {
+  content: "";
+  display: inline-flex;
+  position: absolute;
+  height: 17px;
+  width: 2px;
+  opacity: 0.2;
+  background-color: var(--black);
+  right: -27px;
+  top: 13px;
+}
+
+
+
+.main-nav__link:focus {
+  border: 2px solid var(--violet);
+}
+
+
+.main-nav__link:hover {
+  border: 2px solid transparent;
+}
+.main-nav__link:hover::after {
+  opacity: 1;
+}
+.main-nav__link:hover::before {
+  opacity: 1;
+  display: none;
+}
+
+.main-nav__item:not(.nav-dropdown):hover .main-nav__link::after{
+  content: "";
+  background-color: var(--black);
+  height: 2px;
+  width: calc(100% - 40px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-51%);
+  bottom: 4px;
+
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
 .nav-dropdown__list {
   display: none;
   z-index: 1;
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 0px;
   width: 100%;
   background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
-  padding: 50px 60px 43px;
+  padding: 0px 60px 43px;
 }
 
 .nav-dropdown  .main-nav__link:hover + .nav-dropdown__list, .nav-dropdown__list:hover{

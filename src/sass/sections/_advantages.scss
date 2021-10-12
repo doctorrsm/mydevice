@@ -1,37 +1,49 @@
 .advantages {
-  background-color: var(--light);
-
+  //background-color: var(--light);
+  background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
+  padding-top: 63px;
+  padding-bottom: 115px;
 }
+
 .advantages__controls {
   width: 280px;
   padding-top: 78px;
 }
+
 .advantages__controls button {
   font-family: "Raleway", "Tahoma", sans-serif;
   color: var(--black);
 }
+
 .advantages__content {
   width: calc(100% - 280px);
 }
+
 .advantages__item {
   background-repeat: no-repeat;
   background-position: right center;
   padding-top: 55px;
-    padding-left: 120px;
-    padding-right: 305px;
+  padding-left: 120px;
+  padding-right: 305px;
 }
+
 .advantages__item:not(:first-of-type) {
   display: none;
 }
+
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);
+  background-position: 91% 106%;
 }
+
 .advantages__item--garanty {
   background-image: url(../images/tabs/garanty.png);
 }
+
 .advantages__item--credit {
   background-image: url(../images/tabs/credit.png);
 }
+
 .advantages__header {
   font-size: 50px;
   margin-bottom: 16px;
@@ -39,8 +51,8 @@
 
 .special-offer {
   padding: 90px 0;
-
 }
+
 .special-offer__link {
   position: relative;
   text-align: center;
@@ -49,13 +61,13 @@
   text-transform: uppercase;
   font-family: Raleway;
   font-weight: 800;
-  line-height:24px;
+  line-height: 24px;
   color: var(--black);
-
-  padding: 40px 0;
+  padding: 38px 0;
   letter-spacing: 4px;
   font-size: 20px;
 }
+
 .special-offer__link::before {
   content: "";
   position: absolute;
@@ -67,12 +79,13 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-image: url("../images/icons/delivery-truck.svg");
-
 }
-.special-offer__link::after{
+
+.special-offer__link::after {
   content: "";
   position: absolute;
-  background-color: #e6e6e6;
+  background-color: var(--gray);
+  opacity: 0.3;
   width: 40px;
   height: 40%;
   border-radius: 50%;
@@ -83,6 +96,39 @@
   background-position: 50%;
   background-image: url("../images/icons/info.svg");
 }
+
+.special-offer__link:focus {
+  outline: 5px solid var(--violet);
+}
+
+.special-offer__link:hover {
+  outline: none;
+}
+
+.special-offer__link:hover::before {
+  outline: none;
+  background-color: var(--yellow-hover);
+}
+
+.special-offer__link:hover::after {
+  outline: none;
+  opacity: 1;
+}
+
+.special-offer__link:active::before {
+  background-color: transparent;
+}
+
+.special-offer__link:active {
+  background: linear-gradient(90deg, var(--yellow-hover) 125px, var(--light) 125px, var(--light) 100%);
+}
+
+.special-offer__link:active p,
+.special-offer__link:active::before,
+.special-offer__link:active::after {
+  opacity: 0.3;
+}
+
 .special-offer__text {
   margin: 0;
   color: var(--black);
