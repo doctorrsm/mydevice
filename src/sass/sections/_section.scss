@@ -1,5 +1,15 @@
-.site-contacts {}
+.site-contacts {
+  padding-top: 57px;
+  padding-bottom: 67px;
+}
 
+.site-contacts__grid{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+
+}
 .site-contacts__block {
   padding-right: 45px;
 }
@@ -77,8 +87,8 @@
 
 .subscribe {
   background-color: var(--light);
-  padding-top: 68px;
-  padding-bottom: 143px;
+  padding-top: 75px;
+  padding-bottom: 133px;
 }
 
 .subscribe__text:first-child {
@@ -88,16 +98,40 @@
 .subscribe__form-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 17px;
 }
 .subscribe__form  {
   flex-basis: 861px;
   display: flex;
+
 }
 .subscribe__form input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #dadada;
   flex-grow: 1;
+  border-bottom: 3px solid #d8d8d8;
+  background-color: inherit;
 }
-
+.subscribe__form input:focus {
+  background-color: var(--gray);
+  color: #909090;
+}
+.subscribe__form input:hover {
+  background-color: inherit;
+  color: #787878;
+}
+.subscribe__form input:active {
+  background-color: inherit;
+  color: var(--dark);
+  border-color: var(--black);
+}
+.subscribe__form input:invalid {
+  background-color: inherit;
+  color: var(--dark);
+  border-color: var(--danger);
+}
 .subscribe__button {
   font-style: normal;
   font-size: 18px;
