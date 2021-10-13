@@ -167,6 +167,10 @@ p {
   display: flex;
 }
 
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -249,11 +253,6 @@ p {
   width: 1160px;
   margin: 0 auto;
   position: relative;
-}
-
-.container--page-header {
-  padding: 0 43px;
-  background-color: #ffe17f;
 }
 
 .container--special-offer {
@@ -522,6 +521,7 @@ p {
 /* Main header section of the page */
 .page-header {
   color: var(--black);
+  padding: 0 43px;
 }
 
 .page-header a {
@@ -532,7 +532,7 @@ p {
 /* top-header */
 .top-header {
   display: flex;
-  padding: 40px 0 0 0;
+  padding: 40px 44px 0;
   position: relative;
   margin-bottom: 20px;
 }
@@ -663,7 +663,7 @@ p {
 /* navigation */
 .page-header__navigation {
   position: relative;
-  margin: 0px -8px 0 -2px;
+  padding: 0 39px;
   z-index: 2;
 }
 
@@ -676,17 +676,12 @@ p {
   display: inline-flex;
 }
 
-.main-nav__item:first-child {
-  width: 50%;
-}
-
 .main-nav__item:not(:first-child) {
   margin-right: -11px;
 }
 
 .main-nav__item:last-child {
   margin-right: 0px;
-  margin-left: auto;
 }
 
 .main-nav__link {
@@ -703,20 +698,24 @@ p {
   outline: none;
 }
 
+.nav-dropdown {
+  margin-right: auto;
+}
+
 .nav-dropdown > .main-nav__link::after {
-  content: "";
   display: inline-flex;
+  opacity: 0.2;
   position: absolute;
-  height: 50px;
-  width: 50px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../images/icons/minus.svg");
-  right: -51px;
   top: -4px;
+  right: -51px;
+  width: 50px;
+  height: 50px;
   border: 2px solid;
   border-radius: 50%;
-  opacity: 0.2;
+  content: "";
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav-dropdown > .main-nav__link::before {
@@ -771,10 +770,11 @@ p {
   left: 0px;
   width: 100%;
   background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
-  padding: 30px 20px 42px;
+  padding: 30px 60px 42px;
 }
 
-.nav-dropdown .main-nav__link:hover + .nav-dropdown__list, .nav-dropdown__list:hover {
+.nav-dropdown .main-nav__link:hover + .nav-dropdown__list,
+.nav-dropdown__list:hover {
   display: flex;
   flex-wrap: wrap;
 }

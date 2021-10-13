@@ -135,7 +135,10 @@ p {
 }
 
 .d-flex {display: flex;}
+.bg-yellow {
 
+  background-color: var(--yellow);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
