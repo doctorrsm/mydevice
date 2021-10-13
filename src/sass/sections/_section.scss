@@ -111,7 +111,18 @@
   border: 3px solid #d8d8d8;
 }
 
-
+.subscribe__button:focus {
+  border: 3px solid var(--violet);
+}
+.subscribe__button:hover {
+  border-color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+.subscribe__button:active {
+  color: #4c4c4c;
+}
 .subscribe__span {
   position: relative;
 }
