@@ -64,17 +64,37 @@
 }
 
 .page-footer__phone {
+  margin-left: auto;
+  margin-right: -16px;
+}
+.page-footer__phone  a{
   font-style: normal;
   font-size: 16px;
   line-height: 30px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: normal;
   text-align: right;
-  margin-left: auto;
+
+  border: 2px solid transparent;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1px 13px 3px 13px;
+  color: var(--white);
+
 }
 
-.page-footer__phone a {
-  color: var(--white);
+.page-footer__phone a:focus {
+  border: 2px solid var(--violet);
+}
+
+.page-footer__phone a:hover {
+  border: 2px solid transparent;
+  color: var(--yellow-hover);
+}
+.page-footer__phone a:active {
+  border: 2px solid transparent;
+  color: var(--yellow-hover);
+  opacity: 0.3;
 }
 
 .page-footer__bottom-wrapper {
@@ -94,7 +114,7 @@
 
 .page-footer__socials {
   position: relative;
-  left: 17px;
+  left: 22px;
 }
 
 .socials {
@@ -102,32 +122,67 @@
 }
 
 .socials__item {
-  margin: 0 8px;
+  margin: 0 2px;
 }
 
 .socials__link {
   background-color: #7c7c7c;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   overflow: hidden;
   display: inline-flex;
-  background-repeat: no-repeat;
-  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 5px solid transparent;
+  background-clip: padding-box;
 }
 
+.socials__link svg {
+  fill: var(--dark);
+}
+.socials__link:focus {
+  background-color: var(--dark);
+  border: 5px solid var(--violet);
+}
+.socials__link:focus svg  {
+  fill: var(--white);
+}
+.socials__link:hover {
+  background-color: var(--yellow-hover);
+  border-color: transparent;
+}
+.socials__link:hover svg {
+  fill: var(--dark);
+}
+
+.socials__link:active{
+  background-color: var(--yellow-hover);
+  border-color: transparent;
+}
+.socials__link:active svg {
+  fill: var(--dark);
+  opacity: 0.3;
+}
+
+
+
+
 .socials__link--fb {
-  background-image: url(../images/icons/socials/facebook.svg);
+
 }
 
 .socials__link--inst {
-  background-image: url(../images/icons/socials/instagram.svg);
+
 }
 
 .socials__link--tw {
-  background-image: url(../images/icons/socials/twitter.svg);
-}
 
+}
+.page-footer__copyright  {
+  margin-right: -12px;
+}
 .copyright__link {
   display: inline-flex;
   border: 2px solid transparent;

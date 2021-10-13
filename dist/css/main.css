@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -6,6 +7,7 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -13,6 +15,7 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -20,6 +23,7 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-800.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -27,6 +31,7 @@
   font-display: swap;
   src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
 }
+
 /**
  * Общая типографика сайта
  * Используются селекторы по тегам, без классов,
@@ -64,7 +69,7 @@ html {
 }
 
 * {
-  outline: 1px solid var(--violet);
+ /* outline: 1px solid var(--violet);*/
 }
 
 html,
@@ -101,7 +106,8 @@ h6 {
   font-weight: 700;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 50px;
   line-height: 1;
 }
@@ -198,7 +204,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/innermenu.png);
+  background-image: url(../images/perfectpixel.png);
 }
 
 .bg-monopod {
@@ -473,47 +479,47 @@ p {
   border-radius: 0 20px 20px 0;
 }
 
-.search input + button {
+.search input+button {
   background-color: inherit;
   border: 2px solid transparent;
 }
 
-.search input + button:focus {
+.search input+button:focus {
   border-color: var(--violet);
 }
 
-.search input:placeholder-shown + button {
+.search input:placeholder-shown+button {
   background: transparent;
   color: transparent;
   border: none;
 }
 
-.search input:focus:placeholder-shown + button {
+.search input:focus:placeholder-shown+button {
   border: 2px solid var(--violet);
   border-left: none;
 }
 
-.search input:active:placeholder-shown + button {
+.search input:active:placeholder-shown+button {
   border: 2px solid var(--black);
   border-left: none;
 }
 
-.search input:not(:placeholder-shown) + button {
+.search input:not(:placeholder-shown)+button {
   border-color: var(--black);
 }
 
-.search input:not(:placeholder-shown) + button:focus {
+.search input:not(:placeholder-shown)+button:focus {
   border-color: var(--violet);
 }
 
-.search input:not(:placeholder-shown) + button:hover {
+.search input:not(:placeholder-shown)+button:hover {
   border-color: var(--black);
   background-color: var(--black);
   cursor: pointer;
   color: var(--white);
 }
 
-.search input:not(:placeholder-shown) + button:active {
+.search input:not(:placeholder-shown)+button:active {
   border-color: var(--black);
   color: #4c4c4c;
 }
@@ -685,24 +691,24 @@ p {
 }
 
 .main-nav__link {
+  position: relative;
+  padding: 12px 18px 13px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
   font-size: 18px;
   line-height: 21px;
   font-family: "Raleway";
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  position: relative;
-  padding: 12px 18px 13px;
-  border: 2px solid transparent;
-  border-radius: 25px;
-  outline: none;
 }
 
 .nav-dropdown {
   margin-right: auto;
 }
 
-.nav-dropdown > .main-nav__link::after {
+.nav-dropdown .main-nav__link::after {
   display: inline-flex;
   opacity: 0.2;
   position: absolute;
@@ -718,7 +724,7 @@ p {
   background-position: center;
 }
 
-.nav-dropdown > .main-nav__link::before {
+.nav-dropdown .main-nav__link::before {
   content: "";
   display: inline-flex;
   position: absolute;
@@ -766,14 +772,14 @@ p {
   display: none;
   z-index: 2;
   position: absolute;
-  top: 50px;
+  top: 44px;
   left: 0px;
   width: 100%;
   background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
-  padding: 30px 60px 42px;
+  padding: 36px 60px 42px;
 }
 
-.nav-dropdown .main-nav__link:hover + .nav-dropdown__list,
+.nav-dropdown .main-nav__link:hover+.nav-dropdown__list,
 .nav-dropdown__list:hover {
   display: flex;
   flex-wrap: wrap;
@@ -929,7 +935,7 @@ p {
   display: none;
 }
 
-h1 + .slider .slider__item::before {
+h1+.slider .slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
@@ -1267,7 +1273,7 @@ h1 + .slider .slider__item::before {
   padding-right: 45px;
 }
 
-.site-contacts__block > *:last-child {
+.site-contacts__block>*:last-child {
   margin-top: 43px;
 }
 
@@ -1754,17 +1760,37 @@ h1 + .slider .slider__item::before {
 }
 
 .page-footer__phone {
+  margin-left: auto;
+  margin-right: -16px;
+}
+
+.page-footer__phone a {
   font-style: normal;
   font-size: 16px;
   line-height: 30px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: normal;
   text-align: right;
-  margin-left: auto;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1px 13px 3px 13px;
+  color: var(--white);
 }
 
-.page-footer__phone a {
-  color: var(--white);
+.page-footer__phone a:focus {
+  border: 2px solid var(--violet);
+}
+
+.page-footer__phone a:hover {
+  border: 2px solid transparent;
+  color: var(--yellow-hover);
+}
+
+.page-footer__phone a:active {
+  border: 2px solid transparent;
+  color: var(--yellow-hover);
+  opacity: 0.3;
 }
 
 .page-footer__bottom-wrapper {
@@ -1784,7 +1810,7 @@ h1 + .slider .slider__item::before {
 
 .page-footer__socials {
   position: relative;
-  left: 17px;
+  left: 22px;
 }
 
 .socials {
@@ -1792,30 +1818,57 @@ h1 + .slider .slider__item::before {
 }
 
 .socials__item {
-  margin: 0 8px;
+  margin: 0 2px;
 }
 
 .socials__link {
   background-color: #7c7c7c;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   overflow: hidden;
   display: inline-flex;
-  background-repeat: no-repeat;
-  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 5px solid transparent;
+  background-clip: padding-box;
 }
 
-.socials__link--fb {
-  background-image: url(../images/icons/socials/facebook.svg);
+.socials__link svg {
+  fill: var(--dark);
 }
 
-.socials__link--inst {
-  background-image: url(../images/icons/socials/instagram.svg);
+.socials__link:focus {
+  background-color: var(--dark);
+  border: 5px solid var(--violet);
 }
 
-.socials__link--tw {
-  background-image: url(../images/icons/socials/twitter.svg);
+.socials__link:focus svg {
+  fill: var(--white);
+}
+
+.socials__link:hover {
+  background-color: var(--yellow-hover);
+  border-color: transparent;
+}
+
+.socials__link:hover svg {
+  fill: var(--dark);
+}
+
+.socials__link:active {
+  background-color: var(--yellow-hover);
+  border-color: transparent;
+}
+
+.socials__link:active svg {
+  fill: var(--dark);
+  opacity: 0.3;
+}
+
+.page-footer__copyright {
+  margin-right: -12px;
 }
 
 .copyright__link {
