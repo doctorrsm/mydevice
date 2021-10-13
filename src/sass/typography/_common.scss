@@ -34,7 +34,7 @@ html {
   box-sizing: inherit;
 }
 * {
-  //outline: 1px solid var(--violet);
+  outline: 1px solid var(--violet);
 }
 html,
 body {
@@ -165,7 +165,7 @@ p {
 }
 
 .bg-index{
-  background-image: url(../images/perfectpixel.png); //perfectpixel.png or innermenu.png
+  background-image: url(../images/innermenu.png); //perfectpixel.png or innermenu.png
 }
 .bg-monopod {
   background-image: url(../images/monopod.png); //monopod.png or popupcart.png

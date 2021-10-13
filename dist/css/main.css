@@ -63,6 +63,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  outline: 1px solid var(--violet);
+}
+
 html,
 body {
   margin: 0;
@@ -190,7 +194,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/perfectpixel.png);
+  background-image: url(../images/innermenu.png);
 }
 
 .bg-monopod {
@@ -660,7 +664,7 @@ p {
 .page-header__navigation {
   position: relative;
   margin: 0px -8px 0 -2px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-nav__list {
@@ -670,7 +674,6 @@ p {
 
 .main-nav__item {
   display: inline-flex;
-  position: relative;
 }
 
 .main-nav__item:first-child {
@@ -762,13 +765,13 @@ p {
 
 .nav-dropdown__list {
   display: none;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 50px;
   left: 0px;
   width: 100%;
   background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
-  padding: 0px 60px 43px;
+  padding: 30px 20px 42px;
 }
 
 .nav-dropdown .main-nav__link:hover + .nav-dropdown__list, .nav-dropdown__list:hover {
@@ -1815,6 +1818,35 @@ h1 + .slider .slider__item::before {
   background-image: url(../images/icons/socials/twitter.svg);
 }
 
-.copyright {
+.copyright__link {
+  display: inline-flex;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.copyright__link svg {
+  fill: var(--yellow-hover);
+}
+
+.copyright__link:focus {
+  border-color: var(--violet);
+}
+
+.copyright__link:hover {
+  border-color: transparent;
+}
+
+.copyright__link:hover svg {
+  fill: var(--white);
+}
+
+.copyright__link:active {
+  border-color: transparent;
+  opacity: 0.3;
+}
+
+.copyright__link:active svg {
   fill: var(--white);
 }

@@ -128,6 +128,35 @@
   background-image: url(../images/icons/socials/twitter.svg);
 }
 
-.copyright {
+.copyright__link {
+  display: inline-flex;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.copyright__link svg{
+  fill: var(--yellow-hover);
+}
+
+
+.copyright__link:focus{
+  border-color: var(--violet);
+}
+
+.copyright__link:hover{
+  border-color: transparent;
+}
+
+.copyright__link:hover svg{
+  fill: var(--white);
+}
+
+.copyright__link:active{
+  border-color: transparent;
+  opacity: 0.3;
+}
+.copyright__link:active svg{
   fill: var(--white);
 }
