@@ -3,6 +3,8 @@
   color: var(--white);
   font-size: 16px;
   line-height: 19px;
+  padding-top: 62px;
+  padding-bottom: 10px;
 }
 
 .page-footer__top-wrapper {
@@ -85,6 +87,10 @@
 
 .page-footer__phone a:focus {
   border: 2px solid var(--violet);
+}
+.page-footer__phone a:focus-visible {
+  border: 2px solid var(--violet);
+  outline: none;
 }
 
 .page-footer__phone a:hover {

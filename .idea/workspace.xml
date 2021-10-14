@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af0f5242-9504-43b6-a926-916d37ff7b25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/_categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/_categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/typography/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/typography/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/typography/_links.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/typography/_links.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/_footer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,7 @@
       <updated>1632771104202</updated>
       <workItem from="1632771111568" duration="103000" />
       <workItem from="1633115517025" duration="139000" />
+      <workItem from="1634187435742" duration="455000" />
     </task>
     <servers />
   </component>

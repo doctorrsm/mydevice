@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -7,7 +6,6 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
 }
-
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -15,7 +13,6 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
 }
-
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -23,7 +20,6 @@
   font-display: swap;
   src: url(../fonts/rubik/rubik-800.woff2) format("woff2");
 }
-
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -31,7 +27,6 @@
   font-display: swap;
   src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
 }
-
 /**
  * Общая типографика сайта
  * Используются селекторы по тегам, без классов,
@@ -69,7 +64,7 @@ html {
 }
 
 * {
- /* outline: 1px solid var(--violet);*/
+  outline: 1px solid var(--violet);
 }
 
 html,
@@ -106,8 +101,7 @@ h6 {
   font-weight: 700;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-size: 50px;
   line-height: 1;
 }
@@ -204,7 +198,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/perfectpixel.png);
+  background-image: url(../images/innermenu.png);
 }
 
 .bg-monopod {
@@ -256,7 +250,8 @@ p {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
   position: relative;
 }
@@ -264,15 +259,6 @@ p {
 .container--special-offer {
   padding-top: 90px;
   padding-bottom: 75px;
-}
-
-.container--page-footer {
-  padding-top: 62px;
-  padding-bottom: 10px;
-}
-
-.container--content-header {
-  padding: 37px 61px 43px;
 }
 
 .container--grid {
@@ -479,47 +465,47 @@ p {
   border-radius: 0 20px 20px 0;
 }
 
-.search input+button {
+.search input + button {
   background-color: inherit;
   border: 2px solid transparent;
 }
 
-.search input+button:focus {
+.search input + button:focus {
   border-color: var(--violet);
 }
 
-.search input:placeholder-shown+button {
+.search input:placeholder-shown + button {
   background: transparent;
   color: transparent;
   border: none;
 }
 
-.search input:focus:placeholder-shown+button {
+.search input:focus:placeholder-shown + button {
   border: 2px solid var(--violet);
   border-left: none;
 }
 
-.search input:active:placeholder-shown+button {
+.search input:active:placeholder-shown + button {
   border: 2px solid var(--black);
   border-left: none;
 }
 
-.search input:not(:placeholder-shown)+button {
+.search input:not(:placeholder-shown) + button {
   border-color: var(--black);
 }
 
-.search input:not(:placeholder-shown)+button:focus {
+.search input:not(:placeholder-shown) + button:focus {
   border-color: var(--violet);
 }
 
-.search input:not(:placeholder-shown)+button:hover {
+.search input:not(:placeholder-shown) + button:hover {
   border-color: var(--black);
   background-color: var(--black);
   cursor: pointer;
   color: var(--white);
 }
 
-.search input:not(:placeholder-shown)+button:active {
+.search input:not(:placeholder-shown) + button:active {
   border-color: var(--black);
   color: #4c4c4c;
 }
@@ -528,6 +514,10 @@ p {
 .page-header {
   color: var(--black);
   padding: 0 43px;
+}
+
+.page-header__container {
+  background-clip: content-box;
 }
 
 .page-header a {
@@ -546,7 +536,7 @@ p {
 .page-header__logo {
   position: absolute;
   top: -23px;
-  left: 61px;
+  left: 81px;
 }
 
 .top-header__search {
@@ -608,6 +598,11 @@ p {
 
 .top-link--login::before {
   background-image: url(../images/icons/user.svg);
+}
+
+.top-link--logout {
+  padding-left: 3px;
+  opacity: 0.3;
 }
 
 .top-link--compare {
@@ -687,7 +682,9 @@ p {
 }
 
 .main-nav__item:last-child {
-  margin-right: 0px;
+  margin-left: 62px;
+  position: relative;
+  margin-right: -4px;
 }
 
 .main-nav__link {
@@ -748,7 +745,7 @@ p {
   opacity: 1;
 }
 
-.main-nav__link:hover::before {
+.nav-dropdown:hover .main-nav__link::before {
   opacity: 1;
   display: none;
 }
@@ -776,18 +773,22 @@ p {
   left: 0px;
   width: 100%;
   background: linear-gradient(180deg, transparent 20px, var(--yellow) 20px, var(--yellow) 100%);
-  padding: 36px 60px 42px;
+  padding: 33px 46px 42px;
 }
 
-.nav-dropdown .main-nav__link:hover+.nav-dropdown__list,
+.nav-dropdown .main-nav__link:hover + .nav-dropdown__list,
 .nav-dropdown__list:hover {
   display: flex;
   flex-wrap: wrap;
 }
 
 .nav-dropdown__col {
-  min-width: 153px;
-  margin-right: 47px;
+  min-width: 186px;
+  margin-right: 45px;
+}
+
+.nav-dropdown__col:not(:first-child) {
+  margin-left: -30px;
 }
 
 .nav-dropdown__col:last-child {
@@ -796,8 +797,26 @@ p {
 
 .nav-dropdown__link {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   display: block;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  padding: 1px 13px 2px;
+  outline: none;
+}
+
+.nav-dropdown__link:focus {
+  border-color: var(--violet);
+}
+
+.nav-dropdown__link:hover {
+  border-color: transparent;
+  opacity: 0.6;
+}
+
+.nav-dropdown__link:active {
+  border-color: transparent;
+  opacity: 0.3;
 }
 
 .cart__pop-up {
@@ -935,14 +954,14 @@ p {
   display: none;
 }
 
-h1+.slider .slider__item::before {
+h1 + .slider .slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
-  width: 100%;
+  width: calc(100% - 40px);
   top: 0;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   height: 115px;
   z-index: -1;
 }
@@ -1273,7 +1292,7 @@ h1+.slider .slider__item::before {
   padding-right: 45px;
 }
 
-.site-contacts__block>*:last-child {
+.site-contacts__block > *:last-child {
   margin-top: 43px;
 }
 
@@ -1437,6 +1456,14 @@ h1+.slider .slider__item::before {
   position: absolute;
   left: -37px;
   top: 8px;
+}
+
+.content-header {
+  padding: 25px 0 43px;
+}
+
+.content-header__inner {
+  padding: 0 61px;
 }
 
 .content-header h1 {
@@ -1700,6 +1727,8 @@ h1+.slider .slider__item::before {
   color: var(--white);
   font-size: 16px;
   line-height: 19px;
+  padding-top: 62px;
+  padding-bottom: 10px;
 }
 
 .page-footer__top-wrapper {
@@ -1780,6 +1809,11 @@ h1+.slider .slider__item::before {
 
 .page-footer__phone a:focus {
   border: 2px solid var(--violet);
+}
+
+.page-footer__phone a:focus-visible {
+  border: 2px solid var(--violet);
+  outline: none;
 }
 
 .page-footer__phone a:hover {

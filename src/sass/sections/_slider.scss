@@ -56,10 +56,10 @@ h1 + .slider .slider__item::before {
   content: "";
   position: absolute;
   background-color: var(--yellow);
-  width: 100%;
+  width: calc(100% - 40px);
   top: 0;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   height: 115px;
   z-index: -1;
 }
