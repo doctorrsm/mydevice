@@ -24,8 +24,9 @@ else
 				.pop-up.cart__pop-up
 					.pop-up__list
 						p.pop-up__item
-							img(src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка").pop-up__item-img
-							| Любительская <br> селфи-палка
+							a(href="#").pop-up__link
+								img(src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка").pop-up__item-img
+								| Любительская <br> селфи-палка
 							button(type="button").pop-up__delete
 								svg(width='11', height='11', viewbox='0 0 11 11', fill='none', xmlns='http://www.w3.org/2000/svg')
 									path(d='M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z', fill='white')
@@ -38,5 +39,4 @@ else
 							span.pop-up__sum-count  2
 						p Сумма:
 							span.pop-up__sum-price  2000 &#8381;
-					.pop-up__button-wrapper
-						a(href="#").pop-up__button-link Открыть корзину
+					a(href="#").pop-up__button-link Открыть корзину

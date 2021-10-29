@@ -157,7 +157,7 @@
 .main-nav {}
 
 .main-nav__list {
-  padding: 0 0 50px;
+  padding: 0 0 38px;
   display: flex;
 }
 
@@ -306,7 +306,7 @@
   opacity: 0.3;
 }
 .cart__pop-up {
-  z-index: 2;
+  z-index: 3;
 }
 
 .pop-up {
@@ -315,25 +315,29 @@
   color: var(--white);
   font-size: 16px;
   line-height: 20px;
-  padding: 5px 20px 20px;
+  padding: 20px;
 }
 
 .pop-up__list {
   background-color: var(--black);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .pop-up__item {
   position: relative;
-  display: flex;
-  align-items: self-start;
-  margin-bottom: 40px;
-  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 23px;
+  column-gap: 23px;
+
 }
 
 .pop-up__item:last-of-type {
   margin-bottom: 0;
+}
+.pop-up__link{
+  color: var(--white);
 }
 
 .pop-up__item-img {
@@ -341,9 +345,7 @@
 }
 
 .pop-up__delete {
-  position: absolute;
-  right: 1px;
-  top: 7px;
+  display: block;
   width: 11px;
   height: 11px;
   background-image: url(../images/icons/delete.svg);
@@ -364,11 +366,9 @@
   margin-bottom: 0;
 }
 
-.pop-up__button-wrapper {
-  background-color: var(--white);
-}
 
 .pop-up__button-link {
+  background-color: var(--white);
   color: var(--white);
   font-size: 18px;
   line-height: 21px;
@@ -377,4 +377,10 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  display: block;
+  padding: 10px;
+}
+.pop-up__button-link:hover{
+
+box-shadow: 0 0 0 var(--purple);
 }

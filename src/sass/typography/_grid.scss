@@ -31,8 +31,13 @@
   width: 50%;
   padding: 0 20px;
 }
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 329px 1fr;
+}
 .col-sidebar {
-  width: 329px;;
+
   padding-left: 20px;
   position: relative;
 }
@@ -49,9 +54,10 @@
 }
 
 .col-shop {
-  width: calc(100% - 329px);
+
   padding-left: 72px;
   position: relative;
+  margin-bottom: 80px;
 
 }
 .col-shop::before {

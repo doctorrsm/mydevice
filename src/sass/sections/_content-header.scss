@@ -1,5 +1,5 @@
 .content-header {
-  padding: 25px 0 43px;
+  padding: 37px 0 44px;
 }
 .content-header__inner {
   padding: 0 61px;
@@ -7,12 +7,13 @@
 .content-header h1 {
   margin-bottom: 17px;
 }
-
+.content-header__breadcrumbs {
+  margin-left: -14px;
+}
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -14px;
-}
+ }
 
 .breadcrumbs__item {
   margin-right: 9px;
@@ -42,4 +43,14 @@
 
 .breadcrumbs__link:focus{
   outline: 5px solid var(--violet);
+}
+
+.breadcrumbs__link:hover{
+  outline: none;
+  color: var(--black);
+}
+
+.breadcrumbs__link:active{
+  outline: none;
+  color: #b3b3b3;
 }
