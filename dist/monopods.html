@@ -45,13 +45,9 @@
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
                     <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
-                      <button class="pop-up__delete" type="button">
-                        <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"></path>
-                        </svg>
-                      </button>
+                      <button class="pop-up__delete" type="button"></button>
                     </p>
-                    <p class="pop-up__item"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
                       <button class="pop-up__delete" type="button"></button>
                     </p>
                   </div>
@@ -103,14 +99,22 @@
               <form class="content-sort__form" method="post" action="https://echo.htmlacademy.ru/">
                 <fieldset class="content-sort__form-field">
                   <legend>Стоимость</legend>
-                  <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
-                  <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
-                  <label class="catalog-filter-label">От
-                    <input class="catalog-filter-input" type="number" name="min-price"> &#x20BD;
-                  </label>
-                  <label class="catalog-filter-label">До
-                    <input class="catalog-filter-input" type="number" name="max-price"> &#x20BD;
-                  </label>
+                  <div class="range">
+                    <div class="range__scale">
+                      <div class="range__bar" style="left:43px; width: 134px;">
+                        <button class="range__toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
+                        <button class="range__toggle toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="range__inputs-wrapper">
+                    <label class="range__label">От
+                      <input class="range__input" type="number" name="min-price" value="0">
+                    </label>
+                    <label class="range__label">До
+                      <input class="range__input" type="number" name="max-price" value="5000">
+                    </label>
+                  </div>
                 </fieldset>
                 <fieldset class="content-sort__form-field">
                   <legend>Цвет</legend>

@@ -40,7 +40,12 @@
 .content-shop__header:before {
   background-color: var(--light-gray);
 }
-
+.content-sort__form{
+  padding-top: 71px;
+}
+.content-sort__form-field{
+  border: none;
+}
 .content-sort__form-field legend {
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
@@ -50,11 +55,11 @@
   color: #000000;
 }
 
-.content-sort__form-field label{
+/*.content-sort__form-field label{
   color: var(--black);
   font-size: 16px;
   line-height: 18px;
-}
+}*/
 .catalog-filter-label {
   color: #a5a5a5;
   font-size: 15px;
@@ -70,4 +75,77 @@ line-height: 21px;
 text-align: center;
 letter-spacing: 0.2em;
 text-transform: uppercase;
+}
+
+.range__scale {
+  position: relative;
+  height: 2px;
+  background-color: var(--gray);
+}
+.range__bar {
+  position: absolute;
+  height: 2px;
+  background-color: var(--black);
+}
+.range__toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: var(--light-gray);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.range__toggle:focus{
+  border-color: var(--violet);
+}
+.range__toggle:active{
+  border-color: var(--black);
+  background-color: var(--black);
+}
+.toggle-min {
+  top: -8px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+.range__inputs-wrapper{
+  display: flex;
+
+}
+
+.range__label {
+  display: flex;
+  width: 50%;
+  font-family: Rubik;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+text-align: center;
+
+/* basic/black */
+
+color: #000000;
+
+opacity: 0.3;
+}
+
+.range__input {
+  appearance: textfield;
+  background-color: transparent;
+  border:none;
+  min-width: 30px;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }

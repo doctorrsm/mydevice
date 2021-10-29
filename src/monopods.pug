@@ -25,18 +25,20 @@ block main
 					form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
 						fieldset.content-sort__form-field
 							legend Стоимость
-							button.range-toggle.toggle-min(type='button')
-								span.visually-hidden Изменить минимальную цену.
-							button.range-toggle.toggle-max(type='button')
-								span.visually-hidden Изменить максимальную цену.
-							label.catalog-filter-label
-								| От
-								input.catalog-filter-input(type='number' name='min-price')
-								|  &#x20BD;
-							label.catalog-filter-label
-								| До
-								input.catalog-filter-input(type='number' name='max-price')
-								|  &#x20BD;
+							.range
+								.range__scale
+									.range__bar(style="left:43px; width: 134px;")
+										button.range__toggle.toggle-min(type='button')
+											span.visually-hidden Изменить минимальную цену.
+										button.range__toggle.toggle-max(type='button')
+											span.visually-hidden Изменить максимальную цену.
+							.range__inputs-wrapper
+								label.range__label
+									| От
+									input.range__input(type="number" name="min-price" value="0")
+								label.range__label
+									| До
+									input.range__input(type="number" name="max-price" value="5000")
 						fieldset.content-sort__form-field
 							legend Цвет
 							label.checkbox

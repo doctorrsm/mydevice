@@ -45,13 +45,9 @@
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
                     <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
-                      <button class="pop-up__delete" type="button">
-                        <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"></path>
-                        </svg>
-                      </button>
+                      <button class="pop-up__delete" type="button"></button>
                     </p>
-                    <p class="pop-up__item"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
                       <button class="pop-up__delete" type="button"></button>
                     </p>
                   </div>
@@ -87,13 +83,23 @@
         <div class="container">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="slider__buttons">
-            <button class="arrow arrow--left" type="button"></button>
-            <button class="arrow arrow--right" type="button"></button>
+            <button class="arrow arrow--left" type="button">
+              <div class="span visually-hidden">Предыдущий товар.</div>
+            </button>
+            <button class="arrow arrow--right" type="button">
+              <div class="span visually-hidden">Следующий товар.</div>
+            </button>
           </div>
           <div class="slider__dots">
-            <button class="dot dot--active" type="button"></button>
-            <button class="dot" type="button"></button>
-            <button class="dot" type="button"></button>
+            <button class="dot dot--active" type="button">
+              <div class="span visually-hidden">Первый товар.</div>
+            </button>
+            <button class="dot" type="button">
+              <div class="span visually-hidden">Второй товар.</div>
+            </button>
+            <button class="dot" type="button">
+              <div class="span visually-hidden">Третий товар.</div>
+            </button>
           </div>
           <div class="slider__item">
             <div class="slider__image-area"><img class="slider__img" src="images/slider/quadrocopter.png" width="560" height="560" alt="Боевой лазерный квадрокоптер"></div>

@@ -4,11 +4,16 @@ section.slider.page-slider
 		h2.visually-hidden Популярные товары
 		.slider__buttons
 			button(type="button").arrow.arrow--left
+				.span(class="visually-hidden") Предыдущий товар.
 			button(type="button").arrow.arrow--right
+				.span(class="visually-hidden") Следующий товар.
 		.slider__dots
 			button(type="button").dot.dot--active
+				.span(class="visually-hidden") Первый товар.
 			button(type="button").dot
+				.span(class="visually-hidden") Второй товар.
 			button(type="button").dot
+				.span(class="visually-hidden") Третий товар.
 		.slider__item
 			.slider__image-area
 				img(src="images/slider/quadrocopter.png" width="560" height="560" alt='Боевой лазерный квадрокоптер').slider__img

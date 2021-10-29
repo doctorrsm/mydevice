@@ -88,7 +88,8 @@ h1 + .slider .slider__item::before {
 }
 
 .arrow--right{
-  background-image: url("../images/icons/right-tall-arrow.svg");
+  background-image: url("../images/icons/left-tall-arrow.svg");
+  transform: rotate(180deg);
 }
 
 .arrow:focus {
