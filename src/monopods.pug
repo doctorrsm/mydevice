@@ -24,61 +24,84 @@ block main
 					p.content-sort__header Фильтр:
 					form(method="post" action="https://echo.htmlacademy.ru/").content-sort__form
 						fieldset.content-sort__form-field
-							legend Стоимость
+							legend.content-sort__legend Стоимость
 							.range
 								.range__scale
-									.range__bar(style="left:43px; width: 134px;")
+									.range__bar(style="left:0px; width: 106px;")
 										button.range__toggle.toggle-min(type='button')
 											span.visually-hidden Изменить минимальную цену.
 										button.range__toggle.toggle-max(type='button')
 											span.visually-hidden Изменить максимальную цену.
 							.range__inputs-wrapper
 								label.range__label
-									| От
+									| от
 									input.range__input(type="number" name="min-price" value="0")
 								label.range__label
-									| До
-									input.range__input(type="number" name="max-price" value="5000")
+									| до
+									input.range__input(type="number" name="max-price" value="5000" style="width:58px;")
 						fieldset.content-sort__form-field
-							legend Цвет
-							label.checkbox
-								input(type="checkbox" name="black" value="black" checked)
-								| Черный
-							label.checkbox
-								input(type="checkbox" name="white" value="white" checked)
-								| Белый
-							label.checkbox
-								input(type="checkbox" name="blue" value="blue")
-								| Синий
-							label.checkbox
-								input(type="checkbox" name="red" value="red")
-								| Красный
-							label.checkbox
-								input(type="checkbox" name="pink" value="pink")
-								| Розовый
-							fieldset.content-sort__form-field
-								legend Bluetooth
-								label.radio
-									input(type="radio" name="bluetooth" value="is-bluetooth" checked)
-									| Есть
-								label.radio
-									input(type="radio" name="bluetooth" value="no-bluetooth")
-									| Нет
+							legend.content-sort__legend Цвет
+							ul.content-sort__list
+								li.content-sort__item
+									label.checkbox
+										input(class="checkbox__input visually-hidden" type="checkbox" name="black" checked)
+										span.checkbox__mark
+											<svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg>
+										span.checkbox__label Черный
+								li.content-sort__item
+									label.checkbox
+										input(class="checkbox__input visually-hidden" type="checkbox" name="white" checked)
+										span.checkbox__mark
+											<svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg>
+										span.checkbox__label Белый
+								li.content-sort__item
+									label.checkbox
+										input(class="checkbox__input visually-hidden" type="checkbox" name="blue")
+										span.checkbox__mark
+											<svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg>
+										span.checkbox__label Синий
+								li.content-sort__item
+									label.checkbox
+										input(class="checkbox__input visually-hidden" type="checkbox" name="red")
+										span.checkbox__mark
+											<svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg>
+										span.checkbox__label Красный
+								li.content-sort__item
+									label.checkbox
+										input(class="checkbox__input visually-hidden" type="checkbox" name="pink")
+										span.checkbox__mark
+											<svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg>
+										span.checkbox__label Розовый
+						fieldset.content-sort__form-field
+							legend.content-sort__legend Bluetooth
+							ul.content-sort__list
+								li.content-sort__item
+									label.radio
+										input(class="radio__input visually-hidden" type="radio" name="bluetooth" value="is-bluetooth" 	checked)
+										span.radio__mark
+										span.checkbox__label Есть
+								li.content-sort__item
+									label.radio
+										input(class="radio__input visually-hidden" type="radio" name="bluetooth" value="no-bluetooth")
+										span.radio__mark
+										span.checkbox__label Нет
 						button(type="submit").content-sort__form-submit Показать
 			.col-shop
 				.content-shop
 					header.content-shop__header
 						p Сортировка:
-						.sort-control
-							select.sort-control__select(name="sort")
+						form.sort-control
+							label(class="visually-hidden" for="sorting") Сортировка
+							select.sort-control__select(name="sort" id="sorting")
 								option(value="popular") Сначала популярные
 								option(value="cheap") Сначала дешевые
 								option(value="expensive") Сначала дорогие
-							.sort-control__arr
-								a.sort-control__arr-item.sort-control__arr-item--less
-									span.visually-hidden Сортируем от меньшего к большему
-								a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
-									span.visually-hidden Сортируем от большего к меньшему
+							button.visually-hidden(type="submit") Отсортировать продукты
+						.sort-control__arr
+							a.sort-control__arr-item.sort-control__arr-item--less
+								span.visually-hidden Сортируем от меньшего к большему
+							a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
+								span.visually-hidden Сортируем от большего к меньшему
 					section.catalog
 						h2.visually-hidden Каталог товаров
 						article.catalog__item
@@ -86,7 +109,7 @@ block main
 								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-1.jpg", alt="Любительская селфи-палка" width="360" height="380")
 								.catalog__item-overlay
-									a(href="#"  tabindex="-1").btn-catalog Подробнее
+									a(href="#" ).btn-catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Любительская селфи-палка
 								span.catalog__item-price 500 &#8381;
@@ -96,7 +119,7 @@ block main
 								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-2.jpg", alt="Профессиональная селфи-палка "  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#" tabindex="-1").btn-catalog Подробнее
+									a(href="#").btn-catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Профессиональная<br> селфи-палка
 								span.catalog__item-price 1500 &#8381;
@@ -106,7 +129,7 @@ block main
 								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-3.jpg", alt="Непотопляемая селфи-палка"  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#" tabindex="-1").btn-catalog Подробнее
+									a(href="#").btn-catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Непотопляемая<br> селфи-палка
 								span.catalog__item-price 2500 &#8381;
@@ -115,28 +138,28 @@ block main
 								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-4.jpg", alt="Селфи-палка 'следуй за мной'"  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#" tabindex="-1").btn-catalog Подробнее
+									a(href="#").btn-catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Селфи-палка "следуй за<br> мной"
 								span.catalog__item-price 4900 &#8381;
 
 					button(type="button").load-more Загрузить еще
 					footer.content-shop__footer
-							section.pagination
-								h2.visually-hidden Постраничная навигация сайта
-								a.pagination__bnt(href="#")  Назад
-								ul.pagination__list
-									li.pagination__item
-										a.pagination__link(href="#") 1
-									li.pagination__item
-										a.pagination__link(href="#") 2
-									li.pagination__item
-										a.pagination__link(href="#") 3
-									li.pagination__item
-										a.pagination__link ...
-									li.pagination__item
-										a.pagination__link(href="#") 15
-								a.pagination__bnt(href="#")  Вперёд
+						section.pagination
+							h2.visually-hidden Постраничная навигация сайта
+							a.pagination__bnt(href="#")  Назад
+							ul.pagination__list
+								li.pagination__item
+									a.pagination__link(href="#") 1
+								li.pagination__item
+									a.pagination__link(href="#") 2
+								li.pagination__item
+									a.pagination__link(href="#") 3
+								li.pagination__item
+									a.pagination__link ...
+								li.pagination__item
+									a.pagination__link(href="#") 15
+							a.pagination__bnt(href="#")  Вперёд
 
 block footer
 	include pug/particials/footer.pug

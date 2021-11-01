@@ -34,11 +34,9 @@
 
 .content-grid {
   display: grid;
-  grid-template-columns: 329px 1fr;
+  grid-template-columns: 328px 1fr;
 }
 .col-sidebar {
-
-  padding-left: 20px;
   position: relative;
 }
 .col-sidebar::before {

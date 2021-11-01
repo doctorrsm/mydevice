@@ -98,50 +98,68 @@
               <p class="content-sort__header">Фильтр:</p>
               <form class="content-sort__form" method="post" action="https://echo.htmlacademy.ru/">
                 <fieldset class="content-sort__form-field">
-                  <legend>Стоимость</legend>
+                  <legend class="content-sort__legend">Стоимость</legend>
                   <div class="range">
                     <div class="range__scale">
-                      <div class="range__bar" style="left:43px; width: 134px;">
+                      <div class="range__bar" style="left:0px; width: 106px;">
                         <button class="range__toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
                         <button class="range__toggle toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
                       </div>
                     </div>
                   </div>
                   <div class="range__inputs-wrapper">
-                    <label class="range__label">От
+                    <label class="range__label">от
                       <input class="range__input" type="number" name="min-price" value="0">
                     </label>
-                    <label class="range__label">До
-                      <input class="range__input" type="number" name="max-price" value="5000">
+                    <label class="range__label">до
+                      <input class="range__input" type="number" name="max-price" value="5000" style="width:58px;">
                     </label>
                   </div>
                 </fieldset>
                 <fieldset class="content-sort__form-field">
-                  <legend>Цвет</legend>
-                  <label class="checkbox">
-                    <input type="checkbox" name="black" value="black" checked>Черный
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="white" value="white" checked>Белый
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="blue" value="blue">Синий
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="red" value="red">Красный
-                  </label>
-                  <label class="checkbox">
-                    <input type="checkbox" name="pink" value="pink">Розовый
-                  </label>
-                  <fieldset class="content-sort__form-field">
-                    <legend>Bluetooth</legend>
-                    <label class="radio">
-                      <input type="radio" name="bluetooth" value="is-bluetooth" checked>Есть
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="bluetooth" value="no-bluetooth">Нет
-                    </label>
-                  </fieldset>
+                  <legend class="content-sort__legend">Цвет</legend>
+                  <ul class="content-sort__list">
+                    <li class="content-sort__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="black" checked><span class="checkbox__mark"><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg></span><span class="checkbox__label">Черный</span>
+                      </label>
+                    </li>
+                    <li class="content-sort__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="white" checked><span class="checkbox__mark"><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg></span><span class="checkbox__label">Белый</span>
+                      </label>
+                    </li>
+                    <li class="content-sort__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="blue"><span class="checkbox__mark"><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg></span><span class="checkbox__label">Синий</span>
+                      </label>
+                    </li>
+                    <li class="content-sort__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="red"><span class="checkbox__mark"><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg></span><span class="checkbox__label">Красный</span>
+                      </label>
+                    </li>
+                    <li class="content-sort__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="pink"><span class="checkbox__mark"><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" fill="#000"/></svg></span><span class="checkbox__label">Розовый</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="content-sort__form-field">
+                  <legend class="content-sort__legend">Bluetooth</legend>
+                  <ul class="content-sort__list">
+                    <li class="content-sort__item">
+                      <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="is-bluetooth" checked><span class="radio__mark"></span><span class="checkbox__label">Есть</span>
+                      </label>
+                    </li>
+                    <li class="content-sort__item">
+                      <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="no-bluetooth"><span class="radio__mark"></span><span class="checkbox__label">Нет</span>
+                      </label>
+                    </li>
+                  </ul>
                 </fieldset>
                 <button class="content-sort__form-submit" type="submit">Показать</button>
               </form>
@@ -151,38 +169,40 @@
             <div class="content-shop">
               <header class="content-shop__header">
                 <p>Сортировка:</p>
-                <div class="sort-control">
-                  <select class="sort-control__select" name="sort">
+                <form class="sort-control">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+                  <select class="sort-control__select" name="sort" id="sorting">
                     <option value="popular">Сначала популярные</option>
                     <option value="cheap">Сначала дешевые</option>
                     <option value="expensive">Сначала дорогие</option>
                   </select>
-                  <div class="sort-control__arr"><a class="sort-control__arr-item sort-control__arr-item--less"><span class="visually-hidden">Сортируем от меньшего к большему</span></a><a class="sort-control__arr-item sort-control__arr-item--more sort-control__arr-item--selected"><span class="visually-hidden">Сортируем от большего к меньшему</span></a></div>
-                </div>
+                  <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                </form>
+                <div class="sort-control__arr"><a class="sort-control__arr-item sort-control__arr-item--less"><span class="visually-hidden">Сортируем от меньшего к большему</span></a><a class="sort-control__arr-item sort-control__arr-item--more sort-control__arr-item--selected"><span class="visually-hidden">Сортируем от большего к меньшему</span></a></div>
               </header>
               <section class="catalog">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                 <article class="catalog__item">
                   <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#" tabindex="-1">Подробнее</a></div>
+                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Любительская селфи-палка</a><span class="catalog__item-price">500 &#8381;</span></div>
                 </article>
                 <article class="catalog__item">
                   <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#" tabindex="-1">Подробнее</a></div>
+                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Профессиональная<br> селфи-палка</a><span class="catalog__item-price">1500 &#8381;</span></div>
                 </article>
                 <article class="catalog__item">
                   <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#" tabindex="-1">Подробнее</a></div>
+                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Непотопляемая<br> селфи-палка</a><span class="catalog__item-price">2500 &#8381;</span></div>
                 </article>
                 <article class="catalog__item">
                   <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-4.jpg" alt="Селфи-палка 'следуй за мной'" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#" tabindex="-1">Подробнее</a></div>
+                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Селфи-палка "следуй за<br> мной"</a><span class="catalog__item-price">4900 &#8381;</span></div>
                 </article>

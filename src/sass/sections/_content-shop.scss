@@ -7,7 +7,7 @@
   text-transform: uppercase;
   color: var(--black);
   margin: 0;
-  margin-right: 45px;
+  margin-right: 38px;
 }
 
 .sort-control {
@@ -16,12 +16,26 @@
   width: 100%;
 }
 
-.sort-control__select,
-.sort-control__select option {
+.sort-control__select{
   color: var(--black);
   background-color: var(--light);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  padding: 4px 39px 7px 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;position: relative;
+
+  cursor: pointer;
+
+  background-image: url(../images/icons/dropdown.svg);
+  background-position:right 13px center;
+  background-repeat: no-repeat;
+
 }
 
 .sort-control__arr-item {
