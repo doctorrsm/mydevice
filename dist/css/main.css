@@ -1712,66 +1712,71 @@ h1 + .slider .slider__item::before {
 }
 
 .checkbox {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--black);
+  display: flex;
+  position: relative;
+  align-items: center;
   cursor: pointer;
   user-select: none;
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .checkbox__mark {
+  display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
-  border: 2px solid #bcbcbc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border-radius: 3px;
   margin-right: 18px;
+  padding: 0;
+  border: 2px solid var(--black);
+  border-radius: 3px;
+}
+
+.checkbox__label {
+  color: var(--black);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .checkbox__input[type=checkbox]:not(:checked) ~ .checkbox__mark svg {
   display: none;
 }
 
-.checkbox__input:focus ~ .checkbox__label {
-  color: var(--violet);
-}
-
-.checkbox__input:focus-visible {
-  border: none;
-  outline: none;
-}
-
-.checkbox__input:active ~ .checkbox__label {
-  color: #bcbcbc;
-}
-
-.checkbox__input:checked ~ .checkbox__mark {
-  border-color: var(--black);
-}
-
-.checkbox:hover .checkbox__input:checked:not(:focus) ~ .checkbox__mark {
-  opacity: 0.5;
-}
-
-.checkbox:hover .checkbox__input:checked:not(:focus) ~ .checkbox__label {
-  opacity: 0.5;
-}
-
-.checkbox:active .checkbox__input:checked ~ .checkbox__mark {
+/*Покой*/
+.checkbox__input[type=checkbox]:not(:checked) ~ .checkbox__mark {
   opacity: 0.2;
 }
 
-.checkbox:active .checkbox__input:checked ~ .checkbox__label {
+/*Наведение*/
+.checkbox:not(:focus-within):hover .checkbox__input[type=checkbox]:checked ~ .checkbox__mark {
+  opacity: 0.5;
+}
+
+.checkbox:not(:focus-within):hover .checkbox__input[type=checkbox]:checked ~ .checkbox__label {
+  opacity: 0.5;
+}
+
+/*Фокус*/
+.checkbox:focus-within .checkbox__input[type=checkbox] ~ .checkbox__mark {
+  border-color: var(--violet);
+  opacity: 1;
+}
+
+.checkbox:focus-within .checkbox__input[type=checkbox] ~ .checkbox__mark svg {
+  fill: var(--violet);
+  opacity: 1;
+}
+
+.checkbox:focus-within .checkbox__input[type=checkbox] ~ .checkbox__label {
+  color: var(--violet);
+  opacity: 1;
+}
+
+/*Активность*/
+.checkbox:active {
   opacity: 0.2;
 }
 
@@ -1816,36 +1821,38 @@ h1 + .slider .slider__item::before {
   display: none;
 }
 
-.radio__input:focus ~ .checkbox__label {
-  color: var(--violet);
-}
-
-.radio__input:focus-visible {
-  border: none;
-  outline: none;
-}
-
-.radio__input:active ~ .checkbox__label {
-  color: #bcbcbc;
-}
-
-.radio__input:checked ~ .checkbox__mark {
-  border-color: var(--black);
-}
-
-.radio:hover .radio__input:checked:not(:focus) ~ .radio__mark {
-  opacity: 0.5;
-}
-
-.radio:hover .radio__input:checked:not(:focus) ~ .checkbox__label {
-  opacity: 0.5;
-}
-
-.radio:active .radio__input:checked ~ .radio__mark {
+/*Покой*/
+.radio__input[type=radio]:not(:checked) ~ .radio__mark {
   opacity: 0.2;
 }
 
-.radio:active .radio__input:checked ~ .checkbox__label {
+/*Наведение*/
+.radio:not(:focus-within):hover .radio__input[type=radio]:checked ~ .radio__mark {
+  opacity: 0.5;
+}
+
+.radio:not(:focus-within):hover .radio__input[type=radio]:checked ~ .checkbox__label {
+  opacity: 0.5;
+}
+
+/*Фокус*/
+.radio:focus-within .radio__input[type=radio] ~ .radio__mark {
+  border-color: var(--violet);
+  opacity: 1;
+}
+
+.radio:focus-within .radio__input[type=radio] ~ .radio__mark::after {
+  background-color: var(--violet);
+  opacity: 1;
+}
+
+.radio:focus-within .radio__input[type=radio] ~ .checkbox__label {
+  color: var(--violet);
+  opacity: 1;
+}
+
+/*Активность*/
+.radio:active {
   opacity: 0.2;
 }
 
