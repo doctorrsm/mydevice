@@ -1,32 +1,36 @@
 .categories {
   padding-top: 70px;
-
+  padding: 69px;
 }
+
 .categories__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 -20px;
-
 }
+
 .categories__item {
   width: calc(100%/6);
-  padding: 0 20px;
-}
-.categories__link:hover .icon-box{
-  background-color: var(--yellow-hover);
+  padding: 0 20px 14px;
 }
 
+.categories__link:hover .icon-box {
+  background-color: var(--yellow-hover);
+}
 
 .categories__link:focus:not(:active) .icon-box {
   outline: 5px solid var(--violet);
 }
+
 .categories__link:focus h3 {
   color: var(--violet);
 }
+
 .categories__link:focus-visible {
   outline: none;
 }
+
 .categories__link:active * {
   opacity: 0.3;
 }
@@ -38,34 +42,39 @@
   background-color: var(--yellow);
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 32px;
 }
+
 .icon-box--vr {
   background-image: url(../images/icons/categories/vr.svg);
 }
+
 .icon-box--monopod {
   background-image: url(../images/icons/categories/monopod.svg);
   background-position: 50% 100%;
 }
+
 .icon-box--gopro {
   background-image: url(../images/icons/categories/gopro.svg);
 }
+
 .icon-box--fit-tracker {
   background-image: url(../images/icons/categories/fit-tracker.svg);
 }
+
 .icon-box--smart-watch {
   background-image: url(../images/icons/categories/smart-watch.svg);
 }
+
 .icon-box--quadrocopter {
   background-image: url(../images/icons/categories/quadrocopter.svg);
 }
+
 .categories__name {
   font-family: Raleway;
-
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-
-
-letter-spacing: -0.02em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  margin-top: 33px;
+  margin-bottom: 0;
 }

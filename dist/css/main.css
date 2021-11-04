@@ -129,10 +129,6 @@ button {
   outline: 0;
 }
 
-button:focus {
-  border: 2px solid var(--violet);
-}
-
 input {
   outline: 0;
   border: 0;
@@ -197,7 +193,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/innermenu.png);
+  background-image: url(../images/perfectpixel.png);
 }
 
 .bg-monopod {
@@ -328,7 +324,9 @@ p {
 .btn {
   display: inline-block;
   position: relative;
+  min-width: 260px;
   padding: 16px 10px;
+  border: none;
   outline: none;
   color: var(--black);
   font-size: 18px;
@@ -338,7 +336,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  min-width: 260px;
+  background-color: transparent;
 }
 
 .btn::before {
@@ -902,7 +900,6 @@ p {
 
 .page-slider {
   position: relative;
-  margin-top: -13px;
 }
 
 .slider__dots {
@@ -1073,6 +1070,7 @@ h1 + .slider .slider__item::before {
 
 .categories {
   padding-top: 70px;
+  padding: 69px;
 }
 
 .categories__list {
@@ -1084,7 +1082,7 @@ h1 + .slider .slider__item::before {
 
 .categories__item {
   width: 16.6666666667%;
-  padding: 0 20px;
+  padding: 0 20px 14px;
 }
 
 .categories__link:hover .icon-box {
@@ -1114,7 +1112,6 @@ h1 + .slider .slider__item::before {
   background-color: var(--yellow);
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 32px;
 }
 
 .icon-box--vr {
@@ -1148,17 +1145,21 @@ h1 + .slider .slider__item::before {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
+  margin-top: 33px;
+  margin-bottom: 0;
 }
 
 .advantages {
   background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
-  padding-top: 63px;
   padding-bottom: 115px;
 }
 
 .advantages__controls {
-  width: 280px;
-  padding-top: 78px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  border-right: 7px solid var(--black);
+  width: 284px;
 }
 
 .advantages__controls button {
@@ -1167,7 +1168,7 @@ h1 + .slider .slider__item::before {
 }
 
 .advantages__content {
-  width: calc(100% - 280px);
+  width: calc(100% - 284px);
 }
 
 .advantages__item {

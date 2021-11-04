@@ -1,9 +1,14 @@
 section.advantages
 	.container.d-flex
 		.advantages__controls
-			button(type="button").btn.btn--selected Доставка
-			button(type="button").btn Гарантия
-			button(type="button").btn Кредит
+			ul.advantages__controls-list
+				li.advantages__controls-item
+					button(type="button").btn.btn--selected Доставка
+				li.advantages__controls-item
+					button(type="button").btn Гарантия
+				li.advantages__controls-item
+					button(type="button").btn Кредит
+
 		.advantages__content
 			.advantages__item.advantages__item--delivery
 				h3.advantages__header Доставка

@@ -1,13 +1,17 @@
 .advantages {
   //background-color: var(--light);
   background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
-  padding-top: 63px;
+
   padding-bottom: 115px;
+
 }
 
 .advantages__controls {
-  width: 280px;
-  padding-top: 78px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  border-right: 7px solid var(--black);
+  width: 284px;
 }
 
 .advantages__controls button {
@@ -16,7 +20,7 @@
 }
 
 .advantages__content {
-  width: calc(100% - 280px);
+  width: calc(100% - 284px);
 }
 
 .advantages__item {
