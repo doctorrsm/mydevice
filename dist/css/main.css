@@ -905,7 +905,7 @@ p {
 .slider__dots {
   position: absolute;
   bottom: 185px;
-  right: 59px;
+  right: 80px;
   z-index: 1;
   display: flex;
   justify-self: center;
@@ -972,7 +972,7 @@ h1 + .slider .slider__item::before {
 
 .slider__buttons {
   position: absolute;
-  width: calc(50% - 29px);
+  width: calc(50% - 48px);
   display: flex;
   justify-content: space-between;
   top: 50%;
@@ -1151,7 +1151,7 @@ h1 + .slider .slider__item::before {
 
 .advantages {
   background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
-  padding-bottom: 115px;
+  padding-bottom: 83px;
 }
 
 .advantages__controls {
@@ -2013,6 +2013,13 @@ h1 + .slider .slider__item::before {
 .catalog__item-price {
   margin-left: 10px;
   white-space: nowrap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: var(--dark);
 }
 
 .catalog__item-overlay {
@@ -2317,4 +2324,180 @@ h1 + .slider .slider__item::before {
 
 .copyright__link:active svg {
   fill: var(--white);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 51;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  border: 10px solid #000000;
+  padding: 58px 70px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.modal__header {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--black);
+}
+
+.modal__close {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  background-image: url(../images/icons/big-cross-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  right: 0;
+  top: 0;
+}
+
+.modal__close:hover {
+  opacity: 0.6;
+}
+
+.modal__close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.modal__close:focus {
+  opacity: 1;
+  box-shadow: 0 0 0 5px var(--violet);
+}
+
+.modal__close:active {
+  opacity: 0.3;
+}
+
+.form-order {
+  display: grid;
+}
+
+.form-order__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.label-order {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  color: #000000;
+}
+
+.input-order {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  padding: 17px 47px 17px 17px;
+  background-color: var(--light);
+  width: 100%;
+  border: 3px solid var(--light);
+}
+
+.input-order:hover {
+  background-color: var(--light-gray);
+  border-color: var(--light-gray);
+}
+
+.input-order:focus {
+  outline: 5px solid var(--violet);
+  background-color: var(--light);
+  border-color: var(--light);
+}
+
+.input-order:active {
+  background-color: var(--white);
+  border-color: var(--black);
+  outline: none;
+}
+
+.input-order:invalid {
+  border-color: var(--danger);
+}
+
+.counter-area {
+  display: grid;
+  grid-template-columns: 560px auto;
+  gap: 0 40px;
+}
+
+.counter-group {
+  display: grid;
+  grid-template-columns: 50px 60px 50px;
+  background-color: var(--light);
+  border: 3px solid var(--light);
+}
+
+.counter-order {
+  border: none;
+  height: 32px;
+  width: 32px;
+  background-color: inherit;
+}
+
+.input-number-order[type=number] {
+  padding: 17px;
+}
+
+.input-number-order[type=number]::-webkit-outer-spin-button,
+.input-number-order[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-number-order[type=number],
+.input-number-order[type=number]:hover,
+.input-number-order[type=number]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.text-input-order {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.input-order:invalid + .text-input-order {
+  color: var(--danger);
+}
+
+.text-input-order--invalid {
+  color: var(--danger);
+}
+
+.btn--order {
+  justify-self: start;
 }

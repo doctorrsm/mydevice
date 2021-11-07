@@ -336,6 +336,39 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container" style="display: none;">
+      <div class="modal">
+        <h2 class="modal__header">Доставка под заказ</h2>
+        <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <form class="form-order" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-order__row">
+            <div class="field-group">
+              <label class="label-order" for="customer-name">Ваше имя</label>
+              <input class="input-order" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия"><span class="text-input-order text-input-order--invalid">Пожалуйста, представьтесь</span>
+            </div>
+            <div class="field-group">
+              <label class="label-order" for="customer-email">Ваш e-mail:</label>
+              <input class="input-order" type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru"><span class="text-input-order">Забавный у вас адрес</span>
+            </div>
+          </div>
+          <div class="counter-area">
+            <div class="field-group">
+              <label class="label-order" for="customer-name">Что нужно привести:</label>
+              <input class="input-order" type="text" name="customer-name" id="customer-name" placeholder="В свободной форме"><span class="text-input-order"></span>
+            </div>
+            <div class="field-group">
+              <label class="label-order" for="goods-count">Количество</label>
+              <div class="counter-group">
+                <button class="counter-order" type="button" id="counter-minus" tabindex="1"><span class="visually-hidden">Увеличить количество на 1</span></button>
+                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1" tabindex="2">
+                <button class="counter-order" type="button" id="counter-plus" tabindex="1"><span class="visually-hidden">Уменьшить количество на 1</span></button>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--order" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+.modal-container(style="display: none;")
+	.modal
+		h2.modal__header Доставка под заказ
+		button(type="button").modal__close
+			span.visually-hidden Закрыть
+		form(action="https://echo.htmlacademy.ru/" method="post").form-order
+			.form-order__row
+				.field-group
+					label(for="customer-name").label-order Ваше имя
+					input(type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия").input-order
+					span.text-input-order.text-input-order--invalid Пожалуйста, представьтесь
+				.field-group
+					label(for="customer-email").label-order Ваш e-mail:
+					input(type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru").input-order
+					span.text-input-order Забавный у вас адрес
+			.counter-area
+				.field-group
+					label(for="customer-name").label-order Что нужно привести:
+					input(type="text" name="customer-name" id="customer-name" placeholder="В свободной форме").input-order
+					span.text-input-order
+				.field-group
+					label(for="goods-count").label-order Количество
+					.counter-group
+						button(type="button" id="counter-minus" tabindex="1").counter-order
+							span.visually-hidden Увеличить количество на 1
+						input(type="number" name="goods-count" id="goods-count" value="1" min="1" tabindex="2").input-number-order
+						button(type="button" id="counter-plus" tabindex="1").counter-order
+							span.visually-hidden Уменьшить количество на 1
+
+			button(type="submit").btn.btn--order Отправить

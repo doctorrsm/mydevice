@@ -6,7 +6,7 @@
 .slider__dots {
   position: absolute;
   bottom: 185px;
-  right: 59px;
+  right: 80px;
   z-index: 1;
 
   display: flex;
@@ -64,7 +64,7 @@ h1 + .slider .slider__item::before {
 }
 .slider__buttons {
   position: absolute;
-  width: calc(50% - 29px);
+  width: calc(50% - 48px);
   display: flex;
   justify-content: space-between;
   top: 50%;
