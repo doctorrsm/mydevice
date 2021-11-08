@@ -1,6 +1,6 @@
 .advantages {
   //background-color: var(--light);
-  background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
+  background: linear-gradient(180deg, var(--white) 100px, var(--light) 100px, var(--light) 100%);
 
   padding-bottom: 83px;
 
@@ -9,15 +9,11 @@
 .advantages__controls {
   padding-top: 80px;
   position: relative;
-  z-index: 1;
   border-right: 7px solid var(--black);
   width: 284px;
 }
 
-.advantages__controls button {
-  font-family: "Raleway", "Tahoma", sans-serif;
-  color: var(--black);
-}
+
 
 .advantages__content {
   width: calc(100% - 284px);
@@ -37,7 +33,7 @@
 
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);
-  background-position: 91% 106%;
+  background-position: 91% 77%;
 }
 
 .advantages__item--garanty {

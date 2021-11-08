@@ -325,18 +325,20 @@ p {
   display: inline-block;
   position: relative;
   min-width: 260px;
-  padding: 16px 10px;
+  padding: 14px 10px 15px;
   border: none;
   outline: none;
   color: var(--black);
   font-size: 18px;
-  line-height: 1;
+  line-height: 21px;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .btn::before {
@@ -354,6 +356,11 @@ p {
   transform: translateY(-50%);
 }
 
+.btn:hover:not(:focus)::before {
+  height: 100%;
+  background-color: var(--yellow);
+}
+
 .btn:focus {
   outline: none;
 }
@@ -362,14 +369,52 @@ p {
   background-color: var(--violet);
 }
 
-.btn:hover::before {
-  height: 100%;
-  background-color: var(--yellow);
-}
-
 .btn:active {
   color: #b39e59;
   background-color: var(--yellow);
+}
+
+.btn--advantages {
+  padding: 9px 10px 11px;
+  min-width: 160px;
+  font-family: "Raleway", "Tahoma", sans-serif;
+  color: var(--black);
+  margin-bottom: 23px;
+}
+
+.btn--advantages::before {
+  background-color: var(--yellow-hover);
+}
+
+.btn--advantages:active {
+  color: var(--yellow);
+}
+
+.btn--advantages:active {
+  background-color: var(--black);
+}
+
+.btn--advantages:active::before {
+  background-color: var(--black);
+}
+
+.advantages__controls-item--selected .btn--advantages {
+  color: var(--yellow);
+  background-color: var(--black);
+  width: 100%;
+  text-align: left;
+}
+
+.advantages__controls-item--selected .btn--advantages::before {
+  background-color: var(--black);
+}
+
+.advantages__controls-item--selected .btn--advantages:hover:not(:focus)::before {
+  background-color: var(--black);
+}
+
+.advantages__controls-item--selected .btn--advantages:focus::before {
+  background-color: var(--black);
 }
 
 /* Goods link-button */
@@ -1150,21 +1195,15 @@ h1 + .slider .slider__item::before {
 }
 
 .advantages {
-  background: linear-gradient(180deg, var(--white) 164px, var(--light) 164px, var(--light) 100%);
+  background: linear-gradient(180deg, var(--white) 100px, var(--light) 100px, var(--light) 100%);
   padding-bottom: 83px;
 }
 
 .advantages__controls {
   padding-top: 80px;
   position: relative;
-  z-index: 1;
   border-right: 7px solid var(--black);
   width: 284px;
-}
-
-.advantages__controls button {
-  font-family: "Raleway", "Tahoma", sans-serif;
-  color: var(--black);
 }
 
 .advantages__content {
@@ -1185,7 +1224,7 @@ h1 + .slider .slider__item::before {
 
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);
-  background-position: 91% 106%;
+  background-position: 91% 77%;
 }
 
 .advantages__item--garanty {
