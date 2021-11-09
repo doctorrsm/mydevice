@@ -61,7 +61,7 @@
   min-width: 160px;
   font-family: "Raleway", "Tahoma", sans-serif;
     color: var(--black);
-    margin-bottom: 23px;
+
 }
 .btn--advantages::before {
   background-color: var(--yellow-hover);
@@ -76,10 +76,12 @@
 .btn--advantages:active::before {
   background-color: var(--black);
 }
+.advantages__controls-item--selected {
+  background-color: var(--black);
+}
 .advantages__controls-item--selected .btn--advantages {
   color: var(--yellow);
   background-color: var(--black);
-  width: 100%;
   text-align: left;
 }
 .advantages__controls-item--selected .btn--advantages::before {

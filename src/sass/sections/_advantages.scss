@@ -12,7 +12,9 @@
   border-right: 7px solid var(--black);
   width: 284px;
 }
-
+.advantages__controls-item {
+  margin-bottom: 23px;
+}
 
 
 .advantages__content {
@@ -23,25 +25,30 @@
   background-repeat: no-repeat;
   background-position: right center;
   padding-top: 55px;
-  padding-left: 120px;
+  padding-left: 116px;
   padding-right: 305px;
 }
-
+/*
 .advantages__item:not(:first-of-type) {
   display: none;
 }
-
+*/
+.advantages__item:not(:nth-child(3)) {
+  display: none;
+}
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);
-  background-position: 91% 77%;
+  background-position: 91% 107%;
 }
 
 .advantages__item--garanty {
   background-image: url(../images/tabs/garanty.png);
+  background-position: 93% 122%;
 }
 
 .advantages__item--credit {
   background-image: url(../images/tabs/credit.png);
+  background-position: 90% 71%;
 }
 
 .advantages__header {
