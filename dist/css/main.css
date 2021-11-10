@@ -193,7 +193,7 @@ p {
 }
 
 .bg-index {
-  background-image: url(../images/perfectpixel.png);
+  background-image: url(../images/modalwindow.png);
 }
 
 .bg-monopod {
@@ -2462,14 +2462,14 @@ h1 + .slider .slider__item::before {
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
-  z-index: 51;
+  z-index: 5;
   align-items: center;
   justify-content: center;
 }
 
 .modal {
   border: 10px solid #000000;
-  padding: 58px 70px;
+  padding: 62px 70px;
   background-color: #FFFFFF;
   position: relative;
 }
@@ -2481,6 +2481,7 @@ h1 + .slider .slider__item::before {
   font-size: 50px;
   line-height: 50px;
   color: var(--black);
+  margin-bottom: 64px;
 }
 
 .modal__close {
@@ -2495,8 +2496,8 @@ h1 + .slider .slider__item::before {
   background-color: transparent;
   border: none;
   outline: none;
-  right: 0;
-  top: 0;
+  right: 58px;
+  top: 66px;
 }
 
 .modal__close:hover {
@@ -2525,6 +2526,7 @@ h1 + .slider .slider__item::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
+  margin-bottom: 7px;
 }
 
 .label-order__wrapper {
@@ -2532,7 +2534,7 @@ h1 + .slider .slider__item::before {
 }
 
 .has-info {
-  padding-right: 32px;
+  padding-right: 33px;
 }
 
 .label-order {
@@ -2543,6 +2545,8 @@ h1 + .slider .slider__item::before {
   line-height: 20px;
   letter-spacing: -0.36px;
   color: #000000;
+  margin-bottom: 13px;
+  display: inline-block;
 }
 
 .info {
@@ -2558,6 +2562,7 @@ h1 + .slider .slider__item::before {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .info:hover + .info-text {
@@ -2672,14 +2677,16 @@ h1 + .slider .slider__item::before {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/icons/minus.svg");
-  left: 0;
+  left: 10px;
+  top: 14px;
 }
 
 .counter-order--plus {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/icons/plus.svg");
-  right: 0;
+  right: 12px;
+  top: 14px;
 }
 
 .input-number-order[type=number] {
@@ -2738,4 +2745,5 @@ h1 + .slider .slider__item::before {
 
 .btn--order {
   justify-self: start;
+  margin-top: 40px;
 }

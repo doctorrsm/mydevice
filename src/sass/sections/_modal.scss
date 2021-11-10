@@ -6,14 +6,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
-  z-index: 51;
+  z-index: 5;
   align-items: center;
   justify-content: center;
 }
 
 .modal {
   border: 10px solid #000000;
-  padding: 58px 70px;
+  padding: 62px 70px;
   background-color: #FFFFFF;
   position: relative;
 }
@@ -25,6 +25,7 @@
   font-size: 50px;
   line-height: 50px;
   color: var(--black);
+  margin-bottom: 64px;
 }
 
 .modal__close {
@@ -39,8 +40,8 @@
   background-color: transparent;
   border: none;
   outline: none;
-  right: 0;
-  top: 0;
+  right: 58px;
+  top: 66px;
 }
 
 .modal__close:hover {
@@ -69,6 +70,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
+  margin-bottom: 7px;
 }
 
 .label-order__wrapper {
@@ -76,7 +78,7 @@
 }
 
 .has-info {
-  padding-right: 32px;
+  padding-right: 33px;
 }
 
 .label-order {
@@ -87,6 +89,8 @@
   line-height: 20px;
   letter-spacing: -0.36px;
   color: #000000;
+  margin-bottom: 13px;
+  display: inline-block;
 }
 
 .info {
@@ -102,6 +106,7 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top:3px
 }
 
 .info:hover+.info-text {
@@ -221,13 +226,15 @@
 background-repeat: no-repeat;
 background-position: center;
 background-image: url("../images/icons/minus.svg");
-left: 0;
+left: 10px;
+top: 14px;
 }
 .counter-order--plus {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/icons/plus.svg");
-  right: 0;
+  right: 12px;
+  top: 14px;
 }
 
 
@@ -296,4 +303,5 @@ left: 0;
 
 .btn--order {
   justify-self: start;
+  margin-top: 40px;
 }
