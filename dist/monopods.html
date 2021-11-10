@@ -44,10 +44,10 @@
               <div class="top-header__cart-wrapper cart"><span class="cart-count">2</span><a class="top-link top-link--cart" href="#">Корзина</a>
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
-                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" width="41" height="43" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
                       <button class="pop-up__delete" type="button"></button>
                     </p>
-                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" width="41" height="43" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
                       <button class="pop-up__delete" type="button"></button>
                     </p>
                   </div>
@@ -277,7 +277,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container" style="display: none;">
+    <div class="modal-container" style="display: flex;">
       <div class="modal">
         <h2 class="modal__header">Доставка под заказ</h2>
         <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -297,12 +297,13 @@
               <label class="label-order" for="customer-name">Что нужно привести:</label>
               <input class="input-order" type="text" name="customer-name" id="customer-name" placeholder="В свободной форме"><span class="text-input-order"></span>
             </div>
-            <div class="field-group">
-              <label class="label-order" for="goods-count">Количество</label>
+            <div class="field-group"><span class="label-order__wrapper has-info">
+                <label class="label-order" for="goods-count">Количество</label>
+                <button class="info" type="button" tabindex="-1"><span class="visually-hidden">Посмотреть дополнительную информацию</span></button><span class="info-text">	Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span></span>
               <div class="counter-group">
-                <button class="counter-order" type="button" id="counter-minus" tabindex="1"><span class="visually-hidden">Увеличить количество на 1</span></button>
-                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1" tabindex="2">
-                <button class="counter-order" type="button" id="counter-plus" tabindex="1"><span class="visually-hidden">Уменьшить количество на 1</span></button>
+                <button class="counter-order counter-order--minus" type="button" id="counter-minus"><span class="visually-hidden">Уменьшить количество на 1</span></button>
+                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1">
+                <button class="counter-order counter-order--plus" type="button" id="counter-plus"><span class="visually-hidden">Увеличить количество на 1</span></button>
               </div>
             </div>
           </div>

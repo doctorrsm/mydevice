@@ -55,7 +55,6 @@
 
 .site-contacts__list {
   margin-top: 75px;
-  padding-left: 35px;
 }
 
 .site-contacts__item {
@@ -67,13 +66,14 @@
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
+  padding-left: 35px;
 }
 
 .site-contacts__item::before {
   display: inline-flex;
   position: absolute;
   top: 6px;
-  left: -34px;
+  left: 0;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -88,7 +88,7 @@
 .subscribe {
   background-color: var(--light);
   padding-top: 75px;
-  padding-bottom: 133px;
+  padding-bottom: 131px;
 }
 
 .subscribe__text:first-child {
@@ -99,7 +99,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 17px;
+  padding-top: 20px;
 }
 .subscribe__form  {
   flex-basis: 861px;

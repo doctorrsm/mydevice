@@ -1,4 +1,4 @@
-.modal-container(style="display: none;")
+.modal-container(style="display: flex;")
 	.modal
 		h2.modal__header Доставка под заказ
 		button(type="button").modal__close
@@ -19,12 +19,17 @@
 					input(type="text" name="customer-name" id="customer-name" placeholder="В свободной форме").input-order
 					span.text-input-order
 				.field-group
-					label(for="goods-count").label-order Количество
+					span.label-order__wrapper.has-info
+						label(for="goods-count").label-order Количество
+						button(type="button" tabindex="-1").info
+							span.visually-hidden Посмотреть дополнительную информацию
+						span.info-text
+							|	Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
 					.counter-group
-						button(type="button" id="counter-minus" tabindex="1").counter-order
-							span.visually-hidden Увеличить количество на 1
-						input(type="number" name="goods-count" id="goods-count" value="1" min="1" tabindex="2").input-number-order
-						button(type="button" id="counter-plus" tabindex="1").counter-order
+						button(type="button" id="counter-minus").counter-order.counter-order--minus
 							span.visually-hidden Уменьшить количество на 1
+						input(type="number" name="goods-count" id="goods-count" value="1" min="1").input-number-order
+						button(type="button" id="counter-plus").counter-order.counter-order--plus
+							span.visually-hidden Увеличить количество на 1
 
 			button(type="submit").btn.btn--order Отправить

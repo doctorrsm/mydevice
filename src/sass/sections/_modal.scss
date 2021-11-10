@@ -63,7 +63,6 @@
 
 .form-order {
   display: grid;
-
 }
 
 .form-order__row {
@@ -71,6 +70,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
 }
+
+.label-order__wrapper {
+  position: relative;
+}
+
+.has-info {
+  padding-right: 32px;
+}
+
 .label-order {
   font-family: Rubik;
   font-style: normal;
@@ -81,19 +89,59 @@
   color: #000000;
 }
 
-.input-order {
-  font-family: Rubik;
+.info {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  right: 0;
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.info:hover+.info-text {
+  display: block;
+}
+
+.info-text {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: -34px;
+  width: 200px;
+  padding: 19px 17px 21px 19px;
+  color: var(--white);
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: Rubik;
+  font-weight: 400;
+  background-color: var(--black);
+  z-index: 1;
+}
+
+.info:hover .info-text {
+  display: block;
+}
+
+.input-order {
   display: flex;
   align-items: center;
-  color: var(--black);
-  padding: 17px 47px 17px 17px;
-  background-color: var(--light);
   width: 100%;
+  padding: 17px 47px 17px 17px;
   border: 3px solid var(--light);
+  color: var(--black);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Rubik;
+  font-weight: 400;
+  background-color: var(--light);
 }
 
 .input-order:hover {
@@ -117,8 +165,18 @@
   border-color: var(--danger);
 }
 
-.field-group {
+.input-order::placeholder {
+  color: #606060;
+}
 
+.field-group {}
+
+.field-group--has-info {
+  position: relative;
+}
+
+.field-group--has-info .label-order {
+  padding-right: 34px;
 }
 
 .counter-area {
@@ -126,27 +184,65 @@
   grid-template-columns: 560px auto;
   gap: 0 40px;
 }
+
 .counter-group {
-  display: grid;
-  grid-template-columns: 50px 60px 50px;
-  background-color: var(--light);
-  border: 3px solid var(--light);
+  position: relative;
+  width:160px;
 }
 
 
 
 
 .counter-order {
-  border: none;
-  height: 32px;
+  border: 2px solid transparent;
   width: 32px;
+  height: 32px;
   background-color: inherit;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+
 }
+.counter-order:hover, .counter-order:focus {
+  opacity: 1;
+
+}
+.counter-order:focus {
+  border-color: var(--violet);
+}
+
+.counter-order:active {
+  border-color: transparent;
+  opacity: 0.1;
+}
+
+.counter-order--minus {
+background-repeat: no-repeat;
+background-position: center;
+background-image: url("../images/icons/minus.svg");
+left: 0;
+}
+.counter-order--plus {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icons/plus.svg");
+  right: 0;
+}
+
+
+
 
 .input-number-order[type="number"] {
-  padding: 17px;
-
+  width: 100%;
+  text-align: center;
+  padding: 17px 50px;
+  display: inline-block;
+  background-color: var(--light);
+  border: 3px solid var(--light);
 }
+
+
 .input-number-order[type="number"]::-webkit-outer-spin-button,
 .input-number-order[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -158,6 +254,28 @@
   appearance: none;
   -moz-appearance: textfield;
 }
+
+
+.input-number-order:focus {
+  outline: 5px solid var(--violet);
+}
+
+.input-number-order:active {
+  outline: 3px solid var(--black);
+  outline-offset: -3px;
+  background-color: var(--white);
+}
+.input-number-order:invalid {
+  outline: 3px solid var(--danger);
+  outline-offset: -3px;
+  background-color: var(--white);
+}
+
+
+
+
+
+
 
 .text-input-order {
   font-family: Rubik;
@@ -177,5 +295,5 @@
 }
 
 .btn--order {
-   justify-self: start;
+  justify-self: start;
 }
