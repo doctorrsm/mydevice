@@ -17,7 +17,6 @@
   background-color: transparent;
   z-index: 1;
   cursor: pointer;
-
 }
 
 .btn::before {
@@ -43,26 +42,27 @@
 .btn:focus {
   outline: none;
 }
+
 .btn:focus::before {
   background-color: var(--violet);
-
 }
-
-
 
 .btn:active {
   color: #b39e59;
   background-color: var(--yellow);
 }
 
+.btn:active::before {
+  background-color: transparent;
+}
 
 .btn--advantages {
   padding: 9px 10px 11px;
   min-width: 160px;
   font-family: "Raleway", "Tahoma", sans-serif;
-    color: var(--black);
-
+  color: var(--black);
 }
+
 .btn--advantages::before {
   background-color: var(--yellow-hover);
 }
@@ -70,32 +70,36 @@
 .btn--advantages:active {
   color: var(--yellow);
 }
+
 .btn--advantages:active {
   background-color: var(--black);
 }
+
 .btn--advantages:active::before {
   background-color: var(--black);
 }
+
 .advantages__controls-item--selected {
   background-color: var(--black);
 }
+
 .advantages__controls-item--selected .btn--advantages {
   color: var(--yellow);
   background-color: var(--black);
   text-align: left;
 }
+
 .advantages__controls-item--selected .btn--advantages::before {
   background-color: var(--black);
 }
+
 .advantages__controls-item--selected .btn--advantages:hover:not(:focus)::before {
   background-color: var(--black);
 }
+
 .advantages__controls-item--selected .btn--advantages:focus::before {
   background-color: var(--black);
 }
-
-
-
 
 /* Goods link-button */
 .btn-goods {
@@ -138,5 +142,4 @@
 .btn--slider {
   margin-top: 6px;
   min-width: 220px;
-
 }

@@ -131,8 +131,9 @@
 .cart__pop-up {
   //display: none;
   position: absolute;
-  transform: translate(-42%);
+  transform: translate(-41%);
   z-index: 3;
+  top: 43px;
 }
 
 .top-header__cart-wrapper {
@@ -321,10 +322,11 @@
   top: 0;
   width: 0;
 height: 0;
-border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 40px solid var(--black);
-    transform: translate(-50%, -9px);
+border-left: 22px solid transparent;
+border-right: 22px solid transparent;
+border-bottom: 22px solid var(--black);
+transform: translate(-56%, -7px);
+
 }
 .pop-up__list {
   background-color: var(--black);
@@ -434,6 +436,7 @@ outline: 5px solid var(--violet);
   letter-spacing: 0.2em;
   display: block;
   padding: 10px;
+  padding-bottom: 12px;
   border: 3px solid  transparent;
   margin-top: 20px;
 }

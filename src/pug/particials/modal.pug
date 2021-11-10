@@ -1,4 +1,4 @@
-.modal-container(style="display: flex;")
+.modal-container(style="display: none;")
 	.modal
 		h2.modal__header Доставка под заказ
 		button(type="button").modal__close
@@ -6,7 +6,7 @@
 		form(action="https://echo.htmlacademy.ru/" method="post").form-order
 			.form-order__row
 				.field-group
-					label(for="customer-name").label-order Ваше имя
+					label(for="customer-name").label-order Ваше имя:
 					input(type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия").input-order
 					span.text-input-order.text-input-order--invalid Пожалуйста, представьтесь
 				.field-group
@@ -15,12 +15,12 @@
 					span.text-input-order Забавный у вас адрес
 			.counter-area
 				.field-group
-					label(for="customer-name").label-order Что нужно привести:
+					label(for="customer-name").label-order Что нужно привезти:
 					input(type="text" name="customer-name" id="customer-name" placeholder="В свободной форме").input-order
 					span.text-input-order
 				.field-group
 					span.label-order__wrapper.has-info
-						label(for="goods-count").label-order Количество
+						label(for="goods-count").label-order Количество:
 						button(type="button" tabindex="-1").info
 							span.visually-hidden Посмотреть дополнительную информацию
 						span.info-text

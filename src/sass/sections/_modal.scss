@@ -304,4 +304,10 @@ top: 14px;
 .btn--order {
   justify-self: start;
   margin-top: 40px;
+  min-width: 200px;
+}
+
+.btn--order::before {
+  background-color: var(--yellow-hover);
+
 }
