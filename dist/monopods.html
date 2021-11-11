@@ -41,7 +41,7 @@
             <div class="top-header__links-login"><a class="top-link top-link--login" href="#"> Коля Петухов</a><a class="top-link top-link--logout" href="#">Выйти</a>
             </div>
             <div class="top-header__links-cart"><a class="top-link top-link--compare" href="#">Сравнить</a>
-              <div class="top-header__cart-wrapper cart"><span class="cart-count">2</span><a class="top-link top-link--cart" href="#">Корзина</a>
+              <div class="top-header__cart-wrapper cart"><span class="cart-count">2</span><span class="visually-hidden"> Количество товаров в корзине</span><a class="top-link top-link--cart" href="#">Корзина</a>
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
                     <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" width="41" height="43" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
@@ -161,7 +161,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button class="content-sort__form-submit" type="submit">Показать</button>
+                <button class="btn btn--sort" type="submit">Показать</button>
               </form>
             </div>
           </div>
@@ -178,33 +178,33 @@
                   </select>
                   <button class="visually-hidden" type="submit">Отсортировать продукты</button>
                 </form>
-                <div class="sort-control__arr"><a class="sort-control__arr-item sort-control__arr-item--less"><span class="visually-hidden">Сортируем от меньшего к большему</span></a><a class="sort-control__arr-item sort-control__arr-item--more sort-control__arr-item--selected"><span class="visually-hidden">Сортируем от большего к меньшему</span></a></div>
+                <div class="sort-control__arr"><a class="sort-control__arr-item sort-control__arr-item--less" tabindex="0"><span class="visually-hidden">Сортируем от меньшего к большему</span></a><a class="sort-control__arr-item sort-control__arr-item--more sort-control__arr-item--selected" tabindex="0"><span class="visually-hidden">Сортируем от большего к меньшему</span></a></div>
               </header>
               <section class="catalog">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                 <article class="catalog__item">
-                  <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
+                  <div class="catalog__item-image-wrapper"><img class="catalog__item-img" src="images/content/monopods/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <div class="catalog__item-overlay"><a class="btn btn--catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Любительская селфи-палка</a><span class="catalog__item-price">500 &#8381;</span></div>
                 </article>
                 <article class="catalog__item">
-                  <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
+                  <div class="catalog__item-image-wrapper"><img class="catalog__item-img" src="images/content/monopods/product-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380">
+                    <div class="catalog__item-overlay"><a class="btn btn--catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Профессиональная<br> селфи-палка</a><span class="catalog__item-price">1500 &#8381;</span></div>
                 </article>
                 <article class="catalog__item">
-                  <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
+                  <div class="catalog__item-image-wrapper"><img class="catalog__item-img" src="images/content/monopods/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                    <div class="catalog__item-overlay"><a class="btn btn--catalog" href="#">Подробнее</a></div>
                   </div>
                   <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Непотопляемая<br> селфи-палка</a><span class="catalog__item-price">2500 &#8381;</span></div>
                 </article>
-                <article class="catalog__item">
-                  <div class="catalog__item-image-wrapper"><span class="catalog__item-bage">New</span><img class="catalog__item-img" src="images/content/monopods/product-4.jpg" alt="Селфи-палка 'следуй за мной'" width="360" height="380">
-                    <div class="catalog__item-overlay"><a class="btn-catalog" href="#">Подробнее</a></div>
+                <article class="catalog__item catalog__item--new">
+                  <div class="catalog__item-image-wrapper"><img class="catalog__item-img" src="images/content/monopods/product-4.jpg" alt="Селфи-палка 'следуй за мной'" width="360" height="380">
+                    <div class="catalog__item-overlay"><a class="btn btn--catalog" href="#">Подробнее</a></div>
                   </div>
-                  <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Селфи-палка "следуй за<br> мной"</a><span class="catalog__item-price">4900 &#8381;</span></div>
+                  <div class="catalog__item-desc"><a class="catalog__item-link" href="#">Селфи-палка &laquo;следуй за<br> мной&raquo;</a><span class="catalog__item-price">4900 &#8381;</span></div>
                 </article>
               </section>
               <button class="load-more" type="button">Загрузить еще</button>

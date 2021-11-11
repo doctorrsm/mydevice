@@ -85,7 +85,7 @@ block main
 										input(class="radio__input visually-hidden" type="radio" name="bluetooth" value="no-bluetooth")
 										span.radio__mark
 										span.checkbox__label Нет
-						button(type="submit").content-sort__form-submit Показать
+						button(type="submit").btn.btn--sort Показать
 			.col-shop
 				.content-shop
 					header.content-shop__header
@@ -98,49 +98,45 @@ block main
 								option(value="expensive") Сначала дорогие
 							button.visually-hidden(type="submit") Отсортировать продукты
 						.sort-control__arr
-							a.sort-control__arr-item.sort-control__arr-item--less
+							a(tabindex="0").sort-control__arr-item.sort-control__arr-item--less
 								span.visually-hidden Сортируем от меньшего к большему
-							a.sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
+							a(tabindex="0").sort-control__arr-item.sort-control__arr-item--more.sort-control__arr-item--selected
 								span.visually-hidden Сортируем от большего к меньшему
 					section.catalog
 						h2.visually-hidden Каталог товаров
 						article.catalog__item
 							.catalog__item-image-wrapper
-								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-1.jpg", alt="Любительская селфи-палка" width="360" height="380")
 								.catalog__item-overlay
-									a(href="#" ).btn-catalog Подробнее
+									a(href="#" ).btn.btn--catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Любительская селфи-палка
 								span.catalog__item-price 500 &#8381;
 
 						article.catalog__item
 							.catalog__item-image-wrapper
-								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-2.jpg", alt="Профессиональная селфи-палка "  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#").btn-catalog Подробнее
+									a(href="#").btn.btn--catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Профессиональная<br> селфи-палка
 								span.catalog__item-price 1500 &#8381;
 
 						article.catalog__item
 							.catalog__item-image-wrapper
-								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-3.jpg", alt="Непотопляемая селфи-палка"  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#").btn-catalog Подробнее
+									a(href="#").btn.btn--catalog Подробнее
 							.catalog__item-desc
 								a(href="#").catalog__item-link Непотопляемая<br> селфи-палка
 								span.catalog__item-price 2500 &#8381;
-						article.catalog__item
+						article.catalog__item.catalog__item--new
 							.catalog__item-image-wrapper
-								span.catalog__item-bage New
 								img.catalog__item-img(src="images/content/monopods/product-4.jpg", alt="Селфи-палка 'следуй за мной'"  width="360" height="380")
 								.catalog__item-overlay
-									a(href="#").btn-catalog Подробнее
+									a(href="#").btn.btn--catalog Подробнее
 							.catalog__item-desc
-								a(href="#").catalog__item-link Селфи-палка "следуй за<br> мной"
+								a(href="#").catalog__item-link Селфи-палка &laquo;следуй за<br> мной&raquo;
 								span.catalog__item-price 4900 &#8381;
 
 					button(type="button").load-more Загрузить еще

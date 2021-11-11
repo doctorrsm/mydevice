@@ -20,12 +20,9 @@
 
 html {
   box-sizing: border-box;
-  color: var(--dark);
-  font-size: 18px;
-  line-height: 1.67;
   height: 100%;
-  font-family: "Rubik", "Arial", sans-serif;
-  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -33,20 +30,20 @@ html {
 *::after {
   box-sizing: inherit;
 }
-* {
- // outline: 1px solid var(--violet);
-}
-html,
+
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
   padding-top: 40px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+
 }
 
 h1,
@@ -170,7 +167,7 @@ p {
   background-image: url(../images/modalwindow.png); //perfectpixel.png or innermenu.png or modalwindow.png
 }
 .bg-monopod {
-  background-image: url(../images/popupcart.png); //monopod.png or popupcart.png
+  background-image: url(../images/monopod.png); //monopod.png or popupcart.png
 }
 .bg-grid {
   background-image: url(../images/grid.png);
