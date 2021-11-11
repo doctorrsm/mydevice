@@ -3,16 +3,12 @@
   padding: 0 20px;
   margin: 0 auto;
   position: relative;
-
 }
-
 
 .container--special-offer {
   padding-top: 90px;
   padding-bottom: 75px;
 }
-
-
 
 .container--grid {
   display: flex;
@@ -22,10 +18,10 @@
   display: flex;
   margin: 0 -20px;
 }
+
 .row--shop-page {
   margin: 0;
 }
-
 
 .col {
   width: 50%;
@@ -36,9 +32,11 @@
   display: grid;
   grid-template-columns: 328px 1fr;
 }
+
 .col-sidebar {
   position: relative;
 }
+
 .col-sidebar::before {
   z-index: -1;
   position: absolute;
@@ -52,12 +50,11 @@
 }
 
 .col-shop {
-
-  padding-left: 72px;
   position: relative;
-  margin-bottom: 80px;
-
+  padding-left: 72px;
+  padding-bottom: 77px;
 }
+
 .col-shop::before {
   background-color: var(--light);
   content: '';
@@ -65,13 +62,12 @@
   width: 100vw;
   top: 0;
   left: 0;
-
   position: absolute;
   z-index: -1;
 }
+
 .sidebar-grid {
   background-color: var(--light-gray);
-
 }
 
 .d-flex {

@@ -34,8 +34,8 @@
       <div class="container bg-yellow page-header__container"><a class="page-header__logo logo" href="/"><img class="logo__img logo__img--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
         <div class="top-header">
           <form class="top-header__search search" action="https://echo.htmlacademy.ru/" method="get">
-            <input placeholder="Поиск по сайту" name="search" type="search">
-            <button type="submit">Найти</button>
+            <input class="search-input" placeholder="Поиск по сайту" name="search" type="search" required>
+            <button class="search-button" type="submit">Найти</button>
           </form>
           <div class="top-header__links">
             <div class="top-header__links-login"><a class="top-link top-link--login" href="#"> Коля Петухов</a><a class="top-link top-link--logout" href="#">Выйти</a>
@@ -45,10 +45,10 @@
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
                     <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" width="41" height="43" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
-                      <button class="pop-up__delete" type="button"></button>
+                      <button class="pop-up__delete" type="button"><span class="visually-hidden">Удалить из карзины</span></button>
                     </p>
                     <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" width="41" height="43" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
-                      <button class="pop-up__delete" type="button"></button>
+                      <button class="pop-up__delete" type="button"><span class="visually-hidden">Удалить из карзины</span></button>
                     </p>
                   </div>
                   <div class="pop-up__sum">
@@ -289,7 +289,7 @@
             </div>
             <div class="field-group">
               <label class="label-order" for="customer-email">Ваш e-mail:</label>
-              <input class="input-order" type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru"><span class="text-input-order">Забавный у вас адрес</span>
+              <input class="input-order" type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru" required><span class="text-input-order">Забавный у вас адрес</span>
             </div>
           </div>
           <div class="counter-area">
@@ -302,7 +302,7 @@
                 <button class="info" type="button" tabindex="-1"><span class="visually-hidden">Посмотреть дополнительную информацию</span></button><span class="info-text">	Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span></span>
               <div class="counter-group">
                 <button class="counter-order counter-order--minus" type="button" id="counter-minus"><span class="visually-hidden">Уменьшить количество на 1</span></button>
-                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1">
+                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1" required>
                 <button class="counter-order counter-order--plus" type="button" id="counter-plus"><span class="visually-hidden">Увеличить количество на 1</span></button>
               </div>
             </div>

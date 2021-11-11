@@ -57,13 +57,13 @@
   background-position: 0% 50%;
 }
 
-.top-link:focus {
-  border: 2px solid var(--violet);
-}
-
 .top-link:hover {
   opacity: 0.6;
   border: 2px solid transparent;
+}
+
+.top-link:focus {
+  border: 2px solid var(--violet);
 }
 
 .top-link:active {
@@ -221,14 +221,15 @@
   right: -27px;
   top: 13px;
 }
+.main-nav__link:hover {
+  border: 2px solid transparent;
+}
 
 .main-nav__link:focus {
   border: 2px solid var(--violet);
 }
 
-.main-nav__link:hover {
-  border: 2px solid transparent;
-}
+
 
 .main-nav__link:hover::after {
   opacity: 1;
@@ -252,6 +253,7 @@
 
 .main-nav__link:active {
   opacity: 0.3;
+  border-color: transparent;
 }
 
 .nav-dropdown__list {

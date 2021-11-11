@@ -294,9 +294,9 @@ p {
 }
 
 .col-shop {
-  padding-left: 72px;
   position: relative;
-  margin-bottom: 80px;
+  padding-left: 72px;
+  padding-bottom: 77px;
 }
 
 .col-shop::before {
@@ -460,7 +460,7 @@ p {
   display: flex;
 }
 
-.search input {
+.search-input {
   width: 100%;
   padding: 6px 10px 9px 51px;
   border: 2px solid transparent;
@@ -476,15 +476,15 @@ p {
   background-position: 15px 50%;
 }
 
-.search:hover input::placeholder {
+.search:hover .search-input::placeholder {
   color: #665a33;
 }
 
-.search input:not(:placeholder-shown) {
+.search-input:not(:placeholder-shown) {
   border-color: var(--black);
 }
 
-.search input:focus {
+.search-input:focus {
   border: 2px solid var(--violet);
   border-right: none;
 }
@@ -493,62 +493,88 @@ p {
   color: #b39e59;
 }
 
-.search input:active,
-.search input:focus:not(:placeholder-shown),
-.search input:active:not(:placeholder-shown) {
+.search-input:active,
+.search-input:focus:not(:placeholder-shown),
+.search-input:active:not(:placeholder-shown) {
   color: var(--black);
   border-color: var(--black);
 }
 
-.search button {
+.search-input:disabled, .search-input:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
+}
+
+.search-button {
   padding: 9px 55px;
   line-height: 1;
   border-radius: 0 20px 20px 0;
 }
 
-.search input + button {
+.search-input + .search-button {
   background-color: inherit;
   border: 2px solid transparent;
 }
 
-.search input + button:focus {
+.search-input + .search-button:focus {
   border-color: var(--violet);
 }
 
-.search input:placeholder-shown + button {
+.search-input:placeholder-shown + .search-button {
   background: transparent;
   color: transparent;
   border: none;
 }
 
-.search input:focus:placeholder-shown + button {
+.search-input:focus:placeholder-shown + .search-button {
   border: 2px solid var(--violet);
   border-left: none;
 }
 
-.search input:active:placeholder-shown + button {
+.search-input:active:placeholder-shown + .search-button {
   border: 2px solid var(--black);
   border-left: none;
 }
 
-.search input:not(:placeholder-shown) + button {
+.search-input:not(:placeholder-shown) + .search-button {
   border-color: var(--black);
 }
 
-.search input:not(:placeholder-shown) + button:focus {
-  border-color: var(--violet);
-}
-
-.search input:not(:placeholder-shown) + button:hover {
+.search-input:not(:placeholder-shown) + .search-button:not(:disabled):hover {
   border-color: var(--black);
   background-color: var(--black);
   cursor: pointer;
   color: var(--white);
 }
 
-.search input:not(:placeholder-shown) + button:active {
+.search-input:not(:placeholder-shown) + .search-button:focus {
+  border-color: var(--violet);
+}
+
+.search-input:not(:placeholder-shown) + .search-button:active {
   border-color: var(--black);
   color: #4c4c4c;
+}
+
+.search-button:disabled, .search-button:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
+  touch-action: none;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  display: none;
 }
 
 /* Main header section of the page */
@@ -610,13 +636,13 @@ p {
   background-position: 0% 50%;
 }
 
-.top-link:focus {
-  border: 2px solid var(--violet);
-}
-
 .top-link:hover {
   opacity: 0.6;
   border: 2px solid transparent;
+}
+
+.top-link:focus {
+  border: 2px solid var(--violet);
 }
 
 .top-link:active {
@@ -773,12 +799,12 @@ p {
   top: 13px;
 }
 
-.main-nav__link:focus {
-  border: 2px solid var(--violet);
-}
-
 .main-nav__link:hover {
   border: 2px solid transparent;
+}
+
+.main-nav__link:focus {
+  border: 2px solid var(--violet);
 }
 
 .main-nav__link:hover::after {
@@ -803,6 +829,7 @@ p {
 
 .main-nav__link:active {
   opacity: 0.3;
+  border-color: transparent;
 }
 
 .nav-dropdown__list {
@@ -1374,12 +1401,9 @@ h1 + .slider .slider__item::before {
   background-image: url("../images/icons/info.svg");
 }
 
-.special-offer__link:focus {
-  outline: 5px solid var(--violet);
-}
-
 .special-offer__link:hover {
   outline: none;
+  background-color: #ebebeb;
 }
 
 .special-offer__link:hover::before {
@@ -1392,12 +1416,17 @@ h1 + .slider .slider__item::before {
   opacity: 1;
 }
 
+.special-offer__link:focus {
+  outline: 5px solid var(--violet);
+}
+
 .special-offer__link:active::before {
   background-color: transparent;
 }
 
 .special-offer__link:active {
   background: linear-gradient(90deg, var(--yellow-hover) 125px, var(--light) 125px, var(--light) 100%);
+  outline: none;
 }
 
 .special-offer__link:active p,
@@ -1459,10 +1488,24 @@ h1 + .slider .slider__item::before {
   margin-bottom: 15px;
 }
 
-.site-contacts a[href^=tel] {
+.site-contacts__phone {
   text-decoration: underline;
   position: relative;
   top: -30px;
+}
+
+.site-contacts__phone:hover {
+  opacity: 0.5;
+}
+
+.site-contacts__phone:focus {
+  opacity: 1;
+  outline: 5px solid var(--violet);
+}
+
+.site-contacts__phone:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 .site-contacts__list {
@@ -1544,10 +1587,16 @@ h1 + .slider .slider__item::before {
   border-color: var(--black);
 }
 
-.subscribe__form input:invalid {
+.subscribe__form input.error {
   background-color: inherit;
   color: var(--dark);
   border-color: var(--danger);
+}
+
+.subscribe__form input:disabled, .subscribe__form input:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  cursro: default;
 }
 
 .subscribe__button {
@@ -1576,6 +1625,15 @@ h1 + .slider .slider__item::before {
 
 .subscribe__button:active {
   color: #4c4c4c;
+}
+
+.subscribe__button:disabled, .subscribe__button:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
 }
 
 .subscribe__span {
@@ -1671,6 +1729,7 @@ h1 + .slider .slider__item::before {
   margin: 0;
   padding: 25px 0 26px;
   position: relative;
+  padding-left: 3px;
 }
 
 .content-sort__header::before {
@@ -2185,32 +2244,32 @@ h1 + .slider .slider__item::before {
 .load-more {
   display: block;
   width: 100%;
-  border: 3px solid #e6e6e6;
-  padding: 17px 20px 13px;
+  border: none;
+  outline: 3px solid #e6e6e6;
+  outline-offset: -3px;
+  padding: 18px 20px 18px;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 3.2px;
   text-transform: uppercase;
   cursor: pointer;
-  outline: none;
   background-color: inherit;
 }
 
-.load-more:focus {
-  border: 5px solid var(--violet);
-  padding: 15px 20px 11px;
+.load-more:hover {
+  outline-color: var(--black);
 }
 
-.load-more:hover {
-  border: 3px solid var(--black);
-  padding: 17px 20px 13px;
+.load-more:focus {
+  outline: 5px solid var(--violet);
+  outline-offset: -5px;
 }
 
 .load-more:active {
-  border: 3px solid #e6e6e6;
+  outline: 3px solid var(--black);
   opacity: 0.3;
 }
 
@@ -2219,16 +2278,18 @@ h1 + .slider .slider__item::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 28px 16px;
+  flex-wrap: wrap;
 }
 
 .pagination__list {
   display: flex;
-  padding-left: 86px;
+  flex-wrap: wrap;
+  padding-left: 63px;
+  padding-top: 6px;
 }
 
 .pagination__item {
-  margin-right: 29px;
+  display: inline-flex;
 }
 
 .pagination__bnt {
@@ -2239,12 +2300,35 @@ h1 + .slider .slider__item::before {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  padding: 28px 26px 23px 30px;
+}
+
+.pagination__bnt:focus {
+  outline: 5px solid var(--violet);
+  outline-offset: -5px;
+}
+
+.pagination__bnt:active {
+  outline: none;
+  color: #9e9e9e;
 }
 
 .pagination__link {
   color: #b9b9b9;
   font-size: 16px;
   line-height: 19px;
+  padding: 8px 16px 11px 15px;
+  text-align: center;
+  outline: none;
+}
+
+.pagination__link:hover {
+  color: var(--black);
+}
+
+.pagination__link:focus {
+  outline: 5px solid var(--violet);
+  outline-offset: -5px;
 }
 
 .page-footer {

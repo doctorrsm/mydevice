@@ -11,7 +11,7 @@
 					span.text-input-order.text-input-order--invalid Пожалуйста, представьтесь
 				.field-group
 					label(for="customer-email").label-order Ваш e-mail:
-					input(type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru").input-order
+					input(type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru" required).input-order
 					span.text-input-order Забавный у вас адрес
 			.counter-area
 				.field-group
@@ -28,7 +28,7 @@
 					.counter-group
 						button(type="button" id="counter-minus").counter-order.counter-order--minus
 							span.visually-hidden Уменьшить количество на 1
-						input(type="number" name="goods-count" id="goods-count" value="1" min="1").input-number-order
+						input(type="number" name="goods-count" id="goods-count" value="1" min="1" required).input-number-order
 						button(type="button" id="counter-plus").counter-order.counter-order--plus
 							span.visually-hidden Увеличить количество на 1
 

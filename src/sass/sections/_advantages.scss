@@ -103,13 +103,9 @@
   background-position: 50%;
   background-image: url("../images/icons/info.svg");
 }
-
-.special-offer__link:focus {
-  outline: 5px solid var(--violet);
-}
-
 .special-offer__link:hover {
   outline: none;
+  background-color: #ebebeb;
 }
 
 .special-offer__link:hover::before {
@@ -122,12 +118,23 @@
   opacity: 1;
 }
 
+
+
+.special-offer__link:focus {
+  outline: 5px solid var(--violet);
+}
+
+
+
+
+
 .special-offer__link:active::before {
   background-color: transparent;
 }
 
 .special-offer__link:active {
   background: linear-gradient(90deg, var(--yellow-hover) 125px, var(--light) 125px, var(--light) 100%);
+  outline: none;
 }
 
 .special-offer__link:active p,

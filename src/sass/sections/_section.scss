@@ -47,12 +47,22 @@
   margin-bottom: 15px;
 }
 
-.site-contacts a[href^=tel] {
+.site-contacts__phone {
   text-decoration: underline;
   position: relative;
   top: -30px;
 }
-
+.site-contacts__phone:hover {
+  opacity: 0.5;
+}
+.site-contacts__phone:focus {
+  opacity: 1;
+  outline: 5px solid var(--violet);
+}
+.site-contacts__phone:active {
+  opacity: 0.3;
+  outline: none;
+}
 .site-contacts__list {
   margin-top: 75px;
 }
@@ -127,10 +137,16 @@
   color: var(--dark);
   border-color: var(--black);
 }
-.subscribe__form input:invalid {
+.subscribe__form input.error{
   background-color: inherit;
   color: var(--dark);
   border-color: var(--danger);
+}
+
+.subscribe__form input:disabled,.subscribe__form input:disabled:hover  {
+  opacity: 0.2;
+  background-color: var(--light);
+  cursro: default;
 }
 .subscribe__button {
   font-style: normal;
@@ -156,6 +172,15 @@
 }
 .subscribe__button:active {
   color: #4c4c4c;
+}
+
+.subscribe__button:disabled, .subscribe__button:disabled:hover  {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
 }
 .subscribe__span {
   position: relative;
