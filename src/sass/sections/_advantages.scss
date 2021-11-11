@@ -2,12 +2,13 @@
   //background-color: var(--light);
   background: linear-gradient(180deg, var(--white) 100px, var(--light) 100px, var(--light) 100%);
 
-  padding-bottom: 83px;
+  padding-bottom: 68px;
 
 }
 
 .advantages__controls {
   padding-top: 80px;
+  padding-bottom: 47px;
   position: relative;
   border-right: 7px solid var(--black);
   width: 284px;
@@ -24,7 +25,7 @@
 .advantages__item {
   background-repeat: no-repeat;
   background-position: right center;
-  padding-top: 55px;
+  padding-top: 71px;
   padding-left: 116px;
   padding-right: 305px;
 }
@@ -33,7 +34,7 @@
   display: none;
 }
 */
-.advantages__item:not(:nth-child(3)) {
+.advantages__item:not(:nth-child(1)) {
   display: none;
 }
 .advantages__item--delivery {
@@ -52,8 +53,13 @@
 }
 
 .advantages__header {
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-size: 50px;
-  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 33px;
 }
 
 .special-offer {
@@ -66,7 +72,7 @@
   display: block;
   background-color: var(--light);
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   line-height: 24px;
   color: var(--black);

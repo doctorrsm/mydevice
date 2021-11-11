@@ -23,7 +23,7 @@
   outline: 5px solid var(--violet);
 }
 
-.categories__link:focus h3 {
+.categories__link:focus .categories__name {
   color: var(--violet);
 }
 
@@ -31,10 +31,13 @@
   outline: none;
 }
 
-.categories__link:active * {
+.categories__link:active .icon-box{
   opacity: 0.3;
 }
-
+.categories__link:active .categories__name{
+  opacity: 0.3;
+  color: var(--black);
+}
 .icon-box {
   width: 160px;
   height: 160px;

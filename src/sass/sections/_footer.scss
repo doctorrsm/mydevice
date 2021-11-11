@@ -40,16 +40,10 @@
   letter-spacing: 0.2em;
 }
 
-.page-footer__nav-link:focus {
-  border-color: var(--violet);
-
-}
-
 .page-footer__nav-link:hover {
   border-color: transparent;
   color: var(--yellow-hover);
 }
-
 .page-footer__nav-link:hover::after {
   position: absolute;
   bottom: 4px;
@@ -61,8 +55,18 @@
   transform: translateX(-51%);
 }
 
+.page-footer__nav-link:focus {
+  border-color: var(--violet);
+
+}
+
+
+
+
+
 .page-footer__nav-link:active {
   opacity: 0.3;
+  border-color: transparent;
 }
 
 .page-footer__phone {
@@ -84,6 +88,9 @@
 
 
 }
+.page-footer__phone a:hover {
+    color: var(--yellow-hover);
+}
 
 .page-footer__phone a:focus {
   border: 2px solid var(--violet);
@@ -93,10 +100,7 @@
   outline: none;
 }
 
-.page-footer__phone a:hover {
-  border: 2px solid transparent;
-  color: var(--yellow-hover);
-}
+
 .page-footer__phone a:active {
   border: 2px solid transparent;
   color: var(--yellow-hover);
@@ -148,6 +152,15 @@
 .socials__link svg {
   fill: var(--dark);
 }
+
+.socials__link:hover {
+  background-color: var(--yellow-hover);
+
+}
+.socials__link:hover svg {
+  fill: var(--dark);
+}
+
 .socials__link:focus {
   background-color: var(--dark);
   border: 5px solid var(--violet);
@@ -155,13 +168,7 @@
 .socials__link:focus svg  {
   fill: var(--white);
 }
-.socials__link:hover {
-  background-color: var(--yellow-hover);
-  border-color: transparent;
-}
-.socials__link:hover svg {
-  fill: var(--dark);
-}
+
 
 .socials__link:active{
   background-color: var(--yellow-hover);
@@ -201,18 +208,19 @@
   fill: var(--yellow-hover);
 }
 
-
-.copyright__link:focus{
-  border-color: var(--violet);
-}
-
 .copyright__link:hover{
-  border-color: transparent;
+
 }
 
 .copyright__link:hover svg{
   fill: var(--white);
 }
+
+.copyright__link:focus{
+  border-color: var(--violet);
+}
+
+
 
 .copyright__link:active{
   border-color: transparent;

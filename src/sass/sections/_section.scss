@@ -22,10 +22,11 @@
   position: relative;
   font-style: normal;
   font-size: 50px;
-  line-height: 1;
+  line-height: 50px;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   margin-bottom: 46px;
+  color: var(--black);
 }
 
 .site-contacts__header::before {

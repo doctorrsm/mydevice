@@ -31,14 +31,17 @@
 .dot--active {
   background-color: var(--black);
 }
-.dot:focus{
-  border-color: var(--violet);
-}
 .dot:hover{
   opacity: 0.6;
 }
+.dot:focus{
+
+  border-color: var(--violet);
+}
+
 .dot:active{
   opacity: 0.3;
+  border-color: var(--black);
 }
 .slider__item {
   display: grid;
