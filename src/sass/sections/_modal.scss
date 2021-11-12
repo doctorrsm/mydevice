@@ -79,7 +79,7 @@
 }
 
 .label-order {
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -121,7 +121,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   background-color: var(--black);
   z-index: 1;
@@ -129,6 +129,20 @@
 
 .info:hover .info-text {
   display: block;
+}
+
+.info-text::before {
+  position: absolute;
+  content: "";
+  left: 73%;
+  top: -6px;
+  background-image: url("../images/icons/triangle.svg");
+  background-position: center;
+  background-repeat:no-repeat;
+  width: 14px;
+  height: 6px;
+
+
 }
 
 .input-order {
@@ -141,7 +155,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   background-color: var(--light);
 }
@@ -283,7 +297,7 @@
 }
 
 .text-input-order {
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
