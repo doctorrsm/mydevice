@@ -85,7 +85,6 @@
   line-height: 18px;
 }
 
-
 .range {
   margin-left: 13px;
 }
@@ -141,14 +140,23 @@
 .range__label {
   display: flex;
   width: 47%;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
   color: #000000;
-  opacity: 0.3;
+  opacity: 0.3
+}
+
+.range__label:focus-within:not(:active) {
+  color: var(--violet);
+}
+
+.range__label:active {
+  color: var(--black);
+  opacity: 1;
 }
 
 .range__input {
@@ -157,12 +165,31 @@
   border: none;
   width: 30px;
   font: inherit;
+  color: inherit;
+}
+
+.range__input:active,
+.range__input:focus-within:active {
+  color: var(--black);
 }
 
 .range__input::-webkit-outer-spin-button,
 .range__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range__input:disabled .range__input:disabled:hover {
+  background-color: var(--black);
+  opacity: 0.1;
+}
+
+.range__input:invalid {
+  border: 1px solid var(--danger);
+}
+
+.range__input.error {
+  border: 1px solid var(--danger);
 }
 
 .content-sort__item {
@@ -199,7 +226,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -221,13 +248,13 @@
   opacity: 0.5;
 }
 
-/*Фокус*/
+/*Focus*/
 .checkbox:focus-within .checkbox__input[type="checkbox"]~.checkbox__mark {
   border-color: var(--violet);
   opacity: 1;
 }
 
-.checkbox:focus-within .checkbox__input[type="checkbox"]~.checkbox__mark svg {
+.checkbox:focus-within svg {
   fill: var(--violet);
   opacity: 1;
 }
@@ -237,15 +264,34 @@
   opacity: 1;
 }
 
-/*Активность*/
+/*Active*/
 .checkbox:active {
+  opacity: 0.2;
+}
+
+.checkbox__input[type="checkbox"]:disabled~.checkbox__mark,
+.checkbox__input[type="checkbox"]:disabled:hover~.checkbox__mark {
+  opacity: 0.2;
+  color: var(--black);
+  border-color: (--black);
+}
+
+.checkbox__input[type="checkbox"]:disabled~svg,
+.checkbox__input[type="checkbox"]:disabled:hover~svg {
+  fill: var(--black);
+  opacity: 0.2;
+}
+
+.checkbox__input[type="checkbox"]:disabled~.checkbox__label,
+.checkbox__input[type="checkbox"]:disabled:hover~.checkbox__label {
+  color: var(--black);
   opacity: 0.2;
 }
 
 .radio {
   display: flex;
   align-items: center;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -298,22 +344,31 @@
 }
 
 /*Фокус*/
-.radio:focus-within .radio__input[type="radio"]~.radio__mark {
+.radio:focus-within .radio__mark {
   border-color: var(--violet);
   opacity: 1;
 }
 
-.radio:focus-within .radio__input[type="radio"]~.radio__mark::after {
+.radio:focus-within .radio__mark::after {
   background-color: var(--violet);
   opacity: 1;
 }
 
-.radio:focus-within .radio__input[type="radio"]~.checkbox__label {
+.radio:focus-within .checkbox__label {
   color: var(--violet);
   opacity: 1;
 }
 
 /*Активность*/
 .radio:active {
+  opacity: 0.2;
+}
+
+.radio__input[type="radio"]:disabled~.checkbox__label,
+.radio__input[type="radio"]:disabled:hover~.checkbox__label {
+  opacity: 0.2;
+}
+
+.radio__input[type="radio"]:disabled~.radio__mark {
   opacity: 0.2;
 }

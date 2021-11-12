@@ -40,17 +40,28 @@
   padding: 6px 13px;
 
 }
+.breadcrumbs__link:hover{
+  color: var(--black);
+}
 
 .breadcrumbs__link:focus{
   outline: 5px solid var(--violet);
 }
 
-.breadcrumbs__link:hover{
-  outline: none;
-  color: var(--black);
-}
-
 .breadcrumbs__link:active{
   outline: none;
   color: #b3b3b3;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:hover {
+
+  color: #666666;
+}
+.breadcrumbs__item:last-child .breadcrumbs__link:focus{
+
+  color: #666666;
+}
+.breadcrumbs__item:last-child .breadcrumbs__link:active {
+
+  color: #666666;
 }

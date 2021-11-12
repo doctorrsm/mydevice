@@ -19,7 +19,7 @@
 }
 
 .modal__header {
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -46,10 +46,6 @@
 
 .modal__close:hover {
   opacity: 0.6;
-}
-
-.modal__close:hover {
-  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -60,6 +56,7 @@
 
 .modal__close:active {
   opacity: 0.3;
+  box-shadow: none;
 }
 
 .form-order {
@@ -106,7 +103,7 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  margin-top:3px
+  margin-top: 3px
 }
 
 .info:hover+.info-text {
@@ -168,6 +165,18 @@
 
 .input-order:invalid {
   border-color: var(--danger);
+  outline: none;
+}
+
+.input-order.error {
+  border-color: var(--danger);
+}
+
+.input-order:disabled,
+.input-order:disabled:hover {
+  background-color: var(--white);
+  background-color: var(--black);
+  opacity: 0.2;
 }
 
 .input-order::placeholder {
@@ -192,11 +201,8 @@
 
 .counter-group {
   position: relative;
-  width:160px;
+  width: 160px;
 }
-
-
-
 
 .counter-order {
   border: 2px solid transparent;
@@ -207,12 +213,13 @@
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
-
 }
-.counter-order:hover, .counter-order:focus {
+
+.counter-order:hover,
+.counter-order:focus {
   opacity: 1;
-
 }
+
 .counter-order:focus {
   border-color: var(--violet);
 }
@@ -223,12 +230,13 @@
 }
 
 .counter-order--minus {
-background-repeat: no-repeat;
-background-position: center;
-background-image: url("../images/icons/minus.svg");
-left: 10px;
-top: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icons/minus.svg");
+  left: 10px;
+  top: 14px;
 }
+
 .counter-order--plus {
   background-repeat: no-repeat;
   background-position: center;
@@ -236,9 +244,6 @@ top: 14px;
   right: 12px;
   top: 14px;
 }
-
-
-
 
 .input-number-order[type="number"] {
   width: 100%;
@@ -248,7 +253,6 @@ top: 14px;
   background-color: var(--light);
   border: 3px solid var(--light);
 }
-
 
 .input-number-order[type="number"]::-webkit-outer-spin-button,
 .input-number-order[type="number"]::-webkit-inner-spin-button {
@@ -262,7 +266,6 @@ top: 14px;
   -moz-appearance: textfield;
 }
 
-
 .input-number-order:focus {
   outline: 5px solid var(--violet);
 }
@@ -272,17 +275,12 @@ top: 14px;
   outline-offset: -3px;
   background-color: var(--white);
 }
+
 .input-number-order:invalid {
   outline: 3px solid var(--danger);
   outline-offset: -3px;
   background-color: var(--white);
 }
-
-
-
-
-
-
 
 .text-input-order {
   font-family: Rubik;
@@ -309,5 +307,4 @@ top: 14px;
 
 .btn--order::before {
   background-color: var(--yellow-hover);
-
 }

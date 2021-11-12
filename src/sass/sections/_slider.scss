@@ -122,7 +122,7 @@ h1 + .slider .slider__item::before {
   color: var(--white);
   font-size: 180px;
   line-height: 1;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 800;
 }
 
@@ -130,7 +130,7 @@ h1 + .slider .slider__item::before {
   color: var(--black);
   font-size: 50px;
   line-height: 1;
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   position: relative;
   z-index: 1;

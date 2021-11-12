@@ -74,6 +74,12 @@ body {
   font-weight: 400;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 h1,
 h2,
 h3,
@@ -95,7 +101,8 @@ h6 {
   font-weight: 700;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 50px;
   line-height: 1;
 }
@@ -130,12 +137,6 @@ button {
 input {
   outline: 0;
   border: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 ul {
@@ -455,6 +456,16 @@ p {
   min-width: 220px;
 }
 
+.btn:disabled,
+.btn:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
+}
+
 .search {
   display: flex;
 }
@@ -602,6 +613,22 @@ p {
 
 .top-header__search {
   width: 50%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo:focus {
+  outline: 1px solid var(--violet);
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .top-header__links {
@@ -759,7 +786,7 @@ p {
   outline: none;
   font-size: 18px;
   line-height: 21px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1177,7 +1204,7 @@ h1 + .slider .slider__item::before {
   color: var(--white);
   font-size: 180px;
   line-height: 1;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 800;
 }
 
@@ -1185,7 +1212,7 @@ h1 + .slider .slider__item::before {
   color: var(--black);
   font-size: 50px;
   line-height: 1;
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   position: relative;
   z-index: 1;
@@ -1292,11 +1319,11 @@ h1 + .slider .slider__item::before {
 }
 
 .categories__name {
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.36px;
   margin-top: 33px;
   margin-bottom: 0;
 }
@@ -1708,18 +1735,29 @@ h1 + .slider .slider__item::before {
   padding: 6px 13px;
 }
 
-.breadcrumbs__link:focus {
-  outline: 5px solid var(--violet);
+.breadcrumbs__link:hover {
+  color: var(--black);
 }
 
-.breadcrumbs__link:hover {
-  outline: none;
-  color: var(--black);
+.breadcrumbs__link:focus {
+  outline: 5px solid var(--violet);
 }
 
 .breadcrumbs__link:active {
   outline: none;
   color: #b3b3b3;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:hover {
+  color: #666666;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:focus {
+  color: #666666;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:active {
+  color: #666666;
 }
 
 .content-sort {
@@ -1864,7 +1902,7 @@ h1 + .slider .slider__item::before {
 .range__label {
   display: flex;
   width: 47%;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1874,18 +1912,46 @@ h1 + .slider .slider__item::before {
   opacity: 0.3;
 }
 
+.range__label:focus-within:not(:active) {
+  color: var(--violet);
+}
+
+.range__label:active {
+  color: var(--black);
+  opacity: 1;
+}
+
 .range__input {
   appearance: textfield;
   background-color: transparent;
   border: none;
   width: 30px;
   font: inherit;
+  color: inherit;
+}
+
+.range__input:active,
+.range__input:focus-within:active {
+  color: var(--black);
 }
 
 .range__input::-webkit-outer-spin-button,
 .range__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range__input:disabled .range__input:disabled:hover {
+  background-color: var(--black);
+  opacity: 0.1;
+}
+
+.range__input:invalid {
+  border: 1px solid var(--danger);
+}
+
+.range__input.error {
+  border: 1px solid var(--danger);
 }
 
 .content-sort__item {
@@ -1922,7 +1988,7 @@ h1 + .slider .slider__item::before {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -1944,13 +2010,13 @@ h1 + .slider .slider__item::before {
   opacity: 0.5;
 }
 
-/*Фокус*/
+/*Focus*/
 .checkbox:focus-within .checkbox__input[type=checkbox] ~ .checkbox__mark {
   border-color: var(--violet);
   opacity: 1;
 }
 
-.checkbox:focus-within .checkbox__input[type=checkbox] ~ .checkbox__mark svg {
+.checkbox:focus-within svg {
   fill: var(--violet);
   opacity: 1;
 }
@@ -1960,15 +2026,34 @@ h1 + .slider .slider__item::before {
   opacity: 1;
 }
 
-/*Активность*/
+/*Active*/
 .checkbox:active {
+  opacity: 0.2;
+}
+
+.checkbox__input[type=checkbox]:disabled ~ .checkbox__mark,
+.checkbox__input[type=checkbox]:disabled:hover ~ .checkbox__mark {
+  opacity: 0.2;
+  color: var(--black);
+  border-color: --black;
+}
+
+.checkbox__input[type=checkbox]:disabled ~ svg,
+.checkbox__input[type=checkbox]:disabled:hover ~ svg {
+  fill: var(--black);
+  opacity: 0.2;
+}
+
+.checkbox__input[type=checkbox]:disabled ~ .checkbox__label,
+.checkbox__input[type=checkbox]:disabled:hover ~ .checkbox__label {
+  color: var(--black);
   opacity: 0.2;
 }
 
 .radio {
   display: flex;
   align-items: center;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2021,23 +2106,32 @@ h1 + .slider .slider__item::before {
 }
 
 /*Фокус*/
-.radio:focus-within .radio__input[type=radio] ~ .radio__mark {
+.radio:focus-within .radio__mark {
   border-color: var(--violet);
   opacity: 1;
 }
 
-.radio:focus-within .radio__input[type=radio] ~ .radio__mark::after {
+.radio:focus-within .radio__mark::after {
   background-color: var(--violet);
   opacity: 1;
 }
 
-.radio:focus-within .radio__input[type=radio] ~ .checkbox__label {
+.radio:focus-within .checkbox__label {
   color: var(--violet);
   opacity: 1;
 }
 
 /*Активность*/
 .radio:active {
+  opacity: 0.2;
+}
+
+.radio__input[type=radio]:disabled ~ .checkbox__label,
+.radio__input[type=radio]:disabled:hover ~ .checkbox__label {
+  opacity: 0.2;
+}
+
+.radio__input[type=radio]:disabled ~ .radio__mark {
   opacity: 0.2;
 }
 
@@ -2067,7 +2161,7 @@ h1 + .slider .slider__item::before {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   cursor: pointer;
   background-color: var(--light);
@@ -2424,7 +2518,7 @@ h1 + .slider .slider__item::before {
   font-size: 16px;
   line-height: 30px;
   font-family: "Rubik", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   text-align: right;
   text-align: center;
 }
@@ -2575,7 +2669,7 @@ h1 + .slider .slider__item::before {
 }
 
 .modal__header {
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -2602,10 +2696,6 @@ h1 + .slider .slider__item::before {
 
 .modal__close:hover {
   opacity: 0.6;
-}
-
-.modal__close:hover {
-  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -2616,6 +2706,7 @@ h1 + .slider .slider__item::before {
 
 .modal__close:active {
   opacity: 0.3;
+  box-shadow: none;
 }
 
 .form-order {
@@ -2724,6 +2815,18 @@ h1 + .slider .slider__item::before {
 
 .input-order:invalid {
   border-color: var(--danger);
+  outline: none;
+}
+
+.input-order.error {
+  border-color: var(--danger);
+}
+
+.input-order:disabled,
+.input-order:disabled:hover {
+  background-color: var(--white);
+  background-color: var(--black);
+  opacity: 0.2;
 }
 
 .input-order::placeholder {
@@ -2760,7 +2863,8 @@ h1 + .slider .slider__item::before {
   cursor: pointer;
 }
 
-.counter-order:hover, .counter-order:focus {
+.counter-order:hover,
+.counter-order:focus {
   opacity: 1;
 }
 

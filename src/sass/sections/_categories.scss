@@ -31,13 +31,15 @@
   outline: none;
 }
 
-.categories__link:active .icon-box{
+.categories__link:active .icon-box {
   opacity: 0.3;
 }
-.categories__link:active .categories__name{
+
+.categories__link:active .categories__name {
   opacity: 0.3;
   color: var(--black);
 }
+
 .icon-box {
   width: 160px;
   height: 160px;
@@ -73,11 +75,11 @@
 }
 
 .categories__name {
-  font-family: Raleway;
+  font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.36px;
   margin-top: 33px;
   margin-bottom: 0;
 }

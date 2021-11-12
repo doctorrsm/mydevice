@@ -43,7 +43,12 @@ body {
   line-height: 30px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 h1,
@@ -58,7 +63,6 @@ h6 {
   font-weight: 800;
   color: var(--black);
   margin-top: 0;
-
 }
 
 h4,
@@ -68,14 +72,13 @@ h6 {
   font-weight: 700;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 50px;
   line-height: 1;
 }
 
-h2 {
-
-}
+h2 {}
 
 h3 {
   font-size: 18px;
@@ -92,32 +95,28 @@ a {
   border: none;
 }
 
-
 a:hover {
   cursor: pointer;
 }
+
 address {
   font-style: normal;
 }
+
 button {
   outline: 0;
 }
-
 
 input {
   outline: 0;
   border: 0;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
- }
+}
 
 p {
   margin-top: 0;
@@ -128,11 +127,14 @@ p {
   flex-grow: 1;
 }
 
-.d-flex {display: flex;}
-.bg-yellow {
+.d-flex {
+  display: flex;
+}
 
+.bg-yellow {
   background-color: var(--yellow);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -160,18 +162,20 @@ p {
   pointer-events: none;
   background-repeat: no-repeat;
   background-position: 50% 0;
-
 }
 
-.bg-index{
+.bg-index {
   background-image: url(../images/perfectpixel.png); //perfectpixel.png or innermenu.png or modalwindow.png
 }
+
 .bg-monopod {
   background-image: url(../images/monopod.png); //monopod.png or popupcart.png
 }
+
 .bg-grid {
   background-image: url(../images/grid.png);
 }
+
 .perfectpixel-btn {
   display: flex;
   position: fixed;
@@ -187,8 +191,6 @@ p {
   transition: all .6s;
   background: #ff00cc;
   z-index: 100;
-
-
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #333399, #ff00cc);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -198,22 +200,20 @@ p {
 
 .perfectpixel-btn:hover {
   background: #ff00cc;
-
- transform: scale(1.1);
+  transform: scale(1.1);
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ff00cc, #333399);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ff00cc, #333399);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-#btn--index {
 
-}
+#btn--index {}
 
 #btn--grid {
   bottom: 140px
 }
+
 #btn--monopod {
   bottom: 260px
 }
