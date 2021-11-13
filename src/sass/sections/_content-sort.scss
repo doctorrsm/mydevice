@@ -110,6 +110,7 @@
   border: 2px solid var(--black);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .range__toggle:focus {
@@ -160,6 +161,7 @@
 }
 
 .range__input {
+  outline: none;
   appearance: textfield;
   background-color: transparent;
   border: none;

@@ -14,6 +14,9 @@
   margin-top: 0;
   margin-bottom: 30px;
 }
+.site-contacts address {
+  font-style: normal;
+}
 .site-contacts__block {
   padding-right: 45px;
 }
@@ -138,10 +141,12 @@ list-style-type: none;
 
 }
 .subscribe__form input {
+  outline: none;
   font-size: 18px;
   line-height: 30px;
   color: #dadada;
   flex-grow: 1;
+  border: none;
   border-bottom: 3px solid #d8d8d8;
   background-color: inherit;
 }
@@ -180,6 +185,7 @@ list-style-type: none;
   text-transform: uppercase;
   padding: 12px 38px 12px;
   border: 3px solid #d8d8d8;
+  outline: none;
 }
 
 .subscribe__button:focus {

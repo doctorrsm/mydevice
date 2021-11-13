@@ -115,17 +115,8 @@ h4 {
   font-size: 18px;
 }
 
-address {
-  font-style: normal;
-}
-
 button {
   outline: 0;
-}
-
-input {
-  outline: 0;
-  border: 0;
 }
 
 .page-main {
@@ -502,6 +493,7 @@ input {
   padding: 9px 55px;
   line-height: 1;
   border-radius: 0 20px 20px 0;
+  outline: none;
 }
 
 .search-input + .search-button {
@@ -994,6 +986,7 @@ input {
   border: 2px solid transparent;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .pop-up__delete:hover {
@@ -1084,6 +1077,7 @@ input {
   margin: 0;
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .dot:not(:last-child) {
@@ -1152,6 +1146,7 @@ h1 + .slider .slider__item::before {
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 6px;
+  outline: none;
 }
 
 .arrow--left {
@@ -1510,6 +1505,10 @@ h1 + .slider .slider__item::before {
   margin-bottom: 30px;
 }
 
+.site-contacts address {
+  font-style: normal;
+}
+
 .site-contacts__block {
   padding-right: 45px;
 }
@@ -1636,10 +1635,12 @@ h1 + .slider .slider__item::before {
 }
 
 .subscribe__form input {
+  outline: none;
   font-size: 18px;
   line-height: 30px;
   color: #dadada;
   flex-grow: 1;
+  border: none;
   border-bottom: 3px solid #d8d8d8;
   background-color: inherit;
 }
@@ -1683,6 +1684,7 @@ h1 + .slider .slider__item::before {
   text-transform: uppercase;
   padding: 12px 38px 12px;
   border: 3px solid #d8d8d8;
+  outline: none;
 }
 
 .subscribe__button:focus {
@@ -1911,6 +1913,7 @@ h1 + .slider .slider__item::before {
   border: 2px solid var(--black);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .range__toggle:focus {
@@ -1961,6 +1964,7 @@ h1 + .slider .slider__item::before {
 }
 
 .range__input {
+  outline: none;
   appearance: textfield;
   background-color: transparent;
   border: none;
@@ -2507,6 +2511,7 @@ h1 + .slider .slider__item::before {
 }
 
 .page-footer__address {
+  font-style: normal;
   width: 346px;
 }
 
@@ -2566,6 +2571,7 @@ h1 + .slider .slider__item::before {
 }
 
 .page-footer__phone {
+  font-style: normal;
   margin-left: auto;
   margin-right: -16px;
 }
@@ -2876,6 +2882,7 @@ h1 + .slider .slider__item::before {
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   background-color: var(--light);
+  outline: none;
 }
 
 .input-order:hover {
@@ -2943,6 +2950,7 @@ h1 + .slider .slider__item::before {
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
+  outline: none;
 }
 
 .counter-order:hover,
@@ -2973,6 +2981,10 @@ h1 + .slider .slider__item::before {
   background-image: url("../images/icons/plus.svg");
   right: 12px;
   top: 14px;
+}
+
+.input-number-order {
+  outline: none;
 }
 
 .input-number-order[type=number] {

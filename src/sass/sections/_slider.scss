@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 .dot:not(:last-child) {
   margin-right: 22px;
@@ -83,6 +84,7 @@ h1 + .slider .slider__item::before {
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 6px;
+  outline: none;
 }
 
 .arrow--left {
