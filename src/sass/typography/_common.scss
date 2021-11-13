@@ -51,14 +51,6 @@ img {
   vertical-align: middle;
 }
 
-option {
-  font-weight: normal;
-  display: block;
-  white-space: nowrap;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
-}
-
 .d-flex {
   display: flex;
 }
@@ -88,75 +80,3 @@ option {
 }
 
 
-/*
-.show {
-  display: block;
-}*/
-
-.perfectpixel {
-  opacity: 0.3;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 4000px;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-}
-
-.bg-index {
-  background-image: url(../images/perfectpixel.png); //perfectpixel.png or innermenu.png or modalwindow.png
-}
-
-.bg-monopod {
-  background-image: url(../images/monopod.png); //monopod.png or popupcart.png
-}
-
-.bg-grid {
-  background-image: url(../images/grid.png);
-}
-
-.perfectpixel-btn {
-  display: flex;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  transition: all .6s;
-  background: #ff00cc;
-  z-index: 100;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333399, #ff00cc);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.perfectpixel-btn:hover {
-  background: #ff00cc;
-  transform: scale(1.1);
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff00cc, #333399);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff00cc, #333399);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#btn--index {}
-
-#btn--grid {
-  bottom: 140px
-}
-
-#btn--monopod {
-  bottom: 260px
-}
