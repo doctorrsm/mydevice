@@ -80,6 +80,14 @@ img {
   vertical-align: middle;
 }
 
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -236,7 +244,7 @@ img {
 .col-shop {
   position: relative;
   padding-left: 72px;
-  padding-bottom: 77px;
+  padding-bottom: 79px;
 }
 
 .col-shop::before {
@@ -1206,7 +1214,7 @@ h1 + .slider .slider__item::before {
   font-size: 36px;
   margin-left: 0;
   line-height: 48px;
-  padding: 5px 0 5px;
+  padding: 5px 0 4px;
 }
 
 .categories {
@@ -1706,6 +1714,7 @@ h1 + .slider .slider__item::before {
 
 .subscribe__span {
   position: relative;
+  padding-left: 37px;
 }
 
 .subscribe__span::before {
@@ -1714,7 +1723,7 @@ h1 + .slider .slider__item::before {
   height: 14px;
   width: 14px;
   position: absolute;
-  left: -37px;
+  left: 0;
   top: 8px;
 }
 

@@ -245,6 +245,7 @@
 
 .subscribe__span {
   position: relative;
+  padding-left: 37px;
 }
 
 .subscribe__span::before {
@@ -253,6 +254,6 @@
   height: 14px;
   width: 14px;
   position: absolute;
-  left: -37px;
+  left: 0;
   top: 8px;
 }
