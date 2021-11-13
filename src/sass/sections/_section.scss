@@ -10,6 +10,10 @@
   grid-gap: 40px;
 
 }
+.site-contacts p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .site-contacts__block {
   padding-right: 45px;
 }
@@ -50,6 +54,8 @@
 
 .site-contacts__phone {
   text-decoration: underline;
+  cursor: pointer;
+  color: var(--dark);
   position: relative;
   top: -30px;
 }
@@ -65,7 +71,10 @@
   outline: none;
 }
 .site-contacts__list {
+  margin: 0;
   margin-top: 75px;
+  padding: 0;
+list-style-type: none;
 }
 
 .site-contacts__item {
@@ -93,7 +102,10 @@
 }
 
 .site-contacts__work-time {
+  margin: 0;
   margin-bottom: 12px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .subscribe {
@@ -104,6 +116,10 @@
 
 .subscribe__header {
 
+}
+.subscribe__text {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .subscribe__text:first-child {

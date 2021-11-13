@@ -60,6 +60,7 @@
 .sort-control__arr-item {
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 
 .sort-control__arr-item::after {
@@ -158,6 +159,8 @@
   line-height: 24px;
   letter-spacing: -0.34px;
   color: var(--black);
+  text-decoration: none;
+	cursor: pointer;
 }
 
 .catalog__item-link:focus {
@@ -255,8 +258,11 @@
 .pagination__list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+padding: 0;
   padding-left: 63px;
     padding-top: 6px;
+    list-style-type: none;
 }
 
 .pagination__item {
@@ -272,6 +278,8 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 28px 26px 23px 30px;
+  text-decoration: none;
+	cursor: pointer;
 }
 .pagination__bnt:focus {
   outline: 5px solid var(--violet);
@@ -288,6 +296,8 @@
   padding: 8px 16px 11px 15px;
   text-align: center;
   outline: none;
+  text-decoration: none;
+	cursor: pointer;
 }
 
 .pagination__link:hover {

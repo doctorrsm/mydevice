@@ -13,6 +13,9 @@
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+padding: 0;
+list-style-type: none;
  }
 
 .breadcrumbs__item {
@@ -38,6 +41,8 @@
   color: #666666;
   display: inline-flex;
   padding: 6px 13px;
+  text-decoration: none;
+	cursor: pointer;
 
 }
 .breadcrumbs__link:hover{

@@ -86,15 +86,7 @@ h4 {
   font-size: 18px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--dark);
-  border: none;
-}
 
-a:hover {
-  cursor: pointer;
-}
 
 address {
   font-style: normal;
@@ -107,17 +99,6 @@ button {
 input {
   outline: 0;
   border: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .page-main {

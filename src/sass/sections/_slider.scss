@@ -115,6 +115,10 @@ h1 + .slider .slider__item::before {
   position: relative;
   padding-top: 85px;
 }
+.slider__content-area p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .slider__order {
   position: absolute;
   right: 50px;
@@ -129,11 +133,13 @@ h1 + .slider .slider__item::before {
 .slider__lead-text {
   color: var(--black);
   font-size: 50px;
-  line-height: 1;
+  line-height: 50px;
   font-family: "Raleway", "Tahoma", sans-serif;
   font-weight: 800;
   position: relative;
   z-index: 1;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .slider__description {

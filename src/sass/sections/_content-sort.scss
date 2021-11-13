@@ -191,7 +191,12 @@
 .range__input.error {
   border: 1px solid var(--danger);
 }
+.content-sort__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
+}
 .content-sort__item {
   margin-bottom: 20px;
 }
