@@ -57,13 +57,15 @@
 }
 
 .advantages__header {
-  font-family: "Raleway", "Tahoma", sans-serif;
-  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 33px;
+  color: var(--black);
   font-style: normal;
-  font-weight: 800;
+  font-size: 50px;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 33px;
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-weight: 800;
 }
 .advantages__text {
   margin-top: 0;

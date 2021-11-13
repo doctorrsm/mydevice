@@ -56,6 +56,17 @@
   background-color: transparent;
 }
 
+.btn:disabled,
+.btn:disabled:hover {
+  opacity: 0.2;
+  background-color: var(--light);
+  border-color: var(--black);
+  color: var(--black);
+  cursor: default;
+  border: none;
+}
+
+/* Advantages link-button */
 .btn--advantages {
   padding: 9px 10px 11px;
   min-width: 160px;
@@ -65,6 +76,7 @@
 
 .btn--advantages::before {
   background-color: var(--yellow-hover);
+  top: 46%;
 }
 
 .btn--advantages:active {
@@ -100,7 +112,7 @@
   background-color: var(--black);
 }
 
-/* Goods link-button */
+/* Catalog link-button */
 .btn--catalog {
   padding-top: 9px;
   padding-bottom: 10px;
@@ -109,6 +121,7 @@
 
 .btn--catalog::before {
   background-color: var(--yellow-hover);
+  top: 46%;
 }
 
 .btn--sort {
@@ -119,6 +132,7 @@
 
 .btn--sort::before {
   background-color: var(--yellow-hover);
+  top: 46%;
 }
 
 .btn--sort:active {
@@ -126,22 +140,8 @@
   color: #b38c00;
 }
 
-.btn-goods:focus,
-.btn-goods:active {
-  color: #b38c00;
-}
-
+/* Slider link-button */
 .btn--slider {
   margin-top: 6px;
   min-width: 220px;
-}
-
-.btn:disabled,
-.btn:disabled:hover {
-  opacity: 0.2;
-  background-color: var(--light);
-  border-color: var(--black);
-  color: var(--black);
-  cursor: default;
-  border: none;
 }

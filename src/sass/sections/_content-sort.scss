@@ -74,11 +74,6 @@
   left: 0;
 }
 
-/*.content-sort__form-field label{
-  color: var(--black);
-  font-size: 16px;
-  line-height: 18px;
-}*/
 .catalog-filter-label {
   color: #a5a5a5;
   font-size: 15px;
@@ -193,12 +188,13 @@
 .range__input.error {
   border: 1px solid var(--danger);
 }
+
 .content-sort__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
+
 .content-sort__item {
   margin-bottom: 20px;
 }
@@ -241,12 +237,12 @@
   display: none;
 }
 
-/*Покой*/
+/*regular*/
 .checkbox__input[type="checkbox"]:not(:checked)~.checkbox__mark {
   opacity: 0.2;
 }
 
-/*Наведение*/
+/*Hover*/
 .checkbox:not(:focus-within):hover .checkbox__input[type="checkbox"]:checked~.checkbox__mark {
   opacity: 0.5;
 }
@@ -256,7 +252,7 @@
 }
 
 /*Focus*/
-.checkbox:focus-within .checkbox__input[type="checkbox"]~.checkbox__mark {
+.checkbox__input[type="checkbox"]:focus~.checkbox__mark {
   border-color: var(--violet);
   opacity: 1;
 }
@@ -266,7 +262,7 @@
   opacity: 1;
 }
 
-.checkbox:focus-within .checkbox__input[type="checkbox"]~.checkbox__label {
+.checkbox__input[type="checkbox"]:focus~.checkbox__label {
   color: var(--violet);
   opacity: 1;
 }
@@ -336,12 +332,12 @@
   display: none;
 }
 
-/*Покой*/
+/*Regular*/
 .radio__input[type="radio"]:not(:checked)~.radio__mark {
   opacity: 0.2;
 }
 
-/*Наведение*/
+/*Hover*/
 .radio:not(:focus-within):hover .radio__input[type="radio"]:checked~.radio__mark {
   opacity: 0.5;
 }
@@ -350,7 +346,7 @@
   opacity: 0.5;
 }
 
-/*Фокус*/
+/*Focus*/
 .radio:focus-within .radio__mark {
   border-color: var(--violet);
   opacity: 1;
@@ -366,7 +362,7 @@
   opacity: 1;
 }
 
-/*Активность*/
+/*Active*/
 .radio:active {
   opacity: 0.2;
 }

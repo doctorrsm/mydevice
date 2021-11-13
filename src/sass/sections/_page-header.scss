@@ -28,6 +28,7 @@
 
 .logo {
   cursor: pointer;
+  z-index: 1;
 }
 
 .logo:hover {
@@ -40,6 +41,7 @@
 
 .logo:active {
   opacity: 0.3;
+  outline: none;
 }
 
 .top-header__links {
