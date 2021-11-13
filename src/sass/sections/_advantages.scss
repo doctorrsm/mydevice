@@ -32,14 +32,6 @@
   padding-right: 305px;
 }
 
-/*
-.advantages__item:not(:first-of-type) {
-  display: none;
-}
-*/
-.advantages__item:not(:nth-child(1)) {
-  display: none;
-}
 
 .advantages__item--delivery {
   background-image: url(../images/tabs/delivery.png);

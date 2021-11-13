@@ -1,4 +1,4 @@
-.modal-container(style="display: none;")
+.modal-container.d-none
 	.modal
 		h2.modal__header Доставка под заказ
 		button(type="button").modal__close
@@ -7,7 +7,7 @@
 			.form-order__row
 				.field-group
 					label(for="customer-name").label-order Ваше имя:
-					input(type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия").input-order
+					input(type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия" required).input-order
 					span.text-input-order.text-input-order--invalid Пожалуйста, представьтесь
 				.field-group
 					label(for="customer-email").label-order Ваш e-mail:
@@ -16,7 +16,7 @@
 			.counter-area
 				.field-group
 					label(for="customer-name").label-order Что нужно привезти:
-					input(type="text" name="customer-name" id="customer-name" placeholder="В свободной форме").input-order
+					input(type="text" name="goods-description" id="goods-description" placeholder="В свободной форме").input-order
 					span.text-input-order
 				.field-group
 					span.label-order__wrapper.has-info

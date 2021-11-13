@@ -4,19 +4,19 @@ section.slider.page-slider
 		h2.visually-hidden Популярные товары
 		.slider__buttons
 			button(type="button").arrow.arrow--left
-				.span(class="visually-hidden") Предыдущий товар.
+				span(class="visually-hidden") Предыдущий товар.
 			button(type="button").arrow.arrow--right
-				.span(class="visually-hidden") Следующий товар.
+				span(class="visually-hidden") Следующий товар.
 		.slider__dots
 			button(type="button").dot.dot--active
-				.span(class="visually-hidden") Первый товар.
+				span(class="visually-hidden") Первый товар.
 			button(type="button").dot
-				.span(class="visually-hidden") Второй товар.
+				span(class="visually-hidden") Второй товар.
 			button(type="button").dot
-				.span(class="visually-hidden") Третий товар.
+				span(class="visually-hidden") Третий товар.
 		.slider__item
 			.slider__image-area
-				img(src="images/slider/quadrocopter.png" width="560" height="560" alt='Боевой лазерный квадрокоптер').slider__img
+				img(src="images/slider/quadrocopter.png" width="560" height="560" alt="Боевой лазерный квадрокоптер.").slider__img
 			.slider__content-area
 				span.slider__order 01
 				p.slider__lead-text Порхает как бабочка, жалит как пчела!
@@ -31,9 +31,9 @@ section.slider.page-slider
 					div.slider__description-row
 						dt Радиус поражения
 						dd 50 м
-		.slider__item
+		.slider__item.d-none
 			.slider__image-area
-				img(src="images/slider/fitnestracker.png" width="560" height="560" alt="Фитнес-браслет").slider__img
+				img(src="images/slider/fitnestracker.png" width="560" height="560" alt="Фитнес-браслет.").slider__img
 			.slider__content-area
 				span.slider__order 02
 				p.slider__lead-text Худеем правильно
@@ -44,9 +44,9 @@ section.slider.page-slider
 					div.slider__description-row
 						dt Без подзарядки
 						dd 48 часов
-		.slider__item
+		.slider__item.d-none
 			.slider__image-area
-				img(src="images/slider/monopod.png" width="560" height="560"  alt="Восьмиметровая селфи-палка").slider__img
+				img(src="images/slider/monopod.png" width="560" height="560"  alt="Восьмиметровая селфи-палка.").slider__img
 			.slider__content-area
 				span.slider__order 03
 				p.slider__lead-text Делай селфи, как Бен Стиллер!

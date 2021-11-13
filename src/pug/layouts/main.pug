@@ -28,18 +28,21 @@ html(lang='ru')
 		//- Фавикон иконки конец
 	block vars
 	body.page
-		//-#btn--index.perfectpixel-btn index
-		//-#btn--monopod.perfectpixel-btn monopods
-		//-#btn--grid.perfectpixel-btn  grid
-		//-.perfectpixel#perfectpixel
+		#btn--index.perfectpixel-btn index
+		#btn--monopod.perfectpixel-btn monopods
+		#btn--grid.perfectpixel-btn  grid
+		.perfectpixel#perfectpixel
 
 		header.page-header
 			.container.bg-yellow.page-header__container
 				block header
 
-
-		main.page-main
-			block main
+		if mainpage
+			main.page-main
+				block main
+		else
+			main.page-main.overflow-hidden
+				block main
 		footer.page-footer
 			.container
 				block footer

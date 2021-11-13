@@ -72,6 +72,7 @@
   min-width: 160px;
   font-family: "Raleway", "Tahoma", sans-serif;
   color: var(--black);
+  margin-left: 1px;
 }
 
 .btn--advantages::before {
@@ -121,18 +122,17 @@
 
 .btn--catalog::before {
   background-color: var(--yellow-hover);
-  top: 46%;
 }
 
 .btn--sort {
   min-width: 200px;
   padding-top: 9px;
   padding-bottom: 10px;
+  margin-left: 4px;
 }
 
 .btn--sort::before {
   background-color: var(--yellow-hover);
-  top: 46%;
 }
 
 .btn--sort:active {
@@ -144,4 +144,9 @@
 .btn--slider {
   margin-top: 6px;
   min-width: 220px;
+}
+/* Slider link-button */
+.btn--site-contacts {
+  margin-top: 38px;
+  margin-left: 2px;
 }

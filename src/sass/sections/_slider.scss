@@ -49,12 +49,7 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
 }
-.slider__item:last-of-type {
-  display: none;
-}
-.slider__item:nth-last-child(2) {
-  display:none;
-}
+
 h1 + .slider .slider__item::before {
   content: "";
   position: absolute;

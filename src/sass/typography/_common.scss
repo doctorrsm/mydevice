@@ -52,14 +52,17 @@ img {
 }
 
 
-.page-main {
-  flex-grow: 1;
-}
 
 .d-flex {
   display: flex;
 }
-
+/* class "d-none" hide elements preparing for js-developer (slider items, tab items and the modal window) */
+.d-none {
+  display: none!important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
 .bg-yellow {
   background-color: var(--yellow);
 }
@@ -74,10 +77,15 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page-main {
+  flex-grow: 1;
+}
 
+
+/*
 .show {
   display: block;
-}
+}*/
 
 .perfectpixel {
   opacity: 0.3;

@@ -9,6 +9,7 @@
   border-right: none;
   border-radius: 20px 0 0 20px;
   outline: 0;
+  font-family: "Rubik", "Arial", sans-serif;
   color: var(--black);
   font-size: 16px;
   line-height: 1;
@@ -17,9 +18,12 @@
   background-repeat: no-repeat;
   background-position: 15px 50%;
 }
-
+.search-input::placeholder {
+  color: var(--black);
+  opacity: 0.3;
+}
 .search:hover .search-input::placeholder {
-  color: #665a33;
+  opacity: 0.6;
 }
 .search-input:not(:placeholder-shown) {
   border-color: var(--black);
